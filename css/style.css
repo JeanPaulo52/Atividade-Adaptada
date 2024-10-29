@@ -1,0 +1,218 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(242, 242, 242);
+
+}
+
+header{
+    padding: 20px 0;
+
+}
+
+.barratopo {
+    border: 2px;
+    border-style: groove;
+    background-color: rgb(232, 232, 232);
+}
+
+.logotopo {
+    width: 300px;
+
+}
+
+.center {
+    text-align: center;
+    background-image: url(../Assets/fundo\ AA.png);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    justify-content: center;
+    color:black;
+    font-weight: bold;
+    border: 2px;
+    border-style: groove;
+    background-color: rgb(232, 232, 232);
+    
+
+}
+
+nav a {
+    text-decoration: none;
+    margin: 20px;
+    color: black;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.tituloPagina {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.imgNoticia {
+    width: 300px;
+    align-items: center;
+
+}
+
+.container {
+    padding: 10px 50px;
+    border: 2px;
+    border-style: groove;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+section {
+    display: inline-flex;
+    align-items: center;
+   
+}
+
+.texTi {
+    padding-bottom: 30px;
+    padding-left: 17px;
+}
+
+.texEn {
+    padding-bottom: 100px;
+    padding-left: 17px;
+}
+
+.texTi-Pag {
+    padding-bottom: 10px;
+    padding-left: 17px;
+}
+
+.texEn-Pag {
+    padding-bottom: 5px;
+    padding-left: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.materias {
+    display: inline;
+}
+
+.imgMat {
+    width: 130px;
+    margin: 10px 0px 10px 0px;
+}
+
+.Mat {
+    padding-bottom: 10px;
+    padding-left: 17px;
+}
+
+.Mat:hover {
+    color: red;
+}
+
+.texMat {
+    padding-bottom: 10px;
+    padding-left: 17px;
+    margin-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+.imgATD {
+    width: 300px;
+    margin: 20px 0px 20px 0px;
+    
+}
+
+.TitleATD {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.TextATD {
+    padding-bottom: 200px;
+    padding-left: 10px;
+    margin-right: 10px;
+    text-align:start;
+}
+
+.linkDOW {
+    padding-left: 17px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.linkDOW:hover {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+.imgATD-IND {
+    width: 500px;
+    margin: 20px 0px 40px 0px;
+}
+
+.TitleATD-IND {
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+
+.TextATD-IND {
+    text-align: justify;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.TextATD-HAB {
+    text-align: justify;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.linkDOW-IND {
+    text-align: center;
+    margin-top: 100px;
+}
