@@ -1,37 +1,37 @@
-*{
+*{ /* Confguração basica da pagina */
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
 
-body {
-    background-color: rgb(242, 242, 242);
-
-}
-
-header{
-    padding: 20px 0;
+body { /* Cor da pagina */
+    background-color: rgb(242, 242, 242); 
 
 }
 
-.barratopo {
+header{ /* Espaçamento do topo */
+    padding: 20px 0; 
+
+}
+
+.barratopo { /* Barra de pesquisa */
     border: 2px;
     border-style: groove;
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(232, 232, 232); 
 }
 
-.logotopo {
-    width: 300px;
+.logotopo { /* Escala da imagem do topo da pagina */
+    width: 300px; 
 
 }
 
-.center {
+.center { /* Imagem do topo da pagina */
     text-align: center;
     background-image: url(../Assets/fundo\ AA.png);
 }
 
-nav ul {
+nav ul { /* Barra com botões principais */
     list-style-type: none;
     display: flex;
     padding-top: 15px;
@@ -47,169 +47,186 @@ nav ul {
 
 }
 
-nav a {
+nav a { /* Confguração dos botões da barra principal */
     text-decoration: none;
     margin: 20px;
     color: black;
 }
 
-nav a:hover {
+nav a:hover { /* Cor dos botões da barra principal */
     color: red;
 }
 
-.tituloPagina {
+.tituloPagina { /* Titulo da pagina centralizada */
     text-align: center;
 }
 
+/* ---------------------------------------------------------------------------- */
 
-
-
-
-
-
-
-
-
-.imgNoticia {
+.imgNoticia { /* Confguração do tamanho das imagens da pagina -NOVIDADES- */
     width: 300px;
-    align-items: center;
 
 }
 
-.container {
-    padding: 10px 50px;
+.container { /* Confguração da borda da pagina com o fim da tela */
+    padding: 10px 10px;
+    
+    text-align: center;
 
 }
 
-section {
-    display: inline-flex;
-    align-items: center;
-   
-}
-
-.texTi {
-    padding-bottom: 30px;
+.texTi { /* Espaçamento do texto da pagina - NOVIDADES - */
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 17px;
 }
 
-.texEn {
+.texEn { /* Espaçamento do texto de enunciado */
     padding-bottom: 100px;
     padding-left: 17px;
 }
 
-.texTi-Pag {
+.texTi-Pag { /* Espaçamento do texto das paginas de noticias */
     padding-bottom: 10px;
     padding-left: 17px;
 }
 
-.texEn-Pag {
+.texEn-Pag { /* Espaçamento do texto das paginas de noticias */
     padding-bottom: 5px;
     padding-left: 17px;
 }
 
+/* ---------------------------------------------------------------------------------------------- */
 
-
-
-
-
-
-
-
-
-
-.materias {
+.materias { /* Boto~es de matérias da BNCC */
     display: inline;
 }
 
-.imgMat {
+.imgMat { /* Imagens das matérias da BNCC na pagina - ATIVIDADES - */
     width: 130px;
     margin: 10px 0px 10px 0px;
 }
 
-.Mat {
+.Mat { /* Boto~es de matérias da BNCC */
     padding-bottom: 10px;
     padding-left: 17px;
 }
 
-.Mat:hover {
+.Mat:hover { /* Boto~es de matérias da BNCC */
     color: red;
 }
 
-.texMat {
+.texMat { /* Explicação da matéria */
     padding-bottom: 10px;
     padding-left: 17px;
     margin-right: 40px;
 }
 
+/* -------------------------------------------------------------------------------------------- */
 
-
-
-
-
-
-
-
-.imgATD {
+.imgATD { /* Imagem que representa as atividades da pagina de seleção */
     width: 300px;
-    margin: 20px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
     
 }
 
-.TitleATD {
-    padding-bottom: 40px;
+.TitleATD { /* Titulo da atividade */
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
 }
 
-.TextATD {
+.TextATD { /* Texto de descrição da atividade */
     padding-bottom: 200px;
     padding-left: 10px;
     margin-right: 10px;
-    text-align:start;
+
 }
 
-.linkDOW {
-    padding-left: 17px;
-    margin-right: 40px;
+.linkDOW { /* Botão de download */
+    padding-bottom: 20px;
     text-align: center;
 }
 
-.linkDOW:hover {
+.linkDOW:hover { /* Botão de download */
     color: red;
 }
 
+/* ------------------------------------------------------------------------------------------------ */
 
-
-
-
-
-
-
-
-
-.imgATD-IND {
+.imgATD-IND { /* Imagem da atividade da pagina de download */
     width: 500px;
-    margin: 20px 0px 40px 0px;
+
 }
 
-.TitleATD-IND {
+.TitleATD-IND { /* Titulo da atividade na pagina de donwload */
     text-align: center;
-    margin-bottom: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
 }
 
-.TextATD-IND {
-    text-align: justify;
+.TextATD-IND { /* Texto de descrição da atividade na pagina de downloads */
+
     margin-bottom: 30px;
     margin-left: 20px;
 }
 
-.TextATD-HAB {
-    text-align: justify;
+.TextATD-HAB { /* Texto de descrição da atividade na pagina de downloads */
+
     margin-bottom: 5px;
     margin-left: 20px;
 }
 
-.linkDOW-IND {
-    text-align: center;
-    margin-top: 100px;
+.linkDOW-IND { /* link para da atividade na pagina de downloads */
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+main {
+
+    display:flex;
+    flex-direction: column;
+
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: center;
+    border: 2px;
+    border-style: groove;
+    background-color: rgba(223, 221, 221, 0.603);
+
+
+
+}
+
+@media screen and (max-width: 768px){ 
+
+    nav a {
+        font-size: 8px;
+    }
+
+    .imgNoticia{
+        
+        width: 350px;
+
+    }
+
+    body{
+
+        font-size: 14px;
+
+    }
+
+    main{
+        margin: 0 auto;
+        width:100%;
+        flex-direction: column;
+
+    }
+
+    .imgATD-IND {
+        width: 300px;
+    }
+    
 }
