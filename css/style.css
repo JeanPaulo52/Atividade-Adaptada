@@ -65,14 +65,12 @@ nav a:hover { /* Cor dos botões da barra principal */
 
 .imgNoticia { /* Confguração do tamanho das imagens da pagina -NOVIDADES- */
     width: 300px;
-
+    
 }
 
 .container { /* Confguração da borda da pagina com o fim da tela */
     padding: 10px 10px;
-    
     text-align: center;
-
 }
 
 .texTi { /* Espaçamento do texto da pagina - NOVIDADES - */
@@ -88,12 +86,17 @@ nav a:hover { /* Cor dos botões da barra principal */
 
 .texTi-Pag { /* Espaçamento do texto das paginas de noticias */
     padding-bottom: 10px;
-    padding-left: 17px;
+    padding-right: 170px;
+    padding-left: 170px;
+    text-align: left;
+    
 }
 
 .texEn-Pag { /* Espaçamento do texto das paginas de noticias */
     padding-bottom: 5px;
-    padding-left: 17px;
+    padding-right: 170px;
+    padding-left: 170px;
+    text-align: left;
 }
 
 /* ---------------------------------------------------------------------------------------------- */
@@ -207,13 +210,11 @@ main {
     }
 
     .imgNoticia{
-        
         width: 350px;
 
     }
 
     body{
-
         font-size: 14px;
 
     }
@@ -229,4 +230,13 @@ main {
         width: 300px;
     }
     
+    .texTi-Pag  {
+        padding-right: 17px;
+        padding-left: 17px;
+    }
+
+    .texEn-Pag {
+        padding-right: 17px;
+        padding-left: 17px;
+    }
 }
