@@ -99,6 +99,23 @@ nav a:hover { /* Cor dos botões da barra principal */
     text-align: left;
 }
 
+.QuemSomos{ 
+    display:flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px;
+}
+
+.imgQuemSomos{
+    width: 300px;
+    padding-right: 100px;
+}
+
+.imgQuemSomos2{
+    width: 600px;
+    padding-right: 100px;
+}
+
 /* ---------------------------------------------------------------------------------------------- */
 
 .materias { /* Boto~es de matérias da BNCC */
@@ -239,4 +256,24 @@ main {
         padding-right: 17px;
         padding-left: 17px;
     }
+    
+    .QuemSomos{ 
+        margin: 0 auto;
+        width:100%;
+        flex-direction: column;
+
+    }
+
+    .imgQuemSomos{
+        width: 300px;
+        margin-top: 15px;
+        margin-left: 30px;
+    }
+    
+    .imgQuemSomos2{
+        width: 400px;
+        margin-top: 15px;
+        margin-left: 30px;
+    }
+
 }
