@@ -15,6 +15,30 @@ header{ /* Espaçamento do topo */
 
 }
 
+.search{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: #00000006;
+    width: 350px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #4b4b4b;
+}
+
+#searchInput {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+}
+
+.search label {
+    height: 20px;
+}
+
 .barratopo { /* Barra de pesquisa */
     border: 2px;
     border-style: groove;
