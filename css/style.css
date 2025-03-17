@@ -231,8 +231,6 @@ main {
 
     display:flex;
     flex-direction: column;
-
-
     padding-top: 5px;
     padding-bottom: 5px;
     justify-content: center;
@@ -240,9 +238,8 @@ main {
     border-style: groove;
     background-color: rgba(223, 221, 221, 0.603);
 
-
-
 }
+
 
 @media screen and (max-width: 768px){ 
 
