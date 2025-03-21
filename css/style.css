@@ -118,6 +118,7 @@ nav a:hover { /* Cor dos botões da barra principal */
 
 .texEn-Pag { /* Espaçamento do texto das paginas de noticias */
     padding-bottom: 5px;
+    padding-top: 5px;
     padding-right: 170px;
     padding-left: 170px;
     text-align: left;
@@ -237,11 +238,6 @@ main {
     border: 2px;
     border-style: groove;
     background-color: rgba(223, 221, 221, 0.603);
-
-}
-
-.flexisivel {
-    display:flex;
 
 }
 
