@@ -18,7 +18,7 @@ header{ /* Espaçamento do topo */
 .search{
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     background-color: #00000006;
     width: 350px;
     margin: auto;
@@ -45,8 +45,70 @@ header{ /* Espaçamento do topo */
     background-color: rgb(232, 232, 232); 
 }
 
+.barraFundoInfo {
+    display:flex;
+    background-color: rgb(232, 232, 232);
+
+    
+}
+
+.imagembarraFundoInfo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+
+.textobarraFundoInfo {
+    color:black;
+
+}
+
+.textobarraFundoInfo h4 {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+
+.textobarraFundoInfo a {
+    text-decoration: none;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+
+}
+
+.textobarraFundoInfo3 {
+    width: 40%;
+
+}
+
+.textobarraFundoInfo3 a {
+    text-decoration: none;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    margin-top: 30px;
+
+}
+
+.Containerfundo {
+    display: flex;
+    width: 30%;
+
+}
+
 .logotopo { /* Escala da imagem do topo da pagina */
-    width: 300px; 
+    width: 200px; 
+
+}
+
+.logofundo { /* Escala da imagem do fundo da pagina */
+    width: 150px; 
 
 }
 
@@ -236,8 +298,8 @@ main {
     padding-bottom: 5px;
     justify-content: center;
     border: 2px;
-    border-style: groove;
-    background-color: rgba(223, 221, 221, 0.603);
+   
+    background-color: rgba(223, 221, 221, 0.651);
 
 }
 
@@ -296,6 +358,38 @@ main {
         width: 400px;
         margin-top: 15px;
         margin-left: 30px;
+    }
+
+    .barraFundoInfo{
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+
+    .imagembarraFundoInfo{
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+
+    .textobarraFundoInfo3 {
+        width: 50%;
+    
+    }
+
+    .textobarraFundoInfo3 a {
+        text-decoration: none;
+        margin-left: 3px;
+        margin-bottom: 3px;
+        margin-top: 30px;
+
+    }
+
+    .Containerfundo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    
     }
 
 }
