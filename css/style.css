@@ -52,6 +52,22 @@ header{ /* Espaçamento do topo */
     
 }
 
+.menu-de-rolagem:hover .menu-de-rolagem-itens {
+    display: block;
+}
+
+.menu-de-rolagem-itens {
+    position: absolute;
+    display: none;
+    box-shadow: 0 0 2px rgba(131, 130, 130, 0.664);
+    background-color: rgb(218, 218, 218);
+    text-align: left;
+}
+
+.menu-de-rolagem-itens a {
+    display: block;
+}
+
 .imagembarraFundoInfo {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -114,29 +130,24 @@ header{ /* Espaçamento do topo */
 
 .center { /* Imagem do topo da pagina */
     text-align: center;
-    background-image: url(../Assets/fundo\ AA.png);
+    background-image: url(../Assets/fundo\ AA.webp);
 }
 
-nav ul { /* Barra com botões principais */
-    list-style-type: none;
-    display: flex;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 100%;
-    justify-content: center;
-    color:black;
-    font-weight: bold;
-    border: 2px;
-    border-style: groove;
+nav {
+    text-align: center;
     background-color: rgb(232, 232, 232);
-    
 
 }
 
-nav a { /* Confguração dos botões da barra principal */
-    text-decoration: none;
-    margin: 20px;
+nav li {
+    display: inline-block;
+}
+    
+nav li a { /* Confguração dos botões da barra principal */
+    display: inline-block;
     color: black;
+    text-decoration: none;
+    padding: 15px;
 }
 
 nav a:hover { /* Cor dos botões da barra principal */
@@ -306,12 +317,17 @@ main {
 
 @media screen and (max-width: 768px){ 
 
+    .logotopo {
+        width: 100px;
+
+    }
+
     nav a {
         font-size: 8px;
     }
 
     .imgNoticia{
-        width: 350px;
+        width: 280px;
 
     }
 
