@@ -11,9 +11,8 @@ body { /* Cor da pagina */
 }
 
 .anuncio {
-    color: black;
-    padding: auto;
-    border-radius: 5px;
+    background-color: #a1a1a1bd;
+    margin-left: 28px;
 }
 
 header{ /* Espaçamento do topo */
