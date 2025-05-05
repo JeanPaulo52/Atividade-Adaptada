@@ -10,6 +10,12 @@ body { /* Cor da pagina */
 
 }
 
+.anuncio {
+    color: black;
+    padding: auto;
+    border-radius: 5px;
+}
+
 header{ /* Espaçamento do topo */
     padding: 20px 0; 
 
