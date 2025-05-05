@@ -15,6 +15,20 @@ header{ /* Espaçamento do topo */
 
 }
 
+.bloco-de-noticias-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-principal {
+    width:611px;
+}
+
+.bloco-de-noticias-2 {
+    display: flex;
+    justify-content: center;
+}
+
 .search{
     display: flex;
     align-items: center;
@@ -40,9 +54,8 @@ header{ /* Espaçamento do topo */
 }
 
 .barratopo { /* Barra de pesquisa */
-    border: 2px;
-    border-style: groove;
     background-color: rgb(232, 232, 232); 
+    display: flex;
 }
 
 .barraFundoInfo {
@@ -123,14 +136,28 @@ header{ /* Espaçamento do topo */
 
 }
 
+.logo-do-site {
+    margin: auto;
+}
+
 .logofundo { /* Escala da imagem do fundo da pagina */
     width: 150px; 
 
 }
 
 .center { /* Imagem do topo da pagina */
-    text-align: center;
-    background-image: url(../Assets/fundo\ AA.webp);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botão-redes {
+    width: 50px;
+    margin-left: 15px;
+}
+
+.barra-topo-redes {
+    display: none;
 }
 
 nav {
@@ -155,18 +182,21 @@ nav a:hover { /* Cor dos botões da barra principal */
 }
 
 .tituloPagina { /* Titulo da pagina centralizada */
-    text-align: center;
+    text-align:left;
+    padding-left: 100px;
+
 }
 
 /* ---------------------------------------------------------------------------- */
 
 .imgNoticia { /* Confguração do tamanho das imagens da pagina -NOVIDADES- */
-    width: 300px;
+    width: 331px;
+    padding-left: 25px ;
     
 }
 
 .container { /* Confguração da borda da pagina com o fim da tela */
-    padding: 10px 10px;
+    padding: 5px 5px;
     text-align: center;
 }
 
@@ -317,9 +347,50 @@ main {
 
 @media screen and (max-width: 768px){ 
 
+    .barra-topo-redes {
+        display:flex;
+    }
+
+    .tituloPagina { /* Titulo da pagina centralizada */
+        text-align:left;
+        padding-left: 20px;
+    
+    }
+
+    .banner-principal {
+        width: 380px;
+    }
+
+    .botao-das-redes-topo {
+        margin-left: 20px;
+    }
+
+    .botao-das-redes {
+        display: none;
+    }
+
+    .logo-do-site {
+        display: none;
+    }
+
+    .botão-redes {
+        width: 30px;
+        margin-left: 5px;
+    }
+
     .logotopo {
         width: 100px;
+        margin-left: 70px;
+    }
 
+    .bloco-de-noticias-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bloco-de-noticias-2 {
+        flex-direction: column;
+        align-items: center;
     }
 
     nav a {
@@ -327,8 +398,9 @@ main {
     }
 
     .imgNoticia{
-        width: 280px;
-
+        width: 360px;
+        padding-bottom: 25px;
+        padding-left: 0px;
     }
 
     body{
