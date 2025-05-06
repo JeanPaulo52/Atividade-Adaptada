@@ -356,6 +356,11 @@ main {
         display:flex;
     }
 
+    .anuncio {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     .tituloPagina { /* Titulo da pagina centralizada */
         text-align:left;
         padding-left: 20px;
