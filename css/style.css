@@ -219,8 +219,8 @@ nav a:hover { /* Cor dos botões da barra principal */
 
 .img-atividade { /* Confguração do tamanho das imagens da pagina -NOVIDADES- */
     width: 331px;
-    padding-left: 25px ;
-    
+    padding-left: 10px ;
+    padding-right: 10px ;
 }
 
 .img-lado-a-lado {
@@ -410,11 +410,15 @@ main {
     
     .anuncio-atividades-mobile {
         display: flex;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        width: 150px;
+
+        margin-bottom: 20px;
         background-color: #a1a1a1bd;
-        margin-left: 28px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100%;
+        height: auto;
+        display: block;
+        max-width: 100%
     }
 
     .tituloPagina { /* Titulo da pagina centralizada */
@@ -572,7 +576,10 @@ main {
     }
 
     .img-atividade { /* Confguração do tamanho das imagens da pagina -NOVIDADES- */
-    width: 180px;
-    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%
     }
 }
