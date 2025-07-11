@@ -15,6 +15,20 @@ body { /* Cor da pagina */
     margin-left: 28px;
 }
 
+.anuncio-atividades {
+    background-color: #a1a1a1bd;
+    margin-left: 28px;
+}
+
+.anuncio-atividades-pc {
+    background-color: #a1a1a1bd;
+    margin-left: 28px;
+}    
+    
+.anuncio-atividades-mobile {
+display: none;
+}
+
 header{ /* Espaçamento do topo */
     padding: 20px 0; 
 
@@ -32,6 +46,12 @@ header{ /* Espaçamento do topo */
 .bloco-de-noticias-2 {
     display: flex;
     justify-content: center;
+}
+
+.bloco-de-atividades{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .search{
@@ -66,8 +86,6 @@ header{ /* Espaçamento do topo */
 .barraFundoInfo {
     display:flex;
     background-color: rgb(232, 232, 232);
-
-    
 }
 
 .menu-de-rolagem:hover .menu-de-rolagem-itens {
@@ -91,7 +109,6 @@ header{ /* Espaçamento do topo */
     padding-bottom: 15px;
     padding-left: 150px;
     padding-right: 150px;
-
 }
 
 .textobarraFundoInfo {
@@ -198,6 +215,16 @@ nav a:hover { /* Cor dos botões da barra principal */
     width: 331px;
     padding-left: 25px ;
     
+}
+
+.img-atividade { /* Confguração do tamanho das imagens da pagina -NOVIDADES- */
+    width: 331px;
+    padding-left: 25px ;
+    
+}
+
+.img-lado-a-lado {
+    display:flex;
 }
 
 .container { /* Confguração da borda da pagina com o fim da tela */
@@ -374,6 +401,20 @@ main {
     .anuncio {
         margin-top: 10px;
         margin-bottom: 10px;
+        margin-left: 1px;
+    }
+
+    .anuncio-atividades-pc {
+        display: none;
+    }    
+    
+    .anuncio-atividades-mobile {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 150px;
+        background-color: #a1a1a1bd;
+        margin-left: 28px;
     }
 
     .tituloPagina { /* Titulo da pagina centralizada */
@@ -416,6 +457,11 @@ main {
     .bloco-de-noticias-2 {
         flex-direction: column;
         align-items: center;
+    }
+
+    .bloco-de-atividades {
+        flex-direction: column;
+        margin-top: 1px;
     }
 
     nav a {
@@ -521,4 +567,12 @@ main {
         flex-direction: column;
     }
 
+    .img-lado-a-lado {
+        display:flex;
+    }
+
+    .img-atividade { /* Confguração do tamanho das imagens da pagina -NOVIDADES- */
+    width: 180px;
+    margin-top: 20px;
+    }
 }
