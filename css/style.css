@@ -206,6 +206,7 @@ nav a:hover { /* Cor dos botões da barra principal */
 .tituloPagina { /* Titulo da pagina centralizada */
     text-align:left;
     padding-left: 100px;
+    padding-bottom: 20px;
 
 }
 
@@ -428,7 +429,12 @@ main {
     }
 
     .banner-principal {
-        width: 380px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        height: auto;
+        display: block;
+        max-width: 100%
     }
 
     .botao-das-redes-topo {
@@ -473,9 +479,12 @@ main {
     }
 
     .imgNoticia{
-        width: 360px;
-        padding-bottom: 25px;
-        padding-left: 0px;
+        padding-bottom: 10px;
+        padding-right: 25px ;
+        width: 100%;
+        height: auto;
+        display: block;
+        max-width: 100%
     }
 
     body{
