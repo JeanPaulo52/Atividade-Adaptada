@@ -7,7 +7,8 @@
 
 body { /* Cor da pagina */
     background-color: rgb(242, 242, 242); 
-
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 .anuncio {
@@ -489,7 +490,8 @@ main {
 
     body{
         font-size: 14px;
-
+        font-size: 20px;
+        line-height: 1.8;
     }
 
     main{
