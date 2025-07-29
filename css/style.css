@@ -393,6 +393,48 @@ main {
     display:flex;
 }
 
+.menu {
+  width: 100%;
+  background-color: rgb(232, 232, 232);
+  color: white;
+}
+
+.menu-icon {
+  display: block;
+  padding: 15px;
+  cursor: pointer;
+  background-color: rgb(232, 232, 232);
+  font-size: 20px;
+  color: rgb(12, 0, 0);
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Oculta o menu inicialmente */
+.menu-list {
+  list-style: none;
+  background-color: #444;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+/* Quando ativado, expande */
+#menu-toggle:checked ~ .menu-list {
+  max-height: 500px; /* ou qualquer altura que acomode todos os itens */
+}
+
+/* Estilo dos itens do menu */
+.menu-list li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  border-top: 1px solid #555;
+}
+
 
 @media screen and (max-width: 768px){ 
 
