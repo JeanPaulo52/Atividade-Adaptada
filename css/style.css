@@ -435,6 +435,10 @@ main {
   border-top: 1px solid #555;
 }
 
+.anuncio-container {
+  overflow: hidden; /* esconde o que ultrapassar */
+}
+
 
 @media screen and (max-width: 768px){ 
 
