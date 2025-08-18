@@ -1,0 +1,38 @@
+[
+  {
+    "titulo": "Labirinto de Roma",
+    "descricao": "Atividade de história onde deve pegar o gladiador e levar ele para o coliseu.",
+    "imagem": "/Nivel 2/2-BNCC/Historia/PagDow/ATD-Hist-1/1.png",
+    "link": "/Nivel 2/2-BNCC/Historia/PagDow/ATD-Hist-1/ATD-ARTS-1.html"
+  },
+  {
+    "titulo": "Cultura Grega",
+    "descricao": "Atividade de história sobre a identificação dos objetos ligados a cultura grega.",
+    "imagem": "/Nivel 2/2-BNCC/Historia/PagDow/ATD-Hist-2/2.png",
+    "link": "/Nivel 2/2-BNCC/Historia/PagDow/ATD-Hist-2/ATD-ARTS-2.html"
+  },
+  {
+    "titulo": "Cultura Egípcia",
+    "descricao": "Atividade de história sobre a identificação dos objetos ligados a cultura grega.",
+    "imagem": "/Nivel 2/2-BNCC/Historia/PagDow/ATD-Hist-3/3.png",
+    "link": "/Nivel 2/2-BNCC/Historia/PagDow/ATD-Hist-3/ATD-ARTS-3.html"
+  },
+  {
+    "titulo": "Produtos orientais",
+    "descricao": "Atividades de história de cruzadinha com o tema sendo os produtos orientais.",
+    "imagem": "/Nivel 2/2-BNCC/Historia/PagDow/ATD-Hist-4/4.png",
+    "link": "/Nivel 2/2-BNCC/Historia/PagDow/ATD-Hist-4/ATD-ARTS-4.html"
+  },
+  {
+    "titulo": "Brasão de castelo",
+    "descricao": "Atividade de história onde deve ser utilizada a imaginação para a riação de um brasão de castelos.",
+    "imagem": "/Nivel 2/2-BNCC/Historia/PagDow/ATD-Hist-5/5.png",
+    "link": "/Nivel 2/2-BNCC/Historia/PagDow/ATD-Hist-5/ATD-ARTS-5.html"
+  },
+  {
+    "titulo": "Labirindo do índio",
+    "descricao": "Atividade de história com labirinto onde deve levar o índio para casa dele.",
+    "imagem": "/Nivel 2/2-BNCC/Historia/PagDow/ATD-Hist-6/6.png",
+    "link": "/Nivel 2/2-BNCC/Historia/PagDow/ATD-Hist-6/ATD-ARTS-6.html"
+  }
+]

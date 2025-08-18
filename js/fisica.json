@@ -1,0 +1,38 @@
+[
+  {
+    "titulo": "Matrizes elétricas",
+    "descricao": "Atividade de física sobre as matrizes elétricas e sua importância.",
+    "imagem": "/Nivel 2/2-BNCC/Fisica/PagDow/ATD-FISI-1/1.png",
+    "link": "/Nivel 2/2-BNCC/Fisica/PagDow/ATD-FISI-1/ATD-ARTS-1.html"
+  },
+  {
+    "titulo": "Objetos que usam energia",
+    "descricao": "Atividade de física sobre o uso da energia eletrica.",
+    "imagem": "/Nivel 2/2-BNCC/Fisica/PagDow/ATD-FISI-2/2.png",
+    "link": "/Nivel 2/2-BNCC/Fisica/PagDow/ATD-FISI-2/ATD-ARTS-2.html"
+  },
+  {
+    "titulo": "Energias limpas",
+    "descricao": "Atividade de física sobre as energias limpas e sua importância.",
+    "imagem": "/Nivel 2/2-BNCC/Fisica/PagDow/ATD-FISI-3/3.png",
+    "link": "/Nivel 2/2-BNCC/Fisica/PagDow/ATD-FISI-3/ATD-ARTS-3.html"
+  },
+  {
+    "titulo": "Tipos de radiação",
+    "descricao": "Atividade de física sobre os tipos de radiação e suas utilidades.",
+    "imagem": "/Nivel 2/2-BNCC/Fisica/PagDow/ATD-FISI-4/4.png",
+    "link": "/Nivel 2/2-BNCC/Fisica/PagDow/ATD-FISI-4/ATD-ARTS-4.html"
+  },
+  {
+    "titulo": "As pilhas",
+    "descricao": "Atividade de física sobre o funcionamento das pilhas e suas utilidades.",
+    "imagem": "/Nivel 2/2-BNCC/Fisica/PagDow/ATD-FISI-5/5.png",
+    "link": "/Nivel 2/2-BNCC/Fisica/PagDow/ATD-FISI-5/ATD-ARTS-5.html"
+  },
+  {
+    "titulo": "Entalpia",
+    "descricao": "Atividade de física sobre a entalpia e seu funcionamento.",
+    "imagem": "/Nivel 2/2-BNCC/Fisica/PagDow/ATD-FISI-6/6.png",
+    "link": "/Nivel 2/2-BNCC/Fisica/PagDow/ATD-FISI-6/ATD-ARTS-6.html"
+  }
+]

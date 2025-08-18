@@ -17,7 +17,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade Adaptada.com</title>
-    <link href="../../../css/style.css" rel="stylesheet" />
+    <link href="../../../css/style2.css" rel="stylesheet" />
 </head>
 
 <body>   
@@ -25,7 +25,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V8F3ZKD"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <script src="./js/main.js" defer></script>
+    <script src="../../../js/Pesquisa.js" defer></script>
 
      <div class="barratopo">
     <header>
@@ -86,249 +86,54 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <main>
     <section>
 
+<!-- Barra de pesquisa topo -->
+    <div class="search-container">
+    <form onsubmit="irParaResultadosTopo(); return false;">
+    <div class="search-box">
+    <input type="text" id="searchTopo" placeholder="Pesquisar..." autocomplete="off">
+    <button type="submit" id="btnPesquisarTopo" title="Buscar">
+    <span class="material-symbols-outlined">search</span>
+    </button>
+    </div>
+    </form>
+    </div>
     
+<div class="resultados-container">
+  <div class="resultados-titulo">Atividades de Pintura</div>
+  <div class="resultados-lista" id="listaResultados"></div>
+  <div class="sem-resultado" id="semResultado" style="display:none;">Nenhuma atividade encontrada.</div>
+</div>
 
-    <div class="bloco-de-atividades">
-    <section class="img-lado-a-lado">
-    <a href="./Pagina de Download/desenho-infantil-gatinho-lendo/desenho-infantil-gatinho-lendo.html"><img src="./Pagina de Download/desenho-infantil-gatinho-lendo/gatinho-lendo.webp" alt="desenho para imprimir" class="img-atividade"></a><!--Imagem da Noticia-->
-    <a href="./Pagina de Download/desenho-infantil-coelhos-na-pscina/desenho-infantil-coelhos-na-pscina.html"><img src="./Pagina de Download/desenho-infantil-coelhos-na-pscina/coelhos-na-pscina.webp" alt="desenho para imprimir" class="img-atividade"></a><!--Imagem da Noticia-->
-    </section>
-    <section class="img-lado-a-lado">
-    <a href="./Pagina de Download/desenho-infantil-coelho-tomando-cha/desenho-infantil-coelho-tomando-cha.html"><img src="./Pagina de Download/desenho-infantil-coelho-tomando-cha/coelho-tomando-chá.webp" alt="desenho para imprimir" class="img-atividade"></a><!--Imagem da Noticia-->
-    <a href="./Pagina de Download/desenho-infantil-coelho-no-safari/desenho-infantil-coelho-no-safari.html"><img src="./Pagina de Download/desenho-infantil-coelho-no-safari/coelho-no-safari.webp" alt="desenho para imprimir" class="img-atividade"></a><!--Imagem da Noticia-->
-    </section>
-    </div>
+<script>
+// Carregar itens do JSON
+fetch('../../../js/pintura.json')
+  .then(response => response.json())
+  .then(dados => {
+    const lista = document.getElementById('listaResultados');
+    const semResultado = document.getElementById('semResultado');
 
-    <div class="bloco-de-atividades">
-    <section class="img-lado-a-lado">
-    <a href="./Pagina de Download/desenho-infantil-coelho-na-cidade/desenho-infantil-coelho-na-cidade.html"><img src="./Pagina de Download/desenho-infantil-coelho-na-cidade/coelho-na-cidade.webp" alt="desenho para imprimir" class="img-atividade"></a><!--Imagem da Noticia-->
-    <a href="./Pagina de Download/desenho-infantil-coelho-limpando-neve/desenho-infantil-coelho-limpando-neve.html"><img src="./Pagina de Download/desenho-infantil-coelho-limpando-neve/coelho-limpando-neve.webp" alt="desenho para imprimir" class="img-atividade"></a><!--Imagem da Noticia-->
-    </section>
+    if (dados.length === 0) {
+      semResultado.style.display = 'block';
+      return;
+    }
 
-    <section class="img-lado-a-lado">
-    <div class="anuncio-atividades-pc">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
-    crossorigin="anonymous"></script>
-    <!-- Anuncio teste -->
-    <ins class="adsbygoogle"
-    style="display:inline-block;width:300px;height:300px"
-    data-ad-client="ca-pub-7297230407550504"
-    data-ad-slot="7826003178"></ins>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    </div>
-
-    <div class="anuncio-atividades-mobile">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
-    crossorigin="anonymous"></script>
-    <!-- Anuncio teste -->
-    <ins class="adsbygoogle"
-    style="display:inline-block;width:152px;height:210px"
-    data-ad-client="ca-pub-7297230407550504"
-    data-ad-slot="7826003178"></ins>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    </div>
-
-    <a href="./Pagina de Download/desenho-infantil-coelho-jardineiro/desenho-infantil-coelho-jardineiro.html"><img src="./Pagina de Download/desenho-infantil-coelho-jardineiro/coelho-jardineiro.webp" alt="desenho para imprimir" class="img-atividade"></a><!--Imagem da Noticia-->
-    </section>
-    </div>
-
-    <div class="bloco-de-atividades">
-    <section class="img-lado-a-lado">
-    <a href="./Pagina de Download/desenho-infantil-coelho-investigador/desenho-infantil-coelho-investigador.html"><img src="./Pagina de Download/desenho-infantil-coelho-investigador/coelho-investigador.webp" alt="desenho para imprimir" class="img-atividade"></a><!--Imagem da Noticia-->
-    <a href="./Pagina de Download/desenho-infantil-coelho-em-parque-japonês/desenho-infantil-coelho-em-parque-japonês.html"><img src="./Pagina de Download/desenho-infantil-coelho-em-parque-japonês/coelho-em-parque-japonês.webp" alt="desenho para imprimir" class="img-atividade"></a><!--Imagem da Noticia-->
-    </section>
-    <section class="img-lado-a-lado">
-    <a href="./Pagina de Download/desenho-infantil-coelho-detetive/desenho-infantil-coelho-detetive.html"><img src="./Pagina de Download/desenho-infantil-coelho-detetive/coelho-detetive.webp" alt="criança aprendendo brincando" class="img-atividade"></a><!--Imagem da Noticia-->
-    <a href="./Pagina de Download/desenho_infantil_coelho_comprando_vestido/desenho_infantil_coelho_comprando_vestido.html"><img src="./Pagina de Download/desenho_infantil_coelho_comprando_vestido/coelho_comprando_vestido.webp" alt="desenho para imprimir" class="img-atividade"></a><!--Imagem da Noticia-->
-    </section>
-    </div>
-
-    <div class="bloco-de-atividades">
-    <section class="img-lado-a-lado">
-    <a href="./PagDow/ATD-Pint-13/ATD-ARTS-13.html"><img src="./PagDow/ATD-Pint-13/8.png" alt="aula adaptada" class="img-atividade"></a><!--Imagem da Noticia-->
-    <a href="./PagDow/ATD-Pint-14/ATD-ARTS-14.html"><img src="./PagDow/ATD-Pint-14/9.png" alt="aula adaptada" class="img-atividade"></a><!--Imagem da Noticia-->
-    </section>
-
-    <section class="img-lado-a-lado">
-    <div class="anuncio-atividades-pc">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
-    crossorigin="anonymous"></script>
-    <!-- Anuncio teste -->
-    <ins class="adsbygoogle"
-    style="display:inline-block;width:300px;height:300px"
-    data-ad-client="ca-pub-7297230407550504"
-    data-ad-slot="7826003178"></ins>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    </div>
-
-    <div class="anuncio-atividades-mobile">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
-    crossorigin="anonymous"></script>
-    <!-- Anuncio teste -->
-    <ins class="adsbygoogle"
-    style="display:inline-block;width:170px;height:240px"
-    data-ad-client="ca-pub-7297230407550504"
-    data-ad-slot="7826003178"></ins>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    </div>
-
-    <a href="./PagDow/ATD-Pint-15/ATD-ARTS-15.html"><img src="./PagDow/ATD-Pint-15/10.png" alt="o poder da leitura" class="img-atividade"></a><!--Imagem da Noticia-->
-    </section>
-    </div>
-
-    <div class="bloco-de-atividades">
-    <section class="img-lado-a-lado">
-    <a href="./PagDow/ATD-Pint-16/ATD-ARTS-16.html"><img src="./PagDow/ATD-Pint-16/11.png" alt="aula adaptada" class="img-atividade"></a><!--Imagem da Noticia-->
-    <a href="./PagDow/ATD-Pint-6/ATD-ARTS-6.html"><img src="./PagDow/ATD-Pint-6/Caderno de pintar - Animais.png" alt="aula adaptada" class="img-atividade"></a><!--Imagem da Noticia-->
-    </section>
-    <section class="img-lado-a-lado">
-    <a href="./PagDow/ATD-Pint-17/ATD-ARTS-17.html"><img src="./PagDow/ATD-Pint-17/13.png" alt="criança aprendendo brincando" class="img-atividade"></a><!--Imagem da Noticia-->
-    <a href="./PagDow/ATD-Pint-18/ATD-ARTS-18.html"><img src="./PagDow/ATD-Pint-18/18.png" alt="aula adaptada" class="img-atividade"></a><!--Imagem da Noticia-->
-    </section>
-    </div>
-
-
-    <div class="bloco-de-atividades">
-    <section class="img-lado-a-lado">
-    <a href="./PagDow/ATD-Pint-1/ATD-ARTS-1.html"><img src="./PagDow/ATD-Pint-1/2.png" alt="aula adaptada" class="img-atividade"></a><!--Imagem da Noticia-->
-    <div class="anuncio-atividades-pc">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
-    crossorigin="anonymous"></script>
-    <!-- Anuncio teste -->
-    <ins class="adsbygoogle"
-    style="display:inline-block;width:300px;height:300px"
-    data-ad-client="ca-pub-7297230407550504"
-    data-ad-slot="7826003178"></ins>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    </div>
-    <div class="anuncio-atividades-mobile">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
-    crossorigin="anonymous"></script>
-    <!-- Anuncio teste -->
-    <ins class="adsbygoogle"
-    style="display:inline-block;width:170px;height:240px"
-    data-ad-client="ca-pub-7297230407550504"
-    data-ad-slot="7826003178"></ins>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    </div>
-    </section>
-    <section class="img-lado-a-lado">
-    <a href="./PagDow/ATD-Pint-2/ATD-ARTS-2.html"><img src="./PagDow/ATD-Pint-2/1.png" alt="aula adaptada" class="img-atividade"></a><!--Imagem da Noticia-->
-    <a href="./PagDow/ATD-Pint-3/ATD-ARTS-3.html"><img src="./PagDow/ATD-Pint-3/3.png" alt="o poder da leitura" class="img-atividade"></a><!--Imagem da Noticia-->
-    </section>
-    </div>
-
-    <div class="bloco-de-atividades">
-    <section class="img-lado-a-lado">
-    <a href="./PagDow/ATD-Pint-4/ATD-ARTS-4.html"><img src="./PagDow/ATD-Pint-4/4.png" alt="aula adaptada" class="img-atividade"></a><!--Imagem da Noticia-->    
-    <a href="./PagDow/ATD-Pint-5/ATD-ARTS-5.html"><img src="./PagDow/ATD-Pint-5/Caderno de pintar - Animais.png" alt="criança aprendendo brincando" class="img-atividade"></a><!--Imagem da Noticia-->
-    </section>
-    <section class="img-lado-a-lado">
-    <a href="./PagDow/ATD-Pint-6/ATD-ARTS-6.html"><img src="./PagDow/ATD-Pint-6/Caderno de pintar - Animais.png" alt="aula adaptada" class="img-atividade"></a><!--Imagem da Noticia-->
-    <a href="./PagDow/ATD-Pint-7/ATD-ARTS-7.html"><img src="./PagDow/ATD-Pint-7/7.png" alt="aula adaptada" class="img-atividade"></a><!--Imagem da Noticia-->
-    </section>
-    </div>
-
-    <div class="bloco-de-atividades">
-    <section class="img-lado-a-lado">
-    <a href="./PagDow/ATD-Pint-12/ATD-ARTS-12.html"><img src="./PagDow/ATD-Pint-12/12.png" alt="aula adaptada" class="img-atividade"></a><!--Imagem da Noticia-->
-    <a href="./PagDow/ATD-Pint-11/ATD-ARTS-11.html"><img src="./PagDow/ATD-Pint-11/11.png" alt="aula adaptada" class="img-atividade"></a><!--Imagem da Noticia-->
-    </section>
-    <section class="img-lado-a-lado">
-    <div class="anuncio-atividades-pc">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
-    crossorigin="anonymous"></script>
-    <!-- Anuncio teste -->
-    <ins class="adsbygoogle"
-    style="display:inline-block;width:300px;height:300px"
-    data-ad-client="ca-pub-7297230407550504"
-    data-ad-slot="7826003178"></ins>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    </div>
-    <div class="anuncio-atividades-mobile">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
-    crossorigin="anonymous"></script>
-    <!-- Anuncio teste -->
-    <ins class="adsbygoogle"
-    style="display:inline-block;width:170px;height:240px"
-    data-ad-client="ca-pub-7297230407550504"
-    data-ad-slot="7826003178"></ins>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    </div>
-    <a href="./PagDow/ATD-Pint-10/ATD-ARTS-10.html"><img src="./PagDow/ATD-Pint-10/10.png" alt="o poder da leitura" class="img-atividade"></a><!--Imagem da Noticia-->
-    </div>
-    </section>
-
-    <div class="bloco-de-atividades">
-    <section class="img-lado-a-lado">
-    <a href="./PagDow/ATD-Pint-9/ATD-ARTS-9.html"><img src="./PagDow/ATD-Pint-9/9.png" alt="aula adaptada" class="img-atividade"></a><!--Imagem da Noticia-->
-    <a href="./PagDow/ATD-Pint-8/ATD-ARTS-8.html"><img src="./PagDow/ATD-Pint-8/8.png" alt="criança aprendendo brincando" class="img-atividade"></a><!--Imagem da Noticia-->
-    </section>
-    <section class="img-lado-a-lado">
-    <a href="./PagDow/ATD-Pint-7/ATD-ARTS-7.html"><img src="./PagDow/ATD-Pint-7/7.png" alt="aula adaptada" class="img-atividade"></a><!--Imagem da Noticia-->
-    <a href="../2-Pintura/Pintura 4/ATD-Pint-6/desenho-para-pintar-coelho-fazendo-bolo.html"><img src="../2-Pintura/Pintura 4/ATD-Pint-6/desenho-para-pintar-coelho-fazendo-bolo.webp" alt="aula adaptada" class="img-atividade"></a><!--Imagem da Noticia-->
-    </section>
-    </div>
-
-    <div class="bloco-de-atividades">
-    <section class="img-lado-a-lado">
-    <a href="../2-Pintura/Pintura 4/ATD-Pint-1/desenho-para-pintar-barcos-relaxantes.html"><img src="../2-Pintura/Pintura 4/ATD-Pint-1/desenho-para-pintar-barcos-relaxantes.webp" alt="aula adaptada" class="img-atividade"></a><!--Imagem da Noticia-->
-    <a href="../2-Pintura/Pintura 4/ATD-Pint-2/desenho-para-pintar-vila-relachante.html"><img src="../2-Pintura/Pintura 4/ATD-Pint-2/desenho-para-pintar-vila-relachante.webp" alt="aula adaptada" class="img-atividade"></a><!--Imagem da Noticia-->
-    </section>
-    <section class="img-lado-a-lado">
-    <a href="../2-Pintura/Pintura 4/ATD-Pint-3/desenho-para-pintar-mundo-encantado.html"><img src="../2-Pintura/Pintura 4/ATD-Pint-3/desenho-para-pintar-mundo-encantado.webp" alt="o poder da leitura" class="img-atividade"></a><!--Imagem da Noticia-->
-    <div class="anuncio-atividades-pc">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
-    crossorigin="anonymous"></script>
-    <!-- Anuncio teste -->
-    <ins class="adsbygoogle"
-    style="display:inline-block;width:300px;height:300px"
-    data-ad-client="ca-pub-7297230407550504"
-    data-ad-slot="7826003178"></ins>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    </div>
-    <div class="anuncio-atividades-mobile">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
-    crossorigin="anonymous"></script>
-    <!-- Anuncio teste -->
-    <ins class="adsbygoogle"
-    style="display:inline-block;width:170px;height:240px"
-    data-ad-client="ca-pub-7297230407550504"
-    data-ad-slot="7826003178"></ins>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    </div>
-    </section>
-    </div>
-
-    <div class="bloco-de-atividades">
-    <section class="img-lado-a-lado">
-    <a href="../2-Pintura/Pintura 4/ATD-Pint-4/desenho-para-pintar-cachorrinhos-no-espaço.html"><img src="../2-Pintura/Pintura 4/ATD-Pint-4/desenho-para-pintar-cachorrinhos-no-espaço.webp" alt="aula adaptada" class="img-atividade"></a><!--Imagem da Noticia-->
-    <a href="../2-Pintura/Pintura 4/ATD-Pint-5/desenho-para-pintar-gatinho-no-oceano.html"><img src="../2-Pintura/Pintura 4/ATD-Pint-5/desenho-para-pintar-gatinho-no-oceano.webp" alt="criança aprendendo brincando" class="img-atividade"></a><!--Imagem da Noticia-->
-    <a href="./Pagina de Download/desenho-infantil_coelho-tocando-guitarra/desenho-infantil_coelho-tocando-guitarra.html"><img src="./Pagina de Download/desenho-infantil_coelho-tocando-guitarra/coelho-tocando-guitarra.webp" alt="desenho para imprimir" class="img-atividade"></a><!--Imagem da Noticia-->
-    <a href="./Pagina de Download/desenho-infantil-casal-de-coelho/desenho-infantil-casal-de-coelho.html"><img src="./Pagina de Download/desenho-infantil-casal-de-coelho/casal-de-coelho.webp" alt="desenho para imprimir" class="img-atividade"></a><!--Imagem da Noticia-->
-    </section>
-
-
+    dados.forEach(item => {
+      const a = document.createElement('a');
+      a.className = 'resultado-item';
+      a.href = item.link;
+      a.target = '_blank';
+      a.innerHTML = `
+        <img src="${item.imagem}" alt="${item.titulo}" class="resultado-img">
+        <div class="resultado-titulo-img">${item.titulo}</div>
+      `;
+      lista.appendChild(a);
+    });
+  })
+  .catch(error => {
+    console.error('Erro ao carregar JSON:', error);
+    document.getElementById('semResultado').style.display = 'block';
+  });
+</script>
 
     </div>
 
@@ -402,6 +207,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
         </div>
     </footer>
+
+    <!-- Botão flutuante -->
+    <button id="btnFlutuantePesquisa" class="btn-flutuante-pesquisa" title="Pesquisar">
+      <span class="material-symbols-outlined">search</span>
+    </button>
+
+    <!-- Overlay de pesquisa -->
+    <div id="overlayPesquisa" class="overlay-pesquisa">
+      <form onsubmit="irParaResultadosOverlay(); return false;">
+        <div class="search-box search-box-mobile">
+          <input type="text" id="searchOverlay" placeholder="Pesquisar..." autocomplete="off">
+          <button type="submit" id="btnPesquisarOverlay" title="Buscar">
+            <span class="material-symbols-outlined">search</span>
+          </button>
+        </div>
+      </form>
+    </div>
 
 </body>
 </html>

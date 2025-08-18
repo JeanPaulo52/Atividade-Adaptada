@@ -10,6 +10,123 @@ body { /* Cor da pagina */
     font-size: 18px;
     line-height: 1.6;
 }
+.search-container {
+    max-width: 400px;
+    margin: 32px auto 18px auto;
+}
+.search-box {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 32px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            padding: 2px 8px 2px 18px;
+            position: relative;
+        }
+        /* --- Barra de pesquisa topo --- */
+        .search-container {
+            max-width: 400px;
+            margin: 32px auto 18px auto;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 32px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            padding: 2px 8px 2px 18px;
+            position: relative;
+        }
+        #searchTopo {
+            flex: 1;
+            border: none;
+            background: transparent;
+            font-size: 1.08em;
+            padding: 12px 8px;
+            outline: none;
+            border-radius: 32px;
+            color: #333;
+        }
+        #btnPesquisarTopo {
+            border: none;
+            background: #1976d2;
+            color: #fff;
+            border-radius: 50%;
+            width: 38px; height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin-left: 6px;
+            transition: background 0.2s;
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            box-shadow: 0 2px 8px rgba(25,118,210,0.08);
+        }
+        #btnPesquisarTopo:hover { background: #1565c0; }
+
+        /* --- Botão flutuante --- */
+        .btn-flutuante-pesquisa {
+            position: fixed;
+            bottom: 16px; right: 16px;
+            background: #1976d2;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 56px; height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: background 0.2s;
+            z-index: 1000;
+        }
+        .btn-flutuante-pesquisa:hover { background: #1565c0; }
+
+        /* --- Overlay de pesquisa --- */
+        .overlay-pesquisa {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.6);
+            z-index: 999;
+            align-items: center;
+            justify-content: center;
+        }
+        .overlay-pesquisa.ativa { display: flex; }
+        .search-box-mobile {
+            max-width: 400px; width: 100%;
+            background: #fff;
+            border-radius: 32px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            padding: 2px 8px;
+            display: flex; align-items: center;
+        }
+        #searchOverlay {
+            flex: 1;
+            border: none;
+            background: transparent;
+            font-size: 1em;
+            padding: 12px 8px;
+            outline: none;
+            border-radius: 32px;
+            color: #333;
+        }
+        #btnPesquisarOverlay {
+            border: none;
+            background: #1976d2;
+            color: #fff;
+            border-radius: 50%;
+            width: 38px; height: 38px;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer;
+            margin-left: 6px;
+            transition: background 0.2s;
+        }
+        #btnPesquisarOverlay:hover { background: #1565c0; }
 
 .anuncio {
     background-color: #a1a1a1bd;
@@ -54,31 +171,6 @@ header{ /* Espaçamento do topo */
     justify-content: center;
     margin-top: 20px;
 }
-
-.search{
-    display: flex;
-    align-items: center;
-    border: 1px solid #cccccc;
-    background-color: #00000006;
-    width: 350px;
-    margin: auto;
-    border-radius: 20px;
-    padding: 5px 10px;
-    color: #4b4b4b;
-}
-
-#searchInput {
-    padding: 8px;
-    border: none;
-    background-color: transparent;
-    width: 100%;
-    outline: none;
-}
-
-.search label {
-    height: 20px;
-}
-
 .barratopo { /* Barra de pesquisa */
     background-color: rgb(232, 232, 232); 
     display: flex;
@@ -639,4 +731,5 @@ main {
     display: block;
     max-width: 100%
     }
+    .search-container { display: none;}
 }

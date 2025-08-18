@@ -1,0 +1,38 @@
+[
+  {
+    "titulo": "Emtalpia",
+    "descricao": "Atividade de química sobre a entalpia e seu funcionamento.",
+    "imagem": "/Nivel 2/2-BNCC/Química/PagDow/ATD-QUI-1/1.png",
+    "link": "/Nivel 2/2-BNCC/Química/PagDow/ATD-QUI-1/ATD-ARTS-1.html"
+  },
+  {
+    "titulo": "Montando um átomo",
+    "descricao": "Atividade de química onde deve ser recortado e montado um átomo.",
+    "imagem": "/Nivel 2/2-BNCC/Química/PagDow/ATD-QUI-2/2.png",
+    "link": "/Nivel 2/2-BNCC/Química/PagDow/ATD-QUI-2/ATD-ARTS-2.html"
+  },
+  {
+    "titulo": "Montando um átomo ( grande )",
+    "descricao": "Atividade de química onde deve ser recortado e montado um átomo.",
+    "imagem": "/Nivel 2/2-BNCC/Química/PagDow/ATD-QUI-3/3.png",
+    "link": "/Nivel 2/2-BNCC/Química/PagDow/ATD-QUI-3/ATD-ARTS-3.html"
+  },
+  {
+    "titulo": "Cruzadinha da Química",
+    "descricao": "Atividade de química com cruzadinha relacionada a química.",
+    "imagem": "/Nivel 2/2-BNCC/Química/PagDow/ATD-QUI-4/4.png",
+    "link": "/Nivel 2/2-BNCC/Química/PagDow/ATD-QUI-4/ATD-ARTS-4.html"
+  },
+  {
+    "titulo": "Radiação e seus tipos",
+    "descricao": "Atividade de química sobre os tipos de radiação e suas utilidades.",
+    "imagem": "/Nivel 2/2-BNCC/Química/PagDow/ATD-QUI-5/5.png",
+    "link": "/Nivel 2/2-BNCC/Química/PagDow/ATD-QUI-5/ATD-ARTS-5.html"
+  },
+  {
+    "titulo": "Funcionalidade das pilhas",
+    "descricao": "Atividade de Química sobre o funcionamento das pilhas e suas utilidades.",
+    "imagem": "/Nivel 2/2-BNCC/Química/PagDow/ATD-QUI-6/6.png",
+    "link": "/Nivel 2/2-BNCC/Química/PagDow/ATD-QUI-6/ATD-ARTS-6.html"
+  }
+]

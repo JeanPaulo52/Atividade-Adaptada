@@ -1,0 +1,38 @@
+[
+  {
+    "titulo": "Caça palavras do tratamento da água",
+    "descricao": "Um caça palavras que mostra a importância do tratamento da água.",
+    "imagem": "/Nivel 2/2-BNCC/Ciencias/PagDow/ATD-CIE-1/1.png",
+    "link": "/Nivel 2/2-BNCC/Ciencias/PagDow/ATD-CIE-1/ATD-ARTS-1.html"
+  },
+  {
+    "titulo": "Água tratada",
+    "descricao": "Atividade de Ciências que mostra a identificação de água potel e não potavel.",
+    "imagem": "/Nivel 2/2-BNCC/Ciencias/PagDow/ATD-CIE-2/2.png",
+    "link": "/Nivel 2/2-BNCC/Ciencias/PagDow/ATD-CIE-2/ATD-ARTS-2.html"
+  },
+  {
+    "titulo": "Matrizes elétricas",
+    "descricao": "Atividade de Ciências sobre as matrizes elétricas e sua importância.",
+    "imagem": "/Nivel 2/2-BNCC/Ciencias/PagDow/ATD-CIE-3/3.png",
+    "link": "/Nivel 2/2-BNCC/Ciencias/PagDow/ATD-CIE-3/ATD-ARTS-3.html"
+  },
+  {
+    "titulo": "Objetos que usam energia eletrica",
+    "descricao": "Atividade de ciências sobre o uso da energia eletrica.",
+    "imagem": "/Nivel 2/2-BNCC/Ciencias/PagDow/ATD-CIE-4/4.png",
+    "link": "/Nivel 2/2-BNCC/Ciencias/PagDow/ATD-CIE-4/ATD-ARTS-4.html"
+  },
+  {
+    "titulo": "Levando a energia até as casas",
+    "descricao": "Atividade de ciências que utiliza a criatividade para mostrar o caminho da eletricidade até as residências",
+    "imagem": "/Nivel 2/2-BNCC/Ciencias/PagDow/ATD-CIE-5/5.png",
+    "link": "/Nivel 2/2-BNCC/Ciencias/PagDow/ATD-CIE-5/ATD-ARTS-5.html"
+  },
+  {
+    "titulo": "Energias limpas",
+    "descricao": "Atividade de ciências sobre as energias limpas e sua importância.",
+    "imagem": "/Nivel 2/2-BNCC/Ciencias/PagDow/ATD-CIE-6/6.png",
+    "link": "/Nivel 2/2-BNCC/Ciencias/PagDow/ATD-CIE-6/ATD-ARTS-6.html"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "titulo": "Bolas dos esportes",
+    "descricao": "Atividade de educação física sobre os tipos de bolas e seus esportes.",
+    "imagem": "/Nivel 2/2-BNCC/Educação Fisica/PagDow/ATD-EDU-1/1.png",
+    "link": "/Nivel 2/2-BNCC/Educação Fisica/PagDow/ATD-EDU-1/ATD-ARTS-1.html"
+  },
+  {
+    "titulo": "Você na educação física",
+    "descricao": "Atividades de perguntas sobre educação física.",
+    "imagem": "/Nivel 2/2-BNCC/Educação Fisica/PagDow/ATD-EDU-2/2.png",
+    "link": "/Nivel 2/2-BNCC/Educação Fisica/PagDow/ATD-EDU-2/ATD-ARTS-2.html"
+  },
+  {
+    "titulo": "Jogo da velha",
+    "descricao": "Atividade de educação física do jogo da velha.",
+    "imagem": "/Nivel 2/2-BNCC/Educação Fisica/PagDow/ATD-EDU-3/3.png",
+    "link": "/Nivel 2/2-BNCC/Educação Fisica/PagDow/ATD-EDU-3/ATD-ARTS-3.html"
+  },
+  {
+    "titulo": "chute ao gol",
+    "descricao": "Atividade de educação física de ligar aos pontos relacionada a esportes.",
+    "imagem": "/Nivel 2/2-BNCC/Educação Fisica/PagDow/ATD-EDU-4/4.png",
+    "link": "/Nivel 2/2-BNCC/Educação Fisica/PagDow/ATD-EDU-4/ATD-ARTS-4.html"
+  },
+  {
+    "titulo": "Tipos de brincadeiras",
+    "descricao": "Atividade de educação física sobre os tipos de brincadeiras e como as fazer.",
+    "imagem": "/Nivel 2/2-BNCC/Educação Fisica/PagDow/ATD-EDU-5/5.png",
+    "link": "/Nivel 2/2-BNCC/Educação Fisica/PagDow/ATD-EDU-5/ATD-ARTS-5.html"
+  },
+  {
+    "titulo": "Itens de esporte",
+    "descricao": "Atividade de educação física onde deve ser identificado os itens que são utilizados em esportes.",
+    "imagem": "/Nivel 2/2-BNCC/Educação Fisica/PagDow/ATD-EDU-6/6.png",
+    "link": "/Nivel 2/2-BNCC/Educação Fisica/PagDow/ATD-EDU-6/ATD-ARTS-6.html"
+  }
+]

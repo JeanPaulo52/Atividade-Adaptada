@@ -1,0 +1,38 @@
+[
+  {
+    "titulo": "Cadeia alimentar",
+    "descricao": "Atividade de Biologia sobre a cadeia alimentar",
+    "imagem": "/Nivel 2/2-BNCC/Biologia/PagDow/ATD-BIO-1/1.png",
+    "link": "/Nivel 2/2-BNCC/Biologia/PagDow/ATD-BIO-1/ATD-ARTS-1.html"
+  },
+  {
+    "titulo": "Caça palavras dos animais",
+    "descricao": "Atividade de Biologia de Caça palavras dos animais",
+    "imagem": "/Nivel 2/2-BNCC/Biologia/PagDow/ATD-BIO-2/2.png",
+    "link": "/Nivel 2/2-BNCC/Biologia/PagDow/ATD-BIO-2/ATD-ARTS-2.html"
+  },
+  {
+    "titulo": "Cruzadinha dos animais",
+    "descricao": "Atividade de Biologia com cruzadinha",
+    "imagem": "/Nivel 2/2-BNCC/Biologia/PagDow/ATD-BIO-3/3.png",
+    "link": "/Nivel 2/2-BNCC/Biologia/PagDow/ATD-BIO-3/ATD-ARTS-3.html"
+  },
+  {
+    "titulo": "Pinte o virus",
+    "descricao": "Atividade de Biologia sobre virus",
+    "imagem": "/Nivel 2/2-BNCC/Biologia/PagDow/ATD-BIO-4/4.png",
+    "link": "/Nivel 2/2-BNCC/Biologia/PagDow/ATD-BIO-4/ATD-ARTS-4.html"
+  },
+  {
+    "titulo": "Labirinto da vacina",
+    "descricao": "Atividade de Biologia sobre a importância da vacina.",
+    "imagem": "/Nivel 2/2-BNCC/Biologia/PagDow/ATD-BIO-5/5.png",
+    "link": "/Nivel 2/2-BNCC/Biologia/PagDow/ATD-BIO-5/ATD-ARTS-5.html"
+  },
+  {
+    "titulo": "Identificando os seres vivos",
+    "descricao": "Atividade de Biologia sobre a identificação dos seres vivos.",
+    "imagem": "/Nivel 2/2-BNCC/Biologia/PagDow/ATD-BIO-6/6.png",
+    "link": "/Nivel 2/2-BNCC/Biologia/PagDow/ATD-BIO-6/ATD-ARTS-6.html"
+  }
+]
