@@ -61,6 +61,8 @@
             './js/portugues.json',
             './js/quimica.json',
             './js/sociologia.json',
+            './js/infantil.json',
+            './js/raciocinio.json',
             './js/outro.json'
             // Adicione outros arquivos conforme necessário
         ];

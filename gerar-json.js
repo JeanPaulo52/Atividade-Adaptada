@@ -1,28 +1,40 @@
 const fs = require("fs");
 const path = require("path");
 
-// Caminho da pasta onde estão suas atividades (ajuste para o seu caso)
-const pastaAtividades = path.join(__dirname, "./Nivel 2/5-recortar e pintar/1-Infantil/PagDow/");
+const pastaBase = "./Nivel 2/3-Atividade diaria/Simulados/SAEB/"; // caminho da pasta raiz
+let atividades = [];
 
-// Caminho do JSON final
-const saidaJSON = path.join(__dirname, "infantil.json");
+function listarPastas(dir) {
+  const pastas = fs.readdirSync(dir);
 
-function gerarJSON() {
-  const arquivos = fs.readdirSync(pastaAtividades);
+  pastas.forEach(item => {
+    const caminhoCompleto = path.join(dir, item);
+    const stat = fs.statSync(caminhoCompleto);
 
-  const lista = arquivos.map(arquivo => {
-    const nomeSemExtensao = path.parse(arquivo).name;
+    if (stat.isDirectory()) {
+      // pega os arquivos da pasta
+      const arquivos = fs.readdirSync(caminhoCompleto);
+      
+      const html = arquivos.find(f => f.endsWith(".html"));
+      const imagem = arquivos.find(f => f.endsWith(".webp"));
 
-    return {
-      titulo: nomeSemExtensao, // Exemplo: "Atividade 1"
-      descricao: "Atividade de pintura", // Você pode mudar depois
-      imagem: `/Nivel 2/5-recortar e pintar/1-Infantil/PagDow/${arquivo}`,
-      link: `/Nivel 2/5-recortar e pintar/1-Infantil/PagDow/${arquivo}`
-    };
+      if (html && imagem) {
+        atividades.push({
+          titulo: html.replace(".html", "").replace(/[-_]/g, " "),
+          descricao: "Atividade de pintura educativa.",
+          imagem: path.join(caminhoCompleto, imagem).replace(pastaBase + "/", ""),
+          link: path.join(caminhoCompleto, html).replace(pastaBase + "/", "")
+        });
+      }
+
+      // continua descendo em subpastas
+      listarPastas(caminhoCompleto);
+    }
   });
-
-  fs.writeFileSync(saidaJSON, JSON.stringify(lista, null, 2), "utf8");
-  console.log("✅ JSON gerado com sucesso:", saidaJSON);
 }
 
-gerarJSON();
+listarPastas(pastaBase);
+
+// Salvar JSON final
+fs.writeFileSync("simulado.json", JSON.stringify(atividades, null, 2), "utf-8");
+console.log("✅ JSON gerado com sucesso! Total de atividades:", atividades.length);
