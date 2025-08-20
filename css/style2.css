@@ -451,5 +451,35 @@ nav a:hover { /* Cor dos botões da barra principal */
     nav a {
         font-size: 12px;
     }
+    .barraFundoInfo{
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+
+    .imagembarraFundoInfo{
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+
+    .textobarraFundoInfo3 {
+        width: 50%;
+    
+    }
+
+    .textobarraFundoInfo3 a {
+        text-decoration: none;
+        margin-left: 3px;
+        margin-bottom: 3px;
+        margin-top: 30px;
+
+    }
+
+    .Containerfundo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
 
 }
