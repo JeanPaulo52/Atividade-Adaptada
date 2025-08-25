@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
+     crossorigin="anonymous"></script>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5V8F3ZKD');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../../../Assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Adaptada.com</title>
+    <link href="../../../css/style2.css" rel="stylesheet" />
+</head>
+
+<body>   
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V8F3ZKD"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script src="../../../js/Pesquisa.js" defer></script>
+
+     <div class="barratopo">
+    <header>
+        <div class="barra-topo-redes">
+        <div class="botao-das-redes-topo">
+        <a target="_blank" href="https://br.pinterest.com/AtividadeAdaptada/" ><img src="../../../Assets/Pinterest.AA.webp" class="botão-redes"></a>
+        <a target="_blank" href="https://www.instagram.com/atividadeadaptada.com.br/"><img src="../../../Assets/Instagram.AA.webp" class="botão-redes"></a>
+        <a target="_blank" href="https://www.youtube.com/@AtividadeAdaptada"><img src="../../../Assets/Youtube.AA.webp" class="botão-redes"></a>
+        </div>
+        <div class="logo-do-site-topo">
+        <img src="../../../Assets/logo AA.webp" class="logotopo">
+        </div>
+        </div>
+    </header>
+    </div><!--barra do topo-->
+    <div class="center">
+        <div class="botao-das-redes">
+        <a target="_blank" href="https://br.pinterest.com/AtividadeAdaptada/" ><img src="../../../Assets/Pinterest.AA.webp" class="botão-redes"></a>
+        <a target="_blank" href="https://www.instagram.com/atividadeadaptada.com.br/"><img src="../../../Assets/Instagram.AA.webp" class="botão-redes"></a>
+        <a target="_blank" href="https://www.youtube.com/@AtividadeAdaptada"><img src="../../../Assets/Youtube.AA.webp" class="botão-redes"></a>
+        </div>
+        <div class="logo-do-site">
+        <img src="../../../Assets/logo AA.webp" class="logotopo">
+        </div>
+    </div><!--logo da pagina-->
+
+    <nav class="menu">
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <ul class="menu-list">
+      <li><a href="/index.html">Artigos</a></li>
+      <li><a href="/Nivel 2/5-recortar e pintar/2-Pintura/Pintura.html">Desenhos</a></li>
+      <li><a href="/Nivel 2/2-BNCC/2-BNCC.html">Atividades</a></li>
+      <li><a href="/Nivel 2/5-recortar e pintar/1-Infantil/Infantil.html">Infantil</a></li>
+      <li><a href="/Nivel 2/4-Outras atividades/1-Raciocinio/Raciocinio.html">Raciocínio</a></li>
+      <li><a href="/Nivel 2/4-Outras atividades/2- Jogos de Tabuleiro/Jogos de tabuleiro.html">Jogos</a></li>
+      <li><a href="/3-Atividade diaria.html">Simulados</a></li>
+      <li><a href="/Nivel 2/6-livros/livros.html">Livos</a></li>
+      <li><a href="/Nivel 2/7-lojinha/loja.html">Lojinha</a></li>
+    </ul>
+  </nav>
+
+    <div class="container">
+        
+    <main>
+    <section>
+
+<!-- Barra de pesquisa topo -->
+    <div class="search-container">
+    <form onsubmit="irParaResultadosTopo(); return false;">
+    <div class="search-box">
+    <input type="text" id="searchTopo" placeholder="Pesquisar..." autocomplete="off">
+    <button type="submit" id="btnPesquisarTopo" title="Buscar">
+    <span class="material-symbols-outlined">search</span>
+    </button>
+    </div>
+    </form>
+    </div>
+    
+<div class="resultados-container">
+  <div class="resultados-titulo">Livors</div>
+  <div class="resultados-lista" id="listaResultados"></div>
+  <div class="sem-resultado" id="semResultado" style="display:none;">Nenhuma atividade encontrada.</div>
+</div>
+
+<script>
+// Carregar itens do JSON
+fetch('/js/livros.json')
+  .then(response => response.json())
+  .then(dados => {
+    const lista = document.getElementById('listaResultados');
+    const semResultado = document.getElementById('semResultado');
+
+    if (dados.length === 0) {
+      semResultado.style.display = 'block';
+      return;
+    }
+
+    dados.forEach(item => {
+      const a = document.createElement('a');
+      a.className = 'resultado-item';
+      a.href = item.link;
+      a.target = '_blank';
+      a.innerHTML = `
+        <img src="${item.imagem}" alt="${item.titulo}" class="resultado-img">
+        <div class="resultado-titulo-img">${item.titulo}</div>
+      `;
+      lista.appendChild(a);
+    });
+  })
+  .catch(error => {
+    console.error('Erro ao carregar JSON:', error);
+    document.getElementById('semResultado').style.display = 'block';
+  });
+</script>
+
+    </div>
+
+<div><header></header><!---espaçamento--></div>
+    </section>
+    </main>
+    </div>
+<div><header></header><!---espaçamento--></div>
+
+    <div class="barraFundo">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">.</a>
+                </li>
+                <li>
+                    <a href="#">.</a>
+                </li>
+                <li>
+                    <a href="#">.</a>
+                </li>
+                <li>
+                    <a href="#">.</a>
+                </li>
+                <li>
+                    <a href="#">.</a>
+                </li>
+                <li>
+                    <a href="#">.</a>
+                </li>
+            </ul>
+        </nav>
+        </div><!--Barra de navegação-->
+
+    <footer>
+        <div class="barraFundoInfo">
+
+            <div class="imagembarraFundoInfo">
+            <img src="../../../Assets/logo AA.webp" class="logofundo">
+            </div>
+    
+            <div class="textobarraFundoInfo3">
+                <a>Atividades educativas e inclusivas para todos os estilos de aprendizagem. | atividadeadaptada.com.br</a>
+                <a></a>
+            </div>
+            
+            <div class="Containerfundo">
+            <div class="textobarraFundoInfo"> 
+            <h4>Navegue</h4>
+    
+            <a href="../../../index.html">Inicio</a>
+    
+            <a href="../../../2-BNCC.html">Atividades</a>
+    
+            <a href="../../../5-Recortar e Pintar.html">Pintura</a>
+            </div>
+            
+    
+            <div class="textobarraFundoInfo"> 
+            <h4>Ajuda</h4>
+    
+            <a href="../../../6-Quem Somos.html">Quem Somos</a>
+                
+            <a href="../../../6-Quem Somos.html">Como ajudar</a>
+
+            <div><header></header><!---espaçamento--></div>
+        
+            <a></a>
+            </div>
+            </div>
+    
+        </div>
+    </footer>
+
+    <!-- Botão flutuante -->
+    <button id="btnFlutuantePesquisa" class="btn-flutuante-pesquisa" title="Pesquisar">
+      <span class="material-symbols-outlined">search</span>
+    </button>
+
+    <!-- Overlay de pesquisa -->
+    <div id="overlayPesquisa" class="overlay-pesquisa">
+      <form onsubmit="irParaResultadosOverlay(); return false;">
+        <div class="search-box search-box-mobile">
+          <input type="text" id="searchOverlay" placeholder="Pesquisar..." autocomplete="off">
+          <button type="submit" id="btnPesquisarOverlay" title="Buscar">
+            <span class="material-symbols-outlined">search</span>
+          </button>
+        </div>
+      </form>
+    </div>
+
+</body>
+</html>
