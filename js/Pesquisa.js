@@ -63,6 +63,8 @@
             './js/sociologia.json',
             './js/infantil.json',
             './js/raciocinio.json',
+            './js/livros.json',
+            './js/lojinha.json',
             './js/outro.json'
             // Adicione outros arquivos conforme necessário
         ];
