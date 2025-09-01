@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const pastaBase = "./Nivel 2/7-lojinha/produtos/"; // caminho da pasta raiz
+const pastaBase = "./Nivel 2/2-BNCC/Educação_financeira/PagDow/"; // caminho da pasta raiz
 let atividades = [];
 
 function listarPastas(dir) {
@@ -21,7 +21,7 @@ function listarPastas(dir) {
       if (html && imagem) {
         atividades.push({
           titulo: html.replace(".html", "").replace(/[-_]/g, " "),
-          descricao: "Atividade de pintura educativa.",
+          descricao: "Atividade de educação financeira.",
           imagem: path.join(caminhoCompleto, imagem).replace(pastaBase + "/", ""),
           link: path.join(caminhoCompleto, html).replace(pastaBase + "/", "")
         });
@@ -36,5 +36,5 @@ function listarPastas(dir) {
 listarPastas(pastaBase);
 
 // Salvar JSON final
-fs.writeFileSync("lojinha.json", JSON.stringify(atividades, null, 2), "utf-8");
+fs.writeFileSync("educacao_financeira.json", JSON.stringify(atividades, null, 2), "utf-8");
 console.log("✅ JSON gerado com sucesso! Total de atividades:", atividades.length);

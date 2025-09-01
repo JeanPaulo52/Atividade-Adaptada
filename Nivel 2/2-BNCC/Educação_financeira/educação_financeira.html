@@ -13,50 +13,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-5V8F3ZKD');</script>
 <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="/Assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../Assets/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade Adaptada.com</title>
-    <link href="/css/style.css" rel="stylesheet" />
+    <link href="../../../css/style2.css" rel="stylesheet" />
 </head>
 
-<body>
+<body>   
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V8F3ZKD"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <script src="/js/main.js" defer></script>
+    <script src="../../../js/Pesquisa.js" defer></script>
 
-    <div class="barratopo">
+     <div class="barratopo">
     <header>
         <div class="barra-topo-redes">
-
         <div class="botao-das-redes-topo">
-        <a target="_blank" href="https://br.pinterest.com/AtividadeAdaptada/" ><img src="/Assets/Pinterest.AA.webp" class="botão-redes"></a>
-        <a target="_blank" href="https://www.instagram.com/atividadeadaptada.com.br/"><img src="/Assets/Instagram.AA.webp" class="botão-redes"></a>
-        <a target="_blank" href="https://www.youtube.com/@AtividadeAdaptada"><img src="/Assets/Youtube.AA.webp" class="botão-redes"></a>
+        <a target="_blank" href="https://br.pinterest.com/AtividadeAdaptada/" ><img src="../../../Assets/Pinterest.AA.webp" class="botão-redes"></a>
+        <a target="_blank" href="https://www.instagram.com/atividadeadaptada.com.br/"><img src="../../../Assets/Instagram.AA.webp" class="botão-redes"></a>
+        <a target="_blank" href="https://www.youtube.com/@AtividadeAdaptada"><img src="../../../Assets/Youtube.AA.webp" class="botão-redes"></a>
         </div>
-
         <div class="logo-do-site-topo">
-        <img src="/Assets/logo AA.webp" class="logotopo">
+        <img src="../../../Assets/logo AA.webp" class="logotopo">
         </div>
-
         </div>
     </header>
     </div><!--barra do topo-->
-
     <div class="center">
-
         <div class="botao-das-redes">
-        <a target="_blank" href="https://br.pinterest.com/AtividadeAdaptada/" ><img src="/Assets/Pinterest.AA.webp" class="botão-redes"></a>
-        <a target="_blank" href="https://www.instagram.com/atividadeadaptada.com.br/"><img src="/Assets/Instagram.AA.webp" class="botão-redes"></a>
-        <a target="_blank" href="https://www.youtube.com/@AtividadeAdaptada"><img src="/Assets/Youtube.AA.webp" class="botão-redes"></a>
+        <a target="_blank" href="https://br.pinterest.com/AtividadeAdaptada/" ><img src="../../../Assets/Pinterest.AA.webp" class="botão-redes"></a>
+        <a target="_blank" href="https://www.instagram.com/atividadeadaptada.com.br/"><img src="../../../Assets/Instagram.AA.webp" class="botão-redes"></a>
+        <a target="_blank" href="https://www.youtube.com/@AtividadeAdaptada"><img src="../../../Assets/Youtube.AA.webp" class="botão-redes"></a>
         </div>
-
         <div class="logo-do-site">
-        <img src="/Assets/logo AA.webp" class="logotopo">
+        <img src="../../../Assets/logo AA.webp" class="logotopo">
         </div>
-
     </div><!--logo da pagina-->
 
     <nav class="menu">
@@ -90,63 +83,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
     </div><!---espaçamento-->
 
-    <div class="container">
-    <div class="materias">
-    <ul class="items">
     <main>
+    <section>
 
-    <h1 class="tituloPagina">Atividades</h1><!---novidades-->
+<!-- Barra de pesquisa topo -->
+    <div class="search-container">
+    <form onsubmit="irParaResultadosTopo(); return false;">
+    <div class="search-box">
+    <input type="text" id="searchTopo" placeholder="Pesquisar..." autocomplete="off">
+    <button type="submit" id="btnPesquisarTopo" title="Buscar">
+    <span class="material-symbols-outlined">search</span>
+    </button>
+    </div>
+    </form>
+    </div>
+    
+<div class="resultados-container">
+  <div class="resultados-titulo">Atividades de Educação Financeira</div>
+  <div class="resultados-lista" id="listaResultados"></div>
+  <div class="sem-resultado" id="semResultado" style="display:none;">Nenhuma atividade encontrada.</div>
+</div>
 
-    <div class="bloco-de-atividades">
-    <section class="img-lado-a-lado">
-    <a href="/Nivel 2/2-BNCC/Artes/Artes.html"><img src="/Assets/Artes.png" alt="Artes" class="img-atividade"></a>
-    <a href="/Nivel 2/2-BNCC/Biologia/Biologia.html"><img src="/Assets/Biologia.png" alt="Biologia" class="img-atividade"></a>
-    </section>
-    <section class="img-lado-a-lado">
-    <a href="/Nivel 2/2-BNCC/Ciencias/Ciencas.html"><img src="/Assets/CIencias.png" alt="Ciências" class="img-atividade"></a>
-    <a href="/Nivel 2/2-BNCC/Educação Fisica/Educação Fisica.html"><img src="/Assets/Educacao fisica.png" alt="Educação física" class="img-atividade"></a>
-    </section>
+<script>
+// Carregar itens do JSON
+fetch('../../../js/educacao_financeira.json')
+  .then(response => response.json())
+  .then(dados => {
+    const lista = document.getElementById('listaResultados');
+    const semResultado = document.getElementById('semResultado');
+
+    if (dados.length === 0) {
+      semResultado.style.display = 'block';
+      return;
+    }
+
+    dados.forEach(item => {
+      const a = document.createElement('a');
+      a.className = 'resultado-item';
+      a.href = item.link;
+      a.target = '_blank';
+      a.innerHTML = `
+        <img src="${item.imagem}" alt="${item.titulo}" class="resultado-img">
+        <div class="resultado-titulo-img">${item.titulo}</div>
+      `;
+      lista.appendChild(a);
+    });
+  })
+  .catch(error => {
+    console.error('Erro ao carregar JSON:', error);
+    document.getElementById('semResultado').style.display = 'block';
+  });
+</script>
+
     </div>
 
-    <div class="bloco-de-atividades">
-    <section class="img-lado-a-lado">
-    <a href="/Nivel 2/2-BNCC/Filosofia/Filosofia.html"><img src="/Assets/Filosofia.png" alt="Filosofia" class="img-atividade"></a>
-    <a href="/Nivel 2/2-BNCC/Fisica/Fisica.html"><img src="/Assets/Fisica.png" alt="Física" class="img-atividade"></a>
+<div><header></header><!---espaçamento--></div>
     </section>
-    <section class="img-lado-a-lado">
-    <a href="/Nivel 2/2-BNCC/Geografia/Geografia.html"><img src="/Assets/Geografia.png" alt="Geografia" class="img-atividade"></a>
-    <a href="/Nivel 2/2-BNCC/Historia/Historia.html"><img src="/Assets/Historia.png" alt="História" class="img-atividade"></a>
-    </section>
-    </div>
-
-    <div class="bloco-de-atividades">
-    <section class="img-lado-a-lado">
-    <a href="/Nivel 2/2-BNCC/Ingles/Ingles.html"><img src="/Assets/Ingles.png" alt="Inglês" class="img-atividade"></a>
-    <a href="/Nivel 2/2-BNCC/Lingua Portuguesa/Ligua portugesa.html"><img src="/Assets/Portuges.png" alt="Língua Portuguesa" class="img-atividade"></a>
-    </section>
-    <section class="img-lado-a-lado">
-    <a href="/Nivel 2/2-BNCC/Matematica/Matematica.html"><img src="/Assets/Matematica.png" alt="Matemática" class="img-atividade"></a>
-    <a href="/Nivel 2/2-BNCC/Química/Quimica.html"><img src="/Assets/Química.png" alt="Química" class="img-atividade"></a>
-    </section>
-    </div>
-
-    <div class="bloco-de-atividades">
-    <section class="img-lado-a-lado">
-    <a href="/Nivel 2/2-BNCC/Sociologia/Sociologia.html"><img src="/Assets/Sociologia.png" alt="Sociologia" class="img-atividade"></a>
-    <a href="/Nivel 2/2-BNCC/Educação_financeira/educação_financeira.html"><img src="/Assets/Educão_Financeira.png" alt="Sociologia" class="img-atividade"></a>
-    </section>
-    <section class="img-lado-a-lado">
-    </section>
-    </div>
-                            
     </main>
-    </ul>
-    </div><!--Materias-->
-                
     </div>
-
-    <div><header></header><!---espaçamento--></div>
-
+<div><header></header><!---espaçamento--></div>
 
     <div class="barraFundo">
         <nav>
@@ -171,13 +166,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </li>
             </ul>
         </nav>
-    </div><!--Barra de navegação-->
-    
+        </div><!--Barra de navegação-->
+
     <footer>
         <div class="barraFundoInfo">
 
             <div class="imagembarraFundoInfo">
-            <img src="/Assets/logo AA.webp" class="logofundo">
+            <img src="../../../Assets/logo AA.webp" class="logofundo">
             </div>
     
             <div class="textobarraFundoInfo3">
@@ -189,20 +184,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="textobarraFundoInfo"> 
             <h4>Navegue</h4>
     
-            <a href="/index.html">Inicio</a>
+            <a href="../../../index.html">Inicio</a>
     
-            <a href="/2-BNCC.html">Atividades</a>
+            <a href="../../../2-BNCC.html">Atividades</a>
     
-            <a href="/5-Recortar e Pintar.html">Pintura</a>
+            <a href="../../../5-Recortar e Pintar.html">Pintura</a>
             </div>
             
     
             <div class="textobarraFundoInfo"> 
             <h4>Ajuda</h4>
     
-            <a href="/6-Quem Somos.html">Quem Somos</a>
+            <a href="../../../6-Quem Somos.html">Quem Somos</a>
                 
-            <a href="/6-Quem Somos.html">Como ajudar</a>
+            <a href="../../../6-Quem Somos.html">Como ajudar</a>
 
             <div><header></header><!---espaçamento--></div>
         
@@ -212,6 +207,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
         </div>
     </footer>
+
+    <!-- Botão flutuante -->
+    <button id="btnFlutuantePesquisa" class="btn-flutuante-pesquisa" title="Pesquisar">
+      <span class="material-symbols-outlined">search</span>
+    </button>
+
+    <!-- Overlay de pesquisa -->
+    <div id="overlayPesquisa" class="overlay-pesquisa">
+      <form onsubmit="irParaResultadosOverlay(); return false;">
+        <div class="search-box search-box-mobile">
+          <input type="text" id="searchOverlay" placeholder="Pesquisar..." autocomplete="off">
+          <button type="submit" id="btnPesquisarOverlay" title="Buscar">
+            <span class="material-symbols-outlined">search</span>
+          </button>
+        </div>
+      </form>
+    </div>
 
 </body>
 </html>

@@ -50,6 +50,7 @@
             './js/pintura.json',
             './js/matematica.json',
             './js/artes.json',
+            './js/educacao_financeira.json',
             './js/biologia.json',
             './js/ciencias.json',
             './js/educacaofisica.json',
