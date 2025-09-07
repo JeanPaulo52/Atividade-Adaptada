@@ -28,7 +28,7 @@
             const a = document.createElement('a');
             a.className = 'resultado-item';
             a.href = item.link;
-            a.target = '_blank';
+            
             a.innerHTML = `
                 <img src="${item.imagem}" alt="${item.titulo}" class="resultado-img">
                 <div class="resultado-titulo-img">${item.titulo}</div>

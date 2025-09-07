@@ -1,0 +1,86 @@
+[
+  {
+    "titulo": "Artes",
+    "descricao": "Atividade de matematica.",
+    "imagem": "/Nivel 2\\2-BNCC\\Artes\\Artes_logo.webp",
+    "link": "/Nivel 2\\2-BNCC\\Artes\\Artes.html"
+  },
+  {
+    "titulo": "Biologia",
+    "descricao": "Atividade de matematica.",
+    "imagem": "/Nivel 2\\2-BNCC\\Biologia\\Biologia_logo.webp",
+    "link": "/Nivel 2\\2-BNCC\\Biologia\\Biologia.html"
+  },
+  {
+    "titulo": "Ciencas",
+    "descricao": "Atividade de matematica.",
+    "imagem": "/Nivel 2\\2-BNCC\\Ciencias\\Ciencias_logo.webp",
+    "link": "/Nivel 2\\2-BNCC\\Ciencias\\Ciencas.html"
+  },
+  {
+    "titulo": "Educação Fisica",
+    "descricao": "Atividade de matematica.",
+    "imagem": "/Nivel 2\\2-BNCC\\Educação Fisica\\Educação_fisica_logo.webp",
+    "link": "/Nivel 2\\2-BNCC\\Educação Fisica\\Educação Fisica.html"
+  },
+  {
+    "titulo": "educação financeira",
+    "descricao": "Atividade de matematica.",
+    "imagem": "/Nivel 2\\2-BNCC\\Educação_financeira\\Educação_financeira_logo.webp",
+    "link": "/Nivel 2\\2-BNCC\\Educação_financeira\\educação_financeira.html"
+  },
+  {
+    "titulo": "Filosofia",
+    "descricao": "Atividade de matematica.",
+    "imagem": "/Nivel 2\\2-BNCC\\Filosofia\\Filosifia_logo.webp",
+    "link": "/Nivel 2\\2-BNCC\\Filosofia\\Filosofia.html"
+  },
+  {
+    "titulo": "Fisica",
+    "descricao": "Atividade de matematica.",
+    "imagem": "/Nivel 2\\2-BNCC\\Fisica\\Fisica_logo.webp",
+    "link": "/Nivel 2\\2-BNCC\\Fisica\\Fisica.html"
+  },
+  {
+    "titulo": "Geografia",
+    "descricao": "Atividade de matematica.",
+    "imagem": "/Nivel 2\\2-BNCC\\Geografia\\Geografia_logo.webp",
+    "link": "/Nivel 2\\2-BNCC\\Geografia\\Geografia.html"
+  },
+  {
+    "titulo": "Historia",
+    "descricao": "Atividade de matematica.",
+    "imagem": "/Nivel 2\\2-BNCC\\Historia\\História_logo.webp",
+    "link": "/Nivel 2\\2-BNCC\\Historia\\Historia.html"
+  },
+  {
+    "titulo": "Ingles",
+    "descricao": "Atividade de matematica.",
+    "imagem": "/Nivel 2\\2-BNCC\\Ingles\\Ingles_logo.webp",
+    "link": "/Nivel 2\\2-BNCC\\Ingles\\Ingles.html"
+  },
+  {
+    "titulo": "Ligua portugesa",
+    "descricao": "Atividade de matematica.",
+    "imagem": "/Nivel 2\\2-BNCC\\Lingua Portuguesa\\Lingua_portuguesa_logo.webp",
+    "link": "/Nivel 2\\2-BNCC\\Lingua Portuguesa\\Ligua portugesa.html"
+  },
+  {
+    "titulo": "Matematica",
+    "descricao": "Atividade de matematica.",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\Matematica_logo.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\Matematica.html"
+  },
+  {
+    "titulo": "Quimica",
+    "descricao": "Atividade de matematica.",
+    "imagem": "/Nivel 2\\2-BNCC\\Química\\Quimica_logo.webp",
+    "link": "/Nivel 2\\2-BNCC\\Química\\Quimica.html"
+  },
+  {
+    "titulo": "Sociologia",
+    "descricao": "Atividade de matematica.",
+    "imagem": "/Nivel 2\\2-BNCC\\Sociologia\\Sociologia_logo.webp",
+    "link": "/Nivel 2\\2-BNCC\\Sociologia\\Sociologia.html"
+  }
+]

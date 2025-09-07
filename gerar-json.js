@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const pastaBase = "./Nivel 2/2-BNCC/Matematica/PagDow/"; // caminho da pasta raiz
+const pastaBase = "./Nivel 2/2-BNCC/"; // caminho da pasta raiz
 let atividades = [];
 
 function listarPastas(dir) {
@@ -36,5 +36,5 @@ function listarPastas(dir) {
 listarPastas(pastaBase);
 
 // Salvar JSON final
-fs.writeFileSync("Atualização.json", JSON.stringify(atividades, null, 2), "utf-8");
+fs.writeFileSync("BNCC.json", JSON.stringify(atividades, null, 2), "utf-8");
 console.log("✅ JSON gerado com sucesso! Total de atividades:", atividades.length);
