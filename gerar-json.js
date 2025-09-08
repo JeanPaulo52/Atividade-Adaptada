@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const pastaBase = "./Nivel 2/2-BNCC/"; // caminho da pasta raiz
+const pastaBase = "./Nivel 2/2-BNCC/Matematica/PagDow/"; // caminho da pasta raiz
 let atividades = [];
 
 function listarPastas(dir) {
