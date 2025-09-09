@@ -1,0 +1,44 @@
+[
+  {
+    "titulo": "",
+    "descricao": "",
+    "imagem": "/Assets/artigos_capa.webp",
+    "link": "/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html"
+  },
+  {
+    "titulo": "",
+    "descricao": "",
+    "imagem": "/Assets/atividades_capa.webp",
+    "link": "/Nivel 2/2-BNCC/2-BNCC.html"
+  },
+  {
+    "titulo": "",
+    "descricao": "",
+    "imagem": "/Assets/infantil_capa.webp",
+    "link": "/Nivel 2/5-recortar e pintar/1-Infantil/Infantil.html"
+  },
+  {
+    "titulo": "",
+    "descricao": "",
+    "imagem": "/Assets/desenho_capa.webp",
+    "link": "/Nivel 2/5-recortar e pintar/2-Pintura/Pintura.html"
+  },
+  {
+    "titulo": "",
+    "descricao": "",
+    "imagem": "/Assets/raciocinio_capa.webp",
+    "link": "/Nivel 2/4-Outras atividades/1-Raciocinio/Raciocinio.html"
+  },
+  {
+    "titulo": "",
+    "descricao": "",
+    "imagem": "/Assets/simulados_capa.webp",
+    "link": "/Nivel 2/3-simulados/simulados.html"
+  },
+  {
+    "titulo": "",
+    "descricao": "",
+    "imagem": "/Assets/livros_capa.webp",
+    "link": "/Nivel 2/6-livros/livros.html"
+  }
+]
