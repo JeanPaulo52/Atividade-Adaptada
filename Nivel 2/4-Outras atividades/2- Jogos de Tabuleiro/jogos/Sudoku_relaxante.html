@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
+     crossorigin="anonymous"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5V8F3ZKD');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/Assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Adaptada.com</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            animation: float-up linear infinite;
+        }
+        
+        @keyframes float-up {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: clamp(20px, 5vw, 40px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            margin: 20px;
+        }
+        
+        .title {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #2d3748;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+        
+        .subtitle {
+            color: #718096;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+        
+        .menu {
+            display: block;
+        }
+        
+        .game-area {
+            display: none;
+        }
+        
+        .difficulty-buttons {
+            display: grid;
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+        
+        .difficulty-btn {
+            background: linear-gradient(135deg, #4299e1, #3182ce);
+            color: white;
+            border: none;
+            padding: 16px 24px;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(66, 153, 225, 0.3);
+        }
+        
+        .difficulty-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(66, 153, 225, 0.4);
+        }
+        
+        .difficulty-btn.easy {
+            background: linear-gradient(135deg, #48bb78, #38a169);
+            box-shadow: 0 4px 12px rgba(72, 187, 120, 0.3);
+        }
+        
+        .difficulty-btn.medium {
+            background: linear-gradient(135deg, #ed8936, #dd6b20);
+            box-shadow: 0 4px 12px rgba(237, 137, 54, 0.3);
+        }
+        
+        .difficulty-btn.hard {
+            background: linear-gradient(135deg, #e53e3e, #c53030);
+            box-shadow: 0 4px 12px rgba(229, 62, 62, 0.3);
+        }
+        
+        .game-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        
+        .timer {
+            background: #f7fafc;
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-weight: 500;
+            color: #2d3748;
+            border: 2px solid #e2e8f0;
+        }
+        
+        .back-btn {
+            background: #718096;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: #4a5568;
+            transform: translateY(-1px);
+        }
+        
+        .sudoku-grid {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            grid-template-rows: repeat(9, 1fr);
+            gap: 1px;
+            background: #2d3748;
+            border-radius: 12px;
+            padding: 6px;
+            margin: 0 auto 30px;
+            width: min(450px, 90vw);
+            height: min(450px, 90vw);
+            box-shadow: 0 8px 25px rgba(45, 55, 72, 0.3);
+        }
+        
+        .sudoku-cell {
+            background: white;
+            border: none;
+            font-size: clamp(0.8rem, 3vw, 1.2rem);
+            font-weight: 500;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            color: #2d3748;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2px;
+        }
+        
+        .sudoku-cell:nth-child(3n):not(:nth-child(9n)),
+        .sudoku-cell:nth-child(6n):not(:nth-child(9n)) {
+            border-right: 2px solid #2d3748;
+        }
+        
+        .sudoku-cell:nth-child(n+19):nth-child(-n+27),
+        .sudoku-cell:nth-child(n+46):nth-child(-n+54) {
+            border-bottom: 2px solid #2d3748;
+        }
+        
+        .sudoku-cell:focus {
+            outline: none;
+            background: #e6fffa;
+            box-shadow: inset 0 0 0 2px #38b2ac;
+        }
+        
+        .sudoku-cell.given {
+            background: #f7fafc;
+            color: #2d3748;
+            font-weight: 600;
+        }
+        
+        .sudoku-cell.error {
+            background: #fed7d7;
+            color: #e53e3e;
+        }
+        
+        .sudoku-cell.highlight {
+            background: #bee3f8;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        
+        .control-btn {
+            background: #4299e1;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .control-btn:hover {
+            background: #3182ce;
+            transform: translateY(-1px);
+        }
+        
+        .control-btn.success {
+            background: #48bb78;
+        }
+        
+        .control-btn.success:hover {
+            background: #38a169;
+        }
+        
+        .completion-message {
+            display: none;
+            background: linear-gradient(135deg, #48bb78, #38a169);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 640px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 16px;
+                margin: 10px;
+                border-radius: 16px;
+            }
+            
+            .title {
+                font-size: clamp(1.5rem, 8vw, 2rem);
+            }
+            
+            .game-header {
+                justify-content: space-between;
+                gap: 8px;
+            }
+            
+            .timer, .back-btn {
+                padding: 8px 12px;
+                font-size: 0.9rem;
+            }
+            
+            .controls {
+                gap: 8px;
+            }
+            
+            .control-btn {
+                padding: 10px 16px;
+                font-size: 0.9rem;
+            }
+            
+            .difficulty-btn {
+                padding: 12px 16px;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .sudoku-grid {
+                width: min(350px, 95vw);
+                height: min(350px, 95vw);
+                padding: 4px;
+            }
+            
+            .controls {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .control-btn {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    <div class="container">
+        <div class="menu" id="menu">
+            <h1 class="title">Sudoku Zen</h1>
+            <p class="subtitle">Relaxe e concentre-se</p>
+            
+            <div class="difficulty-buttons">
+                <button class="difficulty-btn easy" onclick="startGame('easy')">
+                    Fácil
+                    <div style="font-size: 0.9rem; opacity: 0.8; margin-top: 4px;">45-50 números preenchidos</div>
+                </button>
+                <button class="difficulty-btn medium" onclick="startGame('medium')">
+                    Médio
+                    <div style="font-size: 0.9rem; opacity: 0.8; margin-top: 4px;">35-40 números preenchidos</div>
+                </button>
+                <button class="difficulty-btn hard" onclick="startGame('hard')">
+                    Difícil
+                    <div style="font-size: 0.9rem; opacity: 0.8; margin-top: 4px;">25-30 números preenchidos</div>
+                </button>
+            </div>
+        </div>
+        
+        <div class="game-area" id="gameArea">
+            <div class="game-header">
+                <button class="back-btn" onclick="backToMenu()">← Voltar</button>
+                <div class="timer" id="timer">00:00</div>
+            </div>
+            
+            <div class="sudoku-grid" id="sudokuGrid"></div>
+            
+            <div class="controls">
+                <button class="control-btn" onclick="clearCell()">Limpar</button>
+                <button class="control-btn" onclick="newGame()">Novo Jogo</button>
+                <button class="control-btn success" onclick="checkSolution()">Verificar</button>
+            </div>
+            
+            <div class="completion-message" id="completionMessage">
+                🎉 Parabéns! Você completou o Sudoku em <span id="finalTime"></span>!
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentGrid = [];
+        let solutionGrid = [];
+        let selectedCell = null;
+        let startTime = null;
+        let timerInterval = null;
+        let currentDifficulty = 'easy';
+        let gameCompleted = false;
+
+        // Gerador de Sudoku com múltiplas possibilidades
+        function generateSudoku(difficulty) {
+            // Criar grade vazia
+            const grid = Array(9).fill().map(() => Array(9).fill(0));
+            
+            // Preencher diagonal de 3x3 primeiro (mais eficiente)
+            fillDiagonal(grid);
+            
+            // Resolver o resto
+            solveSudoku(grid);
+            
+            // Criar cópia para solução
+            solutionGrid = grid.map(row => [...row]);
+            
+            // Remover números baseado na dificuldade
+            const cellsToRemove = {
+                'easy': Math.floor(Math.random() * 6) + 31,    // 31-36 células removidas
+                'medium': Math.floor(Math.random() * 6) + 41,  // 41-46 células removidas  
+                'hard': Math.floor(Math.random() * 6) + 51     // 51-56 células removidas
+            };
+            
+            removeNumbers(grid, cellsToRemove[difficulty]);
+            return grid;
+        }
+
+        function fillDiagonal(grid) {
+            for (let i = 0; i < 9; i += 3) {
+                fillBox(grid, i, i);
+            }
+        }
+
+        function fillBox(grid, row, col) {
+            const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+            shuffleArray(nums);
+            
+            let idx = 0;
+            for (let i = 0; i < 3; i++) {
+                for (let j = 0; j < 3; j++) {
+                    grid[row + i][col + j] = nums[idx++];
+                }
+            }
+        }
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        function solveSudoku(grid) {
+            const emptyCell = findEmptyCell(grid);
+            if (!emptyCell) return true;
+            
+            const [row, col] = emptyCell;
+            const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+            shuffleArray(numbers);
+            
+            for (const num of numbers) {
+                if (isValidMove(grid, row, col, num)) {
+                    grid[row][col] = num;
+                    
+                    if (solveSudoku(grid)) return true;
+                    
+                    grid[row][col] = 0;
+                }
+            }
+            return false;
+        }
+
+        function findEmptyCell(grid) {
+            for (let row = 0; row < 9; row++) {
+                for (let col = 0; col < 9; col++) {
+                    if (grid[row][col] === 0) {
+                        return [row, col];
+                    }
+                }
+            }
+            return null;
+        }
+
+        function isValidMove(grid, row, col, num) {
+            // Verificar linha
+            for (let x = 0; x < 9; x++) {
+                if (grid[row][x] === num) return false;
+            }
+            
+            // Verificar coluna
+            for (let x = 0; x < 9; x++) {
+                if (grid[x][col] === num) return false;
+            }
+            
+            // Verificar caixa 3x3
+            const startRow = row - row % 3;
+            const startCol = col - col % 3;
+            for (let i = 0; i < 3; i++) {
+                for (let j = 0; j < 3; j++) {
+                    if (grid[i + startRow][j + startCol] === num) return false;
+                }
+            }
+            
+            return true;
+        }
+
+        function removeNumbers(grid, count) {
+            let removed = 0;
+            while (removed < count) {
+                const row = Math.floor(Math.random() * 9);
+                const col = Math.floor(Math.random() * 9);
+                
+                if (grid[row][col] !== 0) {
+                    const backup = grid[row][col];
+                    grid[row][col] = 0;
+                    
+                    // Verificar se ainda tem solução única (simplificado)
+                    const tempGrid = grid.map(row => [...row]);
+                    if (solveSudoku(tempGrid)) {
+                        removed++;
+                    } else {
+                        grid[row][col] = backup;
+                    }
+                }
+            }
+        }
+
+        function startGame(difficulty) {
+            currentDifficulty = difficulty;
+            gameCompleted = false;
+            document.getElementById('menu').style.display = 'none';
+            document.getElementById('gameArea').style.display = 'block';
+            document.getElementById('completionMessage').style.display = 'none';
+            
+            currentGrid = generateSudoku(difficulty);
+            renderGrid();
+            startTimer();
+        }
+
+        function renderGrid() {
+            const gridElement = document.getElementById('sudokuGrid');
+            gridElement.innerHTML = '';
+            
+            for (let row = 0; row < 9; row++) {
+                for (let col = 0; col < 9; col++) {
+                    const cell = document.createElement('input');
+                    cell.type = 'text';
+                    cell.className = 'sudoku-cell';
+                    cell.maxLength = 1;
+                    cell.dataset.row = row;
+                    cell.dataset.col = col;
+                    
+                    if (currentGrid[row][col] !== 0) {
+                        cell.value = currentGrid[row][col];
+                        cell.classList.add('given');
+                        cell.readOnly = true;
+                    }
+                    
+                    cell.addEventListener('click', () => selectCell(cell));
+                    cell.addEventListener('input', handleInput);
+                    cell.addEventListener('keydown', handleKeydown);
+                    
+                    gridElement.appendChild(cell);
+                }
+            }
+        }
+
+        function selectCell(cell) {
+            if (selectedCell) {
+                selectedCell.classList.remove('highlight');
+            }
+            selectedCell = cell;
+            cell.classList.add('highlight');
+        }
+
+        function handleInput(e) {
+            const value = e.target.value;
+            if (!/^[1-9]$/.test(value)) {
+                e.target.value = '';
+                return;
+            }
+            
+            const row = parseInt(e.target.dataset.row);
+            const col = parseInt(e.target.dataset.col);
+            
+            // Verificar se é movimento válido
+            const tempGrid = currentGrid.map(row => [...row]);
+            tempGrid[row][col] = parseInt(value);
+            
+            if (isValidMove(currentGrid, row, col, parseInt(value))) {
+                e.target.classList.remove('error');
+                currentGrid[row][col] = parseInt(value);
+                
+                // Verificar se completou
+                if (isSudokuComplete()) {
+                    completeGame();
+                }
+            } else {
+                e.target.classList.add('error');
+                setTimeout(() => {
+                    e.target.classList.remove('error');
+                }, 1000);
+            }
+        }
+
+        function handleKeydown(e) {
+            if (e.key === 'Backspace' || e.key === 'Delete') {
+                clearSelectedCell();
+            }
+        }
+
+        function clearCell() {
+            clearSelectedCell();
+        }
+
+        function clearSelectedCell() {
+            if (selectedCell && !selectedCell.classList.contains('given')) {
+                const row = parseInt(selectedCell.dataset.row);
+                const col = parseInt(selectedCell.dataset.col);
+                selectedCell.value = '';
+                selectedCell.classList.remove('error');
+                currentGrid[row][col] = 0;
+            }
+        }
+
+        function newGame() {
+            startGame(currentDifficulty);
+        }
+
+        function checkSolution() {
+            if (isSudokuComplete()) {
+                completeGame();
+            } else {
+                alert('O Sudoku ainda não está completo ou contém erros.');
+            }
+        }
+
+        function isSudokuComplete() {
+            for (let row = 0; row < 9; row++) {
+                for (let col = 0; col < 9; col++) {
+                    if (currentGrid[row][col] === 0 || 
+                        currentGrid[row][col] !== solutionGrid[row][col]) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+        function completeGame() {
+            if (gameCompleted) return;
+            
+            gameCompleted = true;
+            clearInterval(timerInterval);
+            
+            const finalTime = document.getElementById('timer').textContent;
+            document.getElementById('finalTime').textContent = finalTime;
+            document.getElementById('completionMessage').style.display = 'block';
+            
+            // Adicionar efeito visual de conclusão
+            const cells = document.querySelectorAll('.sudoku-cell');
+            cells.forEach(cell => {
+                cell.style.background = '#c6f6d5';
+                cell.readOnly = true;
+            });
+        }
+
+        function startTimer() {
+            startTime = Date.now();
+            timerInterval = setInterval(updateTimer, 1000);
+        }
+
+        function updateTimer() {
+            const elapsed = Math.floor((Date.now() - startTime) / 1000);
+            const minutes = Math.floor(elapsed / 60);
+            const seconds = elapsed % 60;
+            document.getElementById('timer').textContent = 
+                `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+
+        function backToMenu() {
+            clearInterval(timerInterval);
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('gameArea').style.display = 'none';
+        }
+
+        // Sistema de partículas
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            
+            // Tamanho aleatório entre 2px e 6px
+            const size = Math.random() * 4 + 2;
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+            
+            // Posição horizontal aleatória
+            particle.style.left = Math.random() * 100 + '%';
+            
+            // Duração da animação aleatória entre 15s e 25s
+            const duration = Math.random() * 10 + 15;
+            particle.style.animationDuration = duration + 's';
+            
+            // Delay aleatório
+            particle.style.animationDelay = Math.random() * 5 + 's';
+            
+            document.getElementById('particles').appendChild(particle);
+            
+            // Remover partícula após a animação
+            setTimeout(() => {
+                if (particle.parentNode) {
+                    particle.parentNode.removeChild(particle);
+                }
+            }, (duration + 5) * 1000);
+        }
+
+        // Criar partículas continuamente
+        function initParticles() {
+            // Criar partículas iniciais
+            for (let i = 0; i < 20; i++) {
+                setTimeout(() => createParticle(), i * 500);
+            }
+            
+            // Continuar criando partículas
+            setInterval(createParticle, 800);
+        }
+
+        // Inicializar partículas quando a página carregar
+        window.addEventListener('load', initParticles);
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97cf4850970ea479',t:'MTc1NzUxMTA1My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
