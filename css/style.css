@@ -507,7 +507,7 @@ main {
 /* Oculta o menu inicialmente */
 .menu-list {
   list-style: none;
-  background-color: #90b9f5;
+  background-color: #63dddf;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;

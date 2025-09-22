@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade Adaptada.com</title>
-    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/style2.css" rel="stylesheet" />
 
 </head>
 
@@ -102,76 +102,42 @@
     </script>
     </div><!---espaçamento-->
 
-    <div class="container"><main><section>
-    <h1 class="tituloPagina">Novidades</h1><!---Titulo da Pagina-->
-    
-    <div class="bloco-de-noticias-1">
+<div class="resultados-container">
+  <div class="resultados-titulo">Artigos</div>
+  <div class="resultados-lista" id="listaResultados"></div>
+  <div class="sem-resultado" id="semResultado" style="display:none;">Nenhuma atividade encontrada.</div>
+</div>
 
-    <a href="/Nivel 2/1-pagina inicial/2-Artigos/10-bncc educação infanil/bncc-educação-infantil.html"><img src="/Nivel 2/1-pagina inicial/2-Artigos/10-bncc educação infanil/bncc-educação-infantil-G.webp" alt="Crianças fazendo uma tividade infantil" class="banner-principal"></a>
+<script>
+// Carregar itens do JSON
+fetch('../../../js/Artigos.json')
+  .then(response => response.json())
+  .then(dados => {
+    const lista = document.getElementById('listaResultados');
+    const semResultado = document.getElementById('semResultado');
 
-    <div class="anuncio">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
-    crossorigin="anonymous"></script>
-    <!-- Anuncio teste -->
-    <ins class="adsbygoogle"
-    style="display:inline-block;width:300px;height:300px"
-    data-ad-client="ca-pub-7297230407550504"
-    data-ad-slot="7826003178"></ins>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    </div>
+    if (dados.length === 0) {
+      semResultado.style.display = 'block';
+      return;
+    }
 
-    <a href="/Nivel 2/1-pagina inicial/2-Artigos/13_concurso_educacao_guaruja/concurso_educacao_guaruja.html"><img src="/Nivel 2/1-pagina inicial/2-Artigos/13_concurso_educacao_guaruja/concurso_educacao_guaruja_capa.webp" alt="Crianças na frente de uma escola" class="imgNoticia"></a>
-
-    </div>
-
-    <div><header></header></div>
-
-    <div class="bloco-de-noticias-2">   
-
-        <a href="/Nivel 2/1-pagina inicial/2-Artigos/14_alfabetização_infantil/alfabetização_infantil.html"><img src="/Nivel 2/1-pagina inicial/2-Artigos/14_alfabetização_infantil/alfabetização_infantil_capa.webp" alt="crianças aprendendo a ler" class="imgNoticia"></a>
+    dados.forEach(item => {
+      const a = document.createElement('a');
+      a.className = 'resultado-item';
+      a.href = item.link;
       
-        <a href="/Nivel 2/1-pagina inicial/2-Artigos/12-6-atividades-matematicas/As Melhores Atividades de Matemática para Educação Infantil.html"><img src="/Nivel 2/1-pagina inicial/2-Artigos/12-6-atividades-matematicas/Capas para os artigos AA.com (3).webp" alt="Crianças na frente de uma escola" class="imgNoticia"></a>
-
-        <a href="/Nivel 2/1-pagina inicial/2-Artigos/11-Habilidades-da-BNCC-Educação-Infantil/Habilidades-da-BNCC-Educação-Infantil.html"><img src="/Nivel 2/1-pagina inicial/2-Artigos/11-Habilidades-da-BNCC-Educação-Infantil/Habilidades-da-BNCC-Educação-Infantil-p.webp" alt="Crianças na frente de uma escola" class="imgNoticia"></a>
- 
-        <a href="/Nivel 2/1-pagina inicial/2-Artigos/Atividade-para-educação-infantil/atividades-para-educação-infantil.html"><img src="/Nivel 2/1-pagina inicial/2-Artigos/Atividade-para-educação-infantil/Atividades-para-Educação-Infantil-p.webp" alt="Crianças na frente de uma escola" class="imgNoticia"></a>
-                      
-    </div>
-
-    <div><header></header><!---espaçamento--></div>
-
-    </section>
-    </main> 
-    </div><!--noticias da apagina-->
-
-    <div><header></header><!---espaçamento--></div>
-
-    <div class="barraFundo">
-    <nav>
-        <ul>
-            <li>
-                <a href="#">1</a>
-            </li>
-            <li>
-                <a href="/Nivel 2/1-pagina inicial/1-Paginas/pagina2.html">2</a>
-            </li>
-            <li>
-                <a href="#">.</a>
-            </li>
-            <li>
-                <a href="#">.</a>
-            </li>
-            <li>
-                <a href="#">.</a>
-            </li>
-            <li>
-                <a href="/resultados.html">.</a>
-            </li>
-        </ul>
-    </nav>
-    </div><!--Barra de navegação-->
+      a.innerHTML = `
+        <img src="${item.imagem}" alt="${item.titulo}" class="resultado-img">
+        <div class="resultado-titulo-img">${item.titulo}</div>
+      `;
+      lista.appendChild(a);
+    });
+  })
+  .catch(error => {
+    console.error('Erro ao carregar JSON:', error);
+    document.getElementById('semResultado').style.display = 'block';
+  });
+</script>
 
     <footer>
     <div class="barraFundoInfo">

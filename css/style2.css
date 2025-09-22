@@ -192,7 +192,7 @@ body { background: #f3f3f3; }
 /* Oculta o menu inicialmente */
 .menu-list {
   list-style: none;
-  background-color: #444;
+  background-color: #63dddf;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
@@ -208,8 +208,7 @@ body { background: #f3f3f3; }
   display: block;
   padding: 15px;
   text-decoration: none;
-  color: white;
-  border-top: 1px solid #555;
+  color: rgb(0, 0, 0);
 }
 header{ /* Espaçamento do topo */
     padding: 20px 0; 
