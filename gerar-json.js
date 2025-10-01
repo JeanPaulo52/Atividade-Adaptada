@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const pastaBase = "./Nivel 2/1-pagina inicial/2-Artigos/"; // caminho da pasta raiz
+const pastaBase = "./Nivel 2/2-BNCC/Educação_financeira/PagDow/"; // caminho da pasta raiz
 let atividades = [];
 
 function listarPastas(dir) {
@@ -21,7 +21,7 @@ function listarPastas(dir) {
       if (html && imagem) {
         atividades.push({
           titulo: html.replace(".html", "").replace(/[-_]/g, " "),
-          descricao: "Artigo sobre educação infantil.",
+          descricao: "Atividade de educação financeira.",
           imagem: path.join(caminhoCompleto, imagem).replace(pastaBase + "/", ""),
           link: path.join(caminhoCompleto, html).replace(pastaBase + "/", "")
         });
