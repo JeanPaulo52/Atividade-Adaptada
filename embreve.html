@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em Breve - Atividade Adaptada</title>
+    
+    <!-- Tailwind CSS para estilização -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f8fafc;
+        }
+    </style>
+</head>
+<body class="text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold">
+                <span class="text-red-600">ATIVIDADE</span><span class="text-blue-600">ADAPTADA</span><span class="text-gray-900">.COM</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-cyan-500 transition">Início</a>
+                <a href="pagina-categorias.html" class="text-gray-600 hover:text-cyan-500 transition">Atividades</a>
+                <a href="#" class="text-gray-600 hover:text-cyan-500 transition">Artigos</a>
+                <a href="#" class="text-gray-600 hover:text-cyan-500 transition">Sobre Nós</a>
+            </div>
+            <a href="em-breve.html" class="hidden md:block bg-orange-500 text-white font-bold py-2 px-5 rounded-full hover:bg-orange-600 transition">
+                Entrar
+            </a>
+            <button id="mobile-menu-button" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+             <a href="index.html" class="block py-2 text-gray-600 hover:text-cyan-500">Início</a>
+            <a href="pagina-categorias.html" class="block py-2 text-gray-600 hover:text-cyan-500">Atividades</a>
+            <a href="#" class="block py-2 text-gray-600 hover:text-cyan-500">Artigos</a>
+            <a href="#" class="block py-2 text-gray-600 hover:text-cyan-500">Sobre Nós</a>
+            <a href="em-breve.html" class="block mt-4 bg-orange-500 text-white font-bold py-2 px-5 rounded-full text-center">Entrar</a>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="flex-grow container mx-auto px-6 py-20 flex items-center justify-center">
+        <div class="text-center">
+            <div class="inline-block bg-cyan-100 rounded-full p-6 mb-6">
+                <svg class="w-16 h-16 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-cyan-800 mb-4">Novidades a Caminho!</h1>
+            <p class="text-lg text-gray-600 max-w-xl mx-auto mb-8">
+                Estamos a trabalhar para criar uma área de membros incrível, onde poderá guardar as suas atividades favoritas e muito mais. Esta funcionalidade estará disponível em breve!
+            </p>
+            <a href="index.html" class="bg-orange-500 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-600 transition-transform hover:scale-105 inline-block">
+                Voltar à Página Inicial
+            </a>
+        </div>
+    </main>
+    
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white">
+       <div class="container mx-auto px-6 py-10">
+            <div class="border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Atividade Adaptada. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para o menu mobile -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

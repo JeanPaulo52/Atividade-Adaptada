@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"crossorigin="anonymous"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5V8F3ZKD');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../../../Assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Adaptada.com</title>
+    
+    <!-- Tailwind CSS para estilização rápida e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Nunito, uma fonte amigável e legível -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Aplicando a fonte Nunito como padrão para todo o corpo do site */
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f8fafc; /* Um cinza muito claro para o fundo */
+        }
+        /* Efeito de sombra e escala para os cards, tornando-os mais interativos */
+        .card-hover {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="text-2xl font-extrabold">
+                <span class="text-red-600">Atividade</span><span class="text-blue-600">Adaptada</span><span class="text-gray-900">.com</span>
+            </a>
+            
+            <!-- Menu para Desktop -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="/index copy.html" class="text-gray-600 hover:text-cyan-500 transition">Início</a>
+                <a href="/Nivel 2/2-BNCC/2-BNCC.html" class="text-gray-600 hover:text-cyan-500 transition">Atividades</a>
+                <a href="/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html" class="text-gray-600 hover:text-cyan-500 transition">Artigos</a>
+                <a href="/Nivel 2/6-Quem Somos.html" class="text-gray-600 hover:text-cyan-500 transition">Sobre Nós</a>
+            </div>
+
+            <!-- Botão de Login/Cadastro -->
+            <a href="/embreve.html" class="hidden md:block bg-orange-500 text-white font-bold py-2 px-5 rounded-full hover:bg-orange-600 transition">
+                Entrar
+            </a>
+
+            <!-- Botão do Menu Mobile (Hamburguer) -->
+            <button id="mobile-menu-button" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        
+        <!-- Menu Mobile (oculto por padrão) -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="/index copy.html" class="block py-2 text-gray-600 hover:text-cyan-500">Início</a>
+            <a href="/Nivel 2/2-BNCC/2-BNCC.html" class="block py-2 text-gray-600 hover:text-cyan-500">Atividades</a>
+            <a href="/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html" class="block py-2 text-gray-600 hover:text-cyan-500">Artigos</a>
+            <a href="/Nivel 2/6-Quem Somos.html" class="block py-2 text-gray-600 hover:text-cyan-500">Sobre Nós</a>
+            <a href="/embreve.html" class="block mt-4 bg-orange-500 text-white font-bold py-2 px-5 rounded-full text-center">
+                Entrar
+            </a>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto px-6 py-12">
+        
+        <!-- Seção Principal (Hero) -->
+        <section class="text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Educação Inclusiva ao Alcance de Todos</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">Encontre atividades, jogos e materiais adaptados para cada estilo de aprendizagem. Feito para pais e professores.</p>
+            
+            <!-- Barra de Pesquisa Funcional -->
+                <form id="search-form" class="relative w-full max-w-xl mx-auto">
+                    <input id="search-input" type="search" placeholder="O que você quer aprender hoje? Ex: caça-palavras" class="w-full text-lg py-4 pl-6 pr-32 rounded-full border-2 border-gray-200 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition">
+                    <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 bg-cyan-600 text-white font-bold py-3 px-6 rounded-full hover:bg-cyan-700 transition">Buscar</button>
+                </form>
+        </section>
+        
+        <!-- Seção de Categorias -->
+        <section class="mt-20">
+            <h2 class="text-3xl font-bold text-center mb-10">Explore por Categoria</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
+                <!-- Card de Categoria -->
+                <a href="/Nivel 2/5-recortar e pintar/1-Infantil/Infantil.html" class="card-hover bg-white p-6 rounded-2xl shadow-sm flex flex-col items-center justify-center">
+                    <div class="bg-cyan-100 p-4 rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0891b2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v15H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    </div>
+                    <span class="font-bold text-lg">Alfabetização</span>
+                </a>
+                <!-- Card de Categoria -->
+                <a href="/Nivel 2/categorias/matematica.html" class="card-hover bg-white p-6 rounded-2xl shadow-sm flex flex-col items-center justify-center">
+                    <div class="bg-orange-100 p-4 rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                    </div>
+                    <span class="font-bold text-lg">Matemática</span>
+                </a>
+                <!-- Card de Categoria -->
+                <a href="/Nivel 2/3-simulados/simulados.html" class="card-hover bg-white p-6 rounded-2xl shadow-sm flex flex-col items-center justify-center">
+                     <div class="bg-teal-100 p-4 rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><line x1="10" y1="9" x2="8" y2="9"></line></svg>
+                    </div>
+                    <span class="font-bold text-lg">Simulados</span>
+                </a>
+                <!-- Card de Categoria -->
+                <a href="/Nivel 2/2-BNCC/Sociologia/Sociologia.html" class="card-hover bg-white p-6 rounded-2xl shadow-sm flex flex-col items-center justify-center">
+                    <div class="bg-violet-100 p-4 rounded-full mb-4">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <span class="font-bold text-lg">Habilidades Sociais</span>
+                </a>
+                 <!-- Card de Categoria -->
+                 <a href="/Nivel 2/categorias.html" class="card-hover bg-white p-6 rounded-2xl shadow-sm flex flex-col items-center justify-center">
+                    <div class="bg-rose-100 p-4 rounded-full mb-4">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f43f5e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"></path></svg>
+                    </div>
+                    <span class="font-bold text-lg">Ver Todas</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção de Atividades em Destaque -->
+        <section class="mt-20">
+            <h2 class="text-3xl font-bold text-center mb-10">Atividades em Destaque</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Atividade 1 -->
+                    <a href="/Nivel 2/categorias/matematica/atividade-de-matematica-1.html" class="card-hover bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                        <img src="https://placehold.co/600x400/f97316/ffffff?text=Pintura+Guiada" alt="Pintura geométrica guiada" class="w-full h-48 object-cover">
+                        <div class="p-6 flex-grow">
+                            <h3 class="font-bold text-xl mb-2">Teste Atividade</h3>
+                            <p class="text-gray-600">Pinte seguindo as formas geométricas e as cores correspondentes.</p>
+                        </div>
+                        <div class="p-6 pt-0">
+                             <span class="text-xs font-bold bg-pink-100 text-pink-800 px-3 py-1 rounded-full">Artes</span>
+                        </div>
+                    </a>
+                    <!-- Atividade 2 -->
+                    <a href="atividade-individual.html" class="card-hover bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                        <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Desenho+Simples" alt="Desenhe igual" class="w-full h-48 object-cover">
+                        <div class="p-6 flex-grow">
+                            <h3 class="font-bold text-xl mb-2">Desenhe igual</h3>
+                            <p class="text-gray-600">Utilize as linhas para fazer um desenho igual ao modelo. Ótimo para noção espacial.</p>
+                        </div>
+                        <div class="p-6 pt-0">
+                             <span class="text-xs font-bold bg-teal-100 text-teal-800 px-3 py-1 rounded-full">Coordenação</span>
+                        </div>
+                    </a>
+                    <!-- Atividade 3 -->
+                    <a href="atividade-individual.html" class="card-hover bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                        <img src="https://placehold.co/600x400/10b981/ffffff?text=Imaginação" alt="Aquário vazio" class="w-full h-48 object-cover">
+                        <div class="p-6 flex-grow">
+                            <h3 class="font-bold text-xl mb-2">Aquário vazio</h3>
+                            <p class="text-gray-600">Use a criatividade para desenhar e enfeitar o aquário da melhor forma possível.</p>
+                        </div>
+                        <div class="p-6 pt-0">
+                             <span class="text-xs font-bold bg-rose-100 text-rose-800 px-3 py-1 rounded-full">Desenho Livre</span>
+                        </div>
+                    </a>
+            </div>
+            <div class="text-center mt-12">
+                 <a href="#" class="bg-orange-500 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-600 transition text-lg">
+                    Ver Todas as Atividades
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white mt-20">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-extrabold mb-4">Atividade Adaptada</h3>
+                    <p class="text-gray-400">Promovendo uma educação mais inclusiva e acessível para todas as crianças.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Navegue</h4>
+                    <ul>
+                        <li class="mb-2"><a href="/index.html" class="text-gray-400 hover:text-white">Início</a></li>
+                        <li class="mb-2"><a href="/Nivel 2/categorias.html" class="text-gray-400 hover:text-white">Atividades</a></li>
+                        <li class="mb-2"><a href="/Nivel 2/6-Quem Somos.html" class="text-gray-400 hover:text-white">Quem Somos</a></li>
+                        <li class="mb-2"><a href="/Nivel 2/6-Quem Somos.html" class="text-gray-400 hover:text-white">Como Ajudar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Siga-nos</h4>
+                    <div class="flex space-x-4">
+                        <!-- Ícones de redes sociais -->
+                        <a href="https://www.youtube.com/@AtividadeAdaptada" class="text-gray-400 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg>
+                        </a>
+                        <a href="https://www.instagram.com/atividadeadaptada.com.br/" class="text-gray-400 hover:text-white">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.585.069-4.85c.149-3.225 1.664-4.771 4.919 4.919 1.266.058 1.644.07 4.85.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Atividade Adaptada. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para o menu mobile e busca -->
+    <script>
+        // --- LÓGICA DO MENU MOBILE ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // --- LÓGICA DA BARRA DE PESQUISA ---
+        const searchForm = document.getElementById('search-form');
+        const searchInput = document.getElementById('search-input');
+
+        searchForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o recarregamento da página
+            
+            const query = searchInput.value.trim(); // Pega o valor da busca e remove espaços extras
+            
+            if (query) {
+                // Redireciona para a página de resultados, passando a busca como um parâmetro na URL
+                window.location.href = `resultados.html?q=${encodeURIComponent(query)}`;
+            }
+        });
+    </script>
+</body>
+</html>

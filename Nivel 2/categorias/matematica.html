@@ -2,8 +2,8 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale-1.0">
-    <title>Resultados da Pesquisa - Atividade Adaptada</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades de Matemática - Atividade Adaptada</title>
     
     <!-- Tailwind CSS para estilização -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -29,19 +29,19 @@
 </head>
 <body class="text-gray-800">
 
-    <!-- Cabeçalho e Navegação (Consistente com as outras páginas) -->
+    <!-- Cabeçalho e Navegação -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-extrabold text-cyan-600">
-                Atividade Adaptada
+            <a href="index.html" class="text-2xl font-extrabold">
+                <span class="text-red-600">Atividade</span><span class="text-blue-600">Adaptada</span><span class="text-gray-900">.com</span>
             </a>
             <div class="hidden md:flex items-center space-x-6">
                 <a href="index.html" class="text-gray-600 hover:text-cyan-500 transition">Início</a>
-                <a href="pagina-atividades.html" class="text-gray-600 hover:text-cyan-500 transition">Atividades</a>
+                <a href="pagina-categorias.html" class="font-bold text-cyan-600">Atividades</a>
                 <a href="#" class="text-gray-600 hover:text-cyan-500 transition">Artigos</a>
-                <a href="#" class="text-gray-600 hover:text-cyan-500 transition">Sobre Nós</a>
+                <a href="em-breve.html" class="text-gray-600 hover:text-cyan-500 transition">Sobre Nós</a>
             </div>
-            <a href="#" class="hidden md:block bg-orange-500 text-white font-bold py-2 px-5 rounded-full hover:bg-orange-600 transition">
+            <a href="em-breve.html" class="hidden md:block bg-orange-500 text-white font-bold py-2 px-5 rounded-full hover:bg-orange-600 transition">
                 Entrar
             </a>
             <button id="mobile-menu-button" class="md:hidden">
@@ -50,19 +50,20 @@
         </nav>
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
              <a href="index.html" class="block py-2 text-gray-600 hover:text-cyan-500">Início</a>
-            <a href="pagina-atividades.html" class="block py-2 text-gray-600 hover:text-cyan-500">Atividades</a>
+            <a href="pagina-categorias.html" class="block py-2 font-bold text-cyan-600">Atividades</a>
             <a href="#" class="block py-2 text-gray-600 hover:text-cyan-500">Artigos</a>
             <a href="#" class="block py-2 text-gray-600 hover:text-cyan-500">Sobre Nós</a>
-            <a href="#" class="block mt-4 bg-orange-500 text-white font-bold py-2 px-5 rounded-full text-center">Entrar</a>
+            <a href="em-breve.html" class="block mt-4 bg-orange-500 text-white font-bold py-2 px-5 rounded-full text-center">Entrar</a>
         </div>
     </header>
 
-    <!-- Conteúdo Principal da Página de Resultados -->
+    <!-- Conteúdo Principal -->
     <main class="container mx-auto px-4 sm:px-6 py-12">
         
         <!-- Cabeçalho da Página -->
-        <header class="mb-8">
-            <h1 id="search-title" class="text-3xl md:text-4xl font-extrabold text-gray-900">Resultados para "<span class="text-cyan-600"></span>"</h1>
+        <header class="mb-8 text-center">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900">Atividades de Matemática</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto mt-2">Explore nossas atividades de contagem, formas, adição, subtração e muito mais.</p>
         </header>
 
         <!-- Grade de Atividades Estilo Pinterest -->
@@ -72,16 +73,16 @@
             </div>
         </section>
         
-        <!-- Mensagem de "Nenhum resultado" -->
+        <!-- Mensagem de "Nenhuma atividade" -->
         <div id="no-results" class="text-center py-10 hidden">
-             <p class="text-gray-600 text-lg">Nenhuma atividade encontrada para sua busca.</p>
-             <p class="text-gray-500 mt-2">Tente usar palavras-chave diferentes.</p>
+             <p class="text-gray-600 text-lg">Nenhuma atividade de Matemática encontrada.</p>
+             <p class="text-gray-500 mt-2">Estamos trabalhando para adicionar novos conteúdos em breve!</p>
         </div>
 
         <!-- Indicador de Carregamento -->
         <div id="loading" class="text-center py-10">
             <div class="inline-block w-8 h-8 border-4 border-t-cyan-500 border-r-cyan-500 border-b-cyan-200 border-l-cyan-200 rounded-full spinner"></div>
-            <p class="mt-2 text-gray-600">Carregando resultados...</p>
+            <p class="mt-2 text-gray-600">Carregando atividades...</p>
         </div>
         
     </main>
@@ -95,7 +96,7 @@
         </div>
     </footer>
 
-    <!-- Script para o menu mobile e Lógica da Pesquisa -->
+    <!-- Script para o menu mobile e Lógica da Página -->
     <script>
         // --- LÓGICA DO MENU MOBILE ---
         const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -104,19 +105,11 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // --- LÓGICA DA PÁGINA DE PESQUISA ---
+        // --- LÓGICA DA PÁGINA DE CATEGORIA ---
         const activitiesGrid = document.getElementById('activities-grid');
         const loadingIndicator = document.getElementById('loading');
         const noResultsMessage = document.getElementById('no-results');
-        const searchTitleSpan = document.querySelector('#search-title span');
         
-        // --- FUNÇÕES ---
-
-        function getSearchQuery() {
-            const params = new URLSearchParams(window.location.search);
-            return params.get('q') || '';
-        }
-
         function renderActivities(activities) {
             activitiesGrid.innerHTML = '';
             if (activities.length === 0) {
@@ -128,18 +121,12 @@
             activities.forEach(activity => {
                 const activityCard = document.createElement('a');
                 activityCard.href = activity.link;
-                // break-inside-avoid evita que um card quebre no meio de uma coluna
                 activityCard.className = "block bg-white rounded-lg shadow-sm overflow-hidden break-inside-avoid transition-transform duration-200 ease-in-out hover:shadow-xl hover:-translate-y-1";
                 
                 activityCard.innerHTML = `
                     <div class="relative">
-                        <!-- Imagem da atividade -->
                         <img src="${activity.imagem}" alt="${activity.titulo}" class="w-full h-auto object-cover" loading="lazy">
-                        
-                        <!-- Gradiente para legibilidade do título -->
                         <div class="absolute bottom-0 left-0 right-0 h-2/3 bg-gradient-to-t from-black/70 to-transparent"></div>
-                        
-                        <!-- Título sobreposto -->
                         <div class="absolute bottom-0 left-0 right-0 p-4">
                             <h3 class="font-bold text-white text-base">${activity.titulo}</h3>
                         </div>
@@ -150,55 +137,22 @@
         }
         
         async function initializePage() {
-            const query = getSearchQuery();
-            
-            if (!query.trim()) {
-                searchTitleSpan.textContent = "Busca vazia";
-                loadingIndicator.classList.add('hidden');
-                noResultsMessage.classList.remove('hidden');
-                return;
-            }
-
-            searchTitleSpan.textContent = query;
-
-            const basePath = './js/';
-            const jsonFiles = [
-                'pintura.json', 'matematica.json', 'artes.json', 'educacao_financeira.json',
-                'biologia.json', 'ciencias.json', 'educacaofisica.json', 'filosofia.json',
-                'fisica.json', 'geografia.json', 'historia.json', 'ingles.json',
-                'portugues.json', 'quimica.json', 'sociologia.json', 'infantil.json',
-                'raciocinio.json', 'livros.json', 'lojinha.json', 'outro.json'
-            ];
+            // IMPORTANTE: Altere este caminho se o seu arquivo JSON de matemática tiver outro nome ou local
+            const jsonPath = '/js/matematica.json';
 
             try {
-                const fetchPromises = jsonFiles.map(file => 
-                    fetch(basePath + file).then(response => {
-                        if (!response.ok) {
-                            console.warn(`Aviso: Arquivo não encontrado ou com erro: ${file}`);
-                            return [];
-                        }
-                        return response.json();
-                    }).catch(error => {
-                        console.error(`Erro de rede ao carregar ${file}:`, error);
-                        return [];
-                    })
-                );
-
-                const jsonDataArrays = await Promise.all(fetchPromises);
-                const allActivitiesData = [].concat(...jsonDataArrays);
-                const searchTerm = query.toLowerCase().trim();
-                const searchResults = allActivitiesData.filter(activity => {
-                    return activity.titulo.toLowerCase().includes(searchTerm) ||
-                           activity.descricao.toLowerCase().includes(searchTerm);
-                });
-
+                const response = await fetch(jsonPath);
+                if (!response.ok) {
+                    throw new Error(`Arquivo não encontrado: ${jsonPath}`);
+                }
+                const activities = await response.json();
+                
                 loadingIndicator.classList.add('hidden');
-                renderActivities(searchResults);
+                renderActivities(activities);
 
             } catch (error) {
-                console.error("Erro geral ao processar JSONs:", error);
+                console.error("Erro ao carregar atividades de matemática:", error);
                 loadingIndicator.classList.add('hidden');
-                noResultsMessage.textContent = 'Ocorreu um erro ao carregar os resultados.';
                 noResultsMessage.classList.remove('hidden');
             }
         }
