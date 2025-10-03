@@ -237,52 +237,6 @@
             }
         });
         
-        // --- CORREÇÃO AGRESSIVA PARA BANNER NO TOPO ---
-        // Este script observa a página e remove elementos indesejados (anúncios)
-        // que são inseridos antes do nosso cabeçalho.
-        function handleAdInsertion() {
-            const header = document.querySelector('header');
-            if (!header) return; // Se não houver cabeçalho, não faz nada
-
-            // Função para verificar e remover o anúncio
-            const checkForBannerAd = () => {
-                const firstElement = document.body.firstElementChild;
-                
-                // Se o primeiro elemento não for o nosso header e parecer um anúncio, remove-o.
-                if (firstElement && firstElement !== header) {
-                    // Verificação mais genérica para apanhar diferentes tipos de contentores de anúncios
-                    const hasAdContent = firstElement.querySelector('.adsbygoogle') || firstElement.id.includes('google_ads_iframe');
-                    if (hasAdContent || firstElement.tagName === 'INS' || firstElement.tagName === 'DIV' && firstElement.offsetHeight > 50) {
-                        console.log('Banner de anúncio no topo detetado e removido.');
-                        firstElement.remove();
-                    }
-                }
-            };
-
-            // Imediatamente tenta remover, caso o anúncio já esteja lá
-            checkForBannerAd();
-
-            // Cria um "observador" que vigia se novos elementos são adicionados ao body
-            const observer = new MutationObserver((mutationsList) => {
-                for (const mutation of mutationsList) {
-                    if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
-                        // Se algo for adicionado, verifica novamente
-                        checkForBannerAd();
-                    }
-                }
-            });
-
-            // Começa a observar o body
-            observer.observe(document.body, { childList: true, subtree: false });
-
-            // Uma verificação final de segurança após o carregamento completo da página
-            window.addEventListener('load', () => {
-                setTimeout(checkForBannerAd, 100);
-            });
-        }
-
-        // Executa a função de correção assim que o DOM estiver pronto
-        document.addEventListener('DOMContentLoaded', handleAdInsertion);
     </script>
 </body>
 </html>
