@@ -38,6 +38,10 @@
     </style>
 </head>
 <body class="text-gray-800">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V8F3ZKD"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Cabeçalho e Navegação -->
     <header class="bg-white shadow-md sticky top-0 z-50">
@@ -68,33 +72,44 @@
     </header>
 
     <!-- Conteúdo Principal -->
-    <main class="container mx-auto px-4 sm:px-6 py-12">
+    <main class="container mx-auto px-6 py-12">
         
         <!-- Cabeçalho da Página -->
-        <header class="mb-8 text-center">
-            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900">Artigos</h1>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto mt-2">Explore nossas atividades de aproveite.</p>
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-cyan-800 mb-4">Nossos Artigos</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Dicas, estratégias e reflexões sobre educação inclusiva para pais e professores.</p>
         </header>
 
-        <!-- Grade de Atividades Estilo Pinterest -->
-        <section>
-            <div id="activities-grid" class="columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-4 space-y-4">
-                <!-- Os cards de atividades serão inseridos aqui pelo JavaScript -->
+        <div class="grid lg:grid-cols-3 gap-12">
+            <!-- Coluna Principal (Lista de Artigos) -->
+            <div id="articles-list" class="lg:col-span-2 space-y-12">
+                <!-- Artigos serão carregados aqui -->
+                <div class="text-center py-10">
+                    <div class="inline-block w-8 h-8 border-4 border-t-cyan-500 border-r-cyan-500 border-b-cyan-200 border-l-cyan-200 rounded-full spinner"></div>
+                    <p class="mt-2 text-gray-600">A carregar artigos...</p>
+                </div>
             </div>
-        </section>
-        
-        <!-- Mensagem de "Nenhuma atividade" -->
-        <div id="no-results" class="text-center py-10 hidden">
-             <p class="text-gray-600 text-lg">Nenhuma atividade encontrada.</p>
-             <p class="text-gray-500 mt-2">Estamos trabalhando para adicionar novos conteúdos em breve!</p>
+
+            <!-- Coluna Lateral (Sidebar) -->
+            <aside>
+                <div class="sticky top-28 space-y-8">
+                    <!-- Espaço para Anúncio Vertical -->
+                    <div class="bg-gray-100 p-6 rounded-2xl text-center text-gray-400 h-96 flex items-center justify-center">
+                        <p>Espaço para Anúncio <br> (Vertical ou 300x250)</p>
+                    </div>
+
+                    <!-- Artigos Populares -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border">
+                        <h3 class="font-extrabold text-xl mb-4">Artigos Populares</h3>
+                        <div id="popular-articles-list" class="space-y-4">
+                            <!-- Artigos populares serão carregados aqui -->
+                            <p class="text-gray-500">A carregar...</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
         </div>
 
-        <!-- Indicador de Carregamento -->
-        <div id="loading" class="text-center py-10">
-            <div class="inline-block w-8 h-8 border-4 border-t-cyan-500 border-r-cyan-500 border-b-cyan-200 border-l-cyan-200 rounded-full spinner"></div>
-            <p class="mt-2 text-gray-600">Carregando atividades...</p>
-        </div>
-        
     </main>
     
     <!-- Rodapé -->
@@ -142,59 +157,73 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // --- LÓGICA DA PÁGINA DE CATEGORIA ---
-        const activitiesGrid = document.getElementById('activities-grid');
-        const loadingIndicator = document.getElementById('loading');
-        const noResultsMessage = document.getElementById('no-results');
-        
-        function renderActivities(activities) {
-            activitiesGrid.innerHTML = '';
-            if (activities.length === 0) {
-                noResultsMessage.classList.remove('hidden');
-            } else {
-                noResultsMessage.classList.add('hidden');
-            }
+        // --- LÓGICA DE CARREGAMENTO DE ARTIGOS ---
+        document.addEventListener('DOMContentLoaded', () => {
+            loadArticles();
+        });
 
-            activities.forEach(activity => {
-                const activityCard = document.createElement('a');
-                activityCard.href = activity.link;
-                activityCard.className = "block bg-white rounded-lg shadow-sm overflow-hidden break-inside-avoid transition-transform duration-200 ease-in-out hover:shadow-xl hover:-translate-y-1";
-                
-                activityCard.innerHTML = `
-                    <div class="relative">
-                        <img src="${activity.imagem}" alt="${activity.titulo}" class="w-full h-auto object-cover" loading="lazy">
-                        <div class="absolute bottom-0 left-0 right-0 h-2/3 bg-gradient-to-t from-black/70 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 right-0 p-4">
-                            <h3 class="font-bold text-white text-base">${activity.titulo}</h3>
-                        </div>
-                    </div>
-                `;
-                activitiesGrid.appendChild(activityCard);
-            });
-        }
-        
-        async function initializePage() {
-            // IMPORTANTE: Altere este caminho se o seu arquivo JSON de matemática tiver outro nome ou local
-            const jsonPath = '/js/artigos.json';
+        async function loadArticles() {
+            const articlesList = document.getElementById('articles-list');
+            const popularArticlesList = document.getElementById('popular-articles-list');
+            const jsonPath = '/js/Artigos.json'; 
 
             try {
                 const response = await fetch(jsonPath);
-                if (!response.ok) {
-                    throw new Error(`Arquivo não encontrado: ${jsonPath}`);
-                }
-                const activities = await response.json();
+                if (!response.ok) throw new Error('Não foi possível carregar os artigos.');
                 
-                loadingIndicator.classList.add('hidden');
-                renderActivities(activities);
+                const articles = await response.json();
+
+                // Limpa o estado de "a carregar"
+                articlesList.innerHTML = '';
+                popularArticlesList.innerHTML = '';
+
+                // Renderiza todos os artigos na lista principal
+                articles.forEach((article, index) => {
+                    const articleElement = document.createElement('article');
+                    articleElement.className = "bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col md:flex-row";
+                    // CORREÇÃO: Usar os nomes de propriedade em português do seu JSON
+                    articleElement.innerHTML = `
+                        <img src="${article.imagem}" alt="${article.titulo}" class="md:w-1/3 h-64 md:h-auto object-cover">
+                        <div class="p-6 flex flex-col justify-between">
+                            <div>
+                                <h2 class="font-extrabold text-2xl mb-3 text-gray-900">${article.titulo}</h2>
+                                <p class="text-gray-600 mb-4">${article.descricao}</p>
+                            </div>
+                            <a href="${article.link}" class="font-bold text-cyan-600 hover:text-cyan-700 self-start">Ler mais &rarr;</a>
+                        </div>
+                    `;
+                    articlesList.appendChild(articleElement);
+                    
+                    // Adiciona um espaço de anúncio após o primeiro artigo
+                    if (index === 0) {
+                        const adSpace = document.createElement('div');
+                        adSpace.className = "bg-gray-100 p-6 rounded-2xl text-center text-gray-400";
+                        adSpace.innerHTML = `<p>Espaço para Anúncio (Formato Retangular)</p>`;
+                        articlesList.appendChild(adSpace);
+                    }
+                });
+
+                // Filtra e renderiza os artigos populares
+                const popularArticles = articles.filter(article => article.popular);
+                if (popularArticles.length > 0) {
+                    popularArticles.forEach((article, index) => {
+                        const popularLink = document.createElement('a');
+                        popularLink.href = article.link;
+                        popularLink.className = "block hover:text-cyan-600";
+                        // CORREÇÃO: Usar 'titulo'
+                        popularLink.innerHTML = `<p class="font-bold">${index + 1}. ${article.titulo}</p>`;
+                        popularArticlesList.appendChild(popularLink);
+                    });
+                } else {
+                    popularArticlesList.innerHTML = `<p class="text-gray-500">Nenhum artigo popular no momento.</p>`;
+                }
 
             } catch (error) {
-                console.error("Erro ao carregar atividades de matemática:", error);
-                loadingIndicator.classList.add('hidden');
-                noResultsMessage.classList.remove('hidden');
+                console.error("Erro ao carregar artigos:", error);
+                articlesList.innerHTML = `<p class="text-center text-red-500">Ocorreu um erro ao carregar os artigos.</p>`;
+                popularArticlesList.innerHTML = `<p class="text-red-500">Erro.</p>`;
             }
         }
-
-        document.addEventListener('DOMContentLoaded', initializePage);
     </script>
 
 </body>

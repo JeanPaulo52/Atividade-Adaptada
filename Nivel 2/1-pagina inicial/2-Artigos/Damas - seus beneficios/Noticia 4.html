@@ -1,361 +1,271 @@
 <!DOCTYPE html>
-
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"crossorigin="anonymous"></script>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5V8F3ZKD');</script>
-<!-- End Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5V8F3ZKD');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="../../../../Assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/Assets/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade Adaptada.com</title>
-    <link href="../../../../css/style.css" rel="stylesheet" />
+    
+    <!-- Tailwind CSS para estilização rápida e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Nunito, uma fonte amigável e legível -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f8fafc;
+        }
+        /* Estilos para o conteúdo do artigo */
+        .article-content h2 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .article-content p {
+            font-size: 1.125rem; /* Tamanho de letra confortável para leitura */
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        .article-content ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+            line-height: 1.8;
+        }
+         .article-content a {
+            color: #0891b2; /* ciano-600 */
+            text-decoration: underline;
+        }
+    </style>
 </head>
+<body class="text-gray-800">
 
-<body>   
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V8F3ZKD"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V8F3ZKD"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-     <div class="barratopo">
-    <header>
-        <div class="barra-topo-redes">
-
-        <div class="botao-das-redes-topo">
-        <a target="_blank" href="https://br.pinterest.com/AtividadeAdaptada/" ><img src="../../../../Assets/Pinterest.AA.webp" class="botão-redes"></a>
-        <a target="_blank" href="https://www.instagram.com/atividadeadaptada.com.br/"><img src="../../../../Assets/Instagram.AA.webp" class="botão-redes"></a>
-        <a target="_blank" href="https://www.youtube.com/@AtividadeAdaptada"><img src="../../../../Assets/Youtube.AA.webp" class="botão-redes"></a>
-        </div>
-
-        <div class="logo-do-site-topo">
-        <a href="/index.html"><img src="/Assets/logo AA.webp" class="logotopo"></a>
-        </div>
-
+    <!-- Cabeçalho e Navegação -->
+    <header class="bg-white shadow-md sticky top-0 z-50 notranslate">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/index.html" class="text-2xl font-extrabold">
+                <span class="text-red-600">Atividade</span><span class="text-blue-600">Adaptada</span><span class="text-gray-900">.com</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="/index.html" class="text-gray-600 hover:text-cyan-500 transition">Início</a>
+                <a href="/pagina-categorias.html" class="text-gray-600 hover:text-cyan-500 transition">Atividades</a>
+                <a href="/pagina-artigos.html" class="font-bold text-cyan-600">Artigos</a>
+                <a href="/em-breve.html" class="text-gray-600 hover:text-cyan-500 transition">Sobre Nós</a>
+            </div>
+            <a href="/em-breve.html" class="hidden md:block bg-orange-500 text-white font-bold py-2 px-5 rounded-full hover:bg-orange-600 transition">
+                Entrar
+            </a>
+            <button id="mobile-menu-button" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+             <a href="/index.html" class="block py-2 text-gray-600 hover:text-cyan-500">Início</a>
+            <a href="/pagina-categorias.html" class="block py-2 text-gray-600 hover:text-cyan-500">Atividades</a>
+            <a href="/pagina-artigos.html" class="block py-2 font-bold text-cyan-600">Artigos</a>
+            <a href="/em-breve.html" class="block py-2 text-gray-600 hover:text-cyan-500">Sobre Nós</a>
+            <a href="/em-breve.html" class="block mt-4 bg-orange-500 text-white font-bold py-2 px-5 rounded-full text-center">Entrar</a>
         </div>
     </header>
-    </div><!--barra do topo-->
 
-    <div class="center">
-
-        <div class="botao-das-redes">
-        <a target="_blank" href="https://br.pinterest.com/AtividadeAdaptada/" ><img src="../../../../Assets/Pinterest.AA.webp" class="botão-redes"></a>
-        <a target="_blank" href="https://www.instagram.com/atividadeadaptada.com.br/"><img src="../../../../Assets/Instagram.AA.webp" class="botão-redes"></a>
-        <a target="_blank" href="https://www.youtube.com/@AtividadeAdaptada"><img src="../../../../Assets/Youtube.AA.webp" class="botão-redes"></a>
-        </div>
-
-        <div class="logo-do-site">
-        <a href="/index.html"><img src="/Assets/logo AA.webp" class="logotopo"></a>
-        </div>
-
-    </div><!--logo da pagina-->
-
-    <nav class="menu">
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-    <ul class="menu-list">
-      <li><a href="/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html"><strong>Artigos</strong></a></li>
-      <li><a href="/Nivel 2/5-recortar e pintar/2-Pintura/Pintura.html"><strong>Desenhos</strong></a></li>
-      <li><a href="/Nivel 2/2-BNCC/2-BNCC.html"><strong>Atividades</strong></a></li>
-      <li><a href="/Nivel 2/5-recortar e pintar/1-Infantil/Infantil.html"><strong>Infantil</strong></a></li>
-      <li><a href="/Nivel 2/4-Outras atividades/1-Raciocinio/Raciocinio.html"><strong>Raciocínio</strong></a></li>
-      <li><a href="/Nivel 2/4-Outras atividades/2- Jogos de Tabuleiro/Jogos de tabuleiro.html"><strong>Jogos</strong></a></li>
-      <li><a href="/Nivel 2/3-simulados/simulados.html"><strong>Simulados</strong></a></li>
-      <li><a href="/Nivel 2/6-livros/livros.html"><strong>Livros</strong></a></li>
-      <li><a href="/Nivel 2/7-lojinha/loja.html"><strong>Lojinha</strong></a></li>
-    </ul>
-  </nav>
-
-    <div class="anuncio-container">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
-     crossorigin="anonymous"></script>
-    <!-- Anuncio Principal -->
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7297230407550504"
-     data-ad-slot="2603632519"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-    <script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    </div><!---espaçamento-->
-
-    <div class="container">
-    <h1 class="tituloPagina"></h1><!---Titulo da Pagina-->
-
-    <div>
-    <header>
-
-    </header><!---espaçamento-->
-    </div>
-
-    <main>
-    <section>
-
-        <img src="./30.webp" alt="um pai ensinando damas ao seu filho" class="imgNoticia"><!--Imagem da Noticia-->
-
-        <div class="textNoticia">
-        <h1 class="texTi-Pag">O jogo que transforma seu filho</h1>
-
-        <p class="texEn-Pag">
-            Quando viramos pais, uma das coisas que acabam sendo prioridade, além da educação do nosso filho, 
-            é o desenvolvimento de habilidades que consideramos importantes, como concentração, foco e 
-            raciocínio.
-        </p>
-        <p class="texEn-Pag">
-            Se eu te dissesse que um simples tabuleiro quadriculado com algumas pecinhas pode ajudar
-            seu filho a desenvolver habilidades incríveis? Pois é, o jogo de 
-            damas é muito mais do que uma brincadeira de passatempo. Ele pode ser uma ferramenta 
-            poderosa para estimular o raciocínio, a paciência e até mesmo a matemática das crianças. 
-            Quer saber como? Vamos ver isso agora!
-        </p>
-        </div>
-
-    <div>
-            <header>
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
-                crossorigin="anonymous"></script>
-           <ins class="adsbygoogle"
-                style="display:block; text-align:center;"
-                data-ad-layout="in-article"
-                data-ad-format="fluid"
-                data-ad-client="ca-pub-7297230407550504"
-                data-ad-slot="9114098338"></ins>
-           <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-           </script>
-            </header><!---espaçamento-->
-    </div>
-
-        <div class="textNoticia">
-        <h2 class="texTi-Pag">Raciocínio lógico e estratégico</h2>
-
-        <img src="./31.png" alt="garoto lendo um livro" class="imgNoticia">
-
-        <p class="texEn-Pag">
-            Jogar damas não é só mover peças para frente e torcer para dar certo. A criança aprende, 
-            de forma natural, a pensar antes de agir, antecipando as jogadas do adversário e criando 
-            estratégias. Segundo estudos sobre jogos de tabuleiro e desenvolvimento cognitivo, 
-            atividades como damas e xadrez estimulam o córtex pré-frontal, que é a região do cérebro 
-            ligada à tomada de decisão e planejamento.
-        </p>
-
-        </div>
-
-    <div>
-            <header>
-            
-            </header><!---espaçamento-->
-    </div>
-
-        <div class="textNoticia">
-        <h2 class="texTi-Pag">Concentração e paciência</h2>
-
-        <img src="./32.png" alt="mão ensinando o filho" class="imgNoticia">
-
-        <p class="texEn-Pag">
-            Não adianta querer vencer no impulso. No damas, cada jogada conta, e é preciso estar 
-            atento para não cair em armadilhas. Isso faz com que a criança aprenda a ter paciência 
-            e a focar em uma atividade por mais tempo. Hoje em dia, com tantos estímulos digitais, 
-            qualquer oportunidade de exercitar a atenção é valiosa!
-        </p>
-
-        </div>
-
-    <div>
-            <header>
-            
-            </header><!---espaçamento-->
-    </div>
-
-        <div class="textNoticia">
-        <h2 class="texTi-Pag">Aprimoramento da memória</h2>
-
-        <img src="./33.png" alt="mão ensinando o filho" class="imgNoticia">
-    
-        <p class="texEn-Pag">
-            Estudos indicam que jogos de estratégia ajudam a melhorar a memória de curto e longo 
-            prazo. Em damas, a criança precisa lembrar das jogadas anteriores para não repetir 
-            erros e, aos poucos, vai criando seu próprio repertório de estratégias.
-        </p>
-
-        </div>
-
-    <div>
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto px-6 py-12">
+        
+        <div class="grid lg:grid-cols-3 gap-12">
+            <!-- Coluna Principal (Conteúdo do Artigo) -->
+            <article class="lg:col-span-2 article-content">
+                
                 <header>
+                    <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">O Jogo que Transforma Seu Filho</h1>
+                    <p class="text-lg text-gray-500">Escrito por: Jean Paulo Jampietri de Paiva Junior</p>
+                </header>
                 
-                </header><!---espaçamento-->
-    </div>
+                <img src="./30.webp" alt="Ilustração sobre o jogo de damas" class="w-full rounded-2xl my-8 shadow-sm">
 
-        <div class="textNoticia">
-        <h2 class="texTi-Pag">Desenvolvimento da inteligência emocional</h2>
-
-        <img src="./34.png" alt="mão ensinando o filho" class="imgNoticia">
-
-        <p class="texEn-Pag">
-            Ganhando ou perdendo, a criança aprende a lidar com frustrações e vitórias. Ela entende 
-            que nem sempre vai vencer, mas que cada partida é uma oportunidade de aprender. Isso 
-            fortalece a resiliência e a autoconfiança da criança e tornando ela muito mais madura
-            e resiliente.
-        </p>
-
-        </div>
-
-    <div>
-        <header>
+                <p>Quando viramos pais, uma das coisas que acabam sendo prioridade, além da educação do nosso filho, é o desenvolvimento de habilidades que consideramos importantes, como concentração, foco e raciocínio.</p>
+                <p>Se eu te dissesse que um simples tabuleiro quadriculado com algumas pecinhas pode ajudar seu filho a desenvolver habilidades incríveis? Pois é, o jogo de damas é muito mais do que uma brincadeira de passatempo. Ele pode ser uma ferramenta poderosa para estimular o raciocínio, a paciência e até mesmo a matemática das crianças. Quer saber como? Vamos ver isso agora!</p>
                 
-        </header><!---espaçamento-->
-    </div>
+                <h2>Raciocínio lógico e estratégico</h2>
+                <p>Jogar damas não é só mover peças para frente e torcer para dar certo. A criança aprende, de forma natural, a pensar antes de agir, antecipando as jogadas do adversário e criando estratégias. Segundo estudos sobre jogos de tabuleiro e desenvolvimento cognitivo, atividades como damas e xadrez estimulam o córtex pré-frontal, que é a região do cérebro ligada à tomada de decisão e planejamento.</p>
 
-    <div class="textNoticia">
-        <h2 class="texTi-Pag">Benefícios matemáticos</h2>
+                <h2>Concentração e paciência</h2>
+                <p>Não adianta querer vencer no impulso. No damas, cada jogada conta, e é preciso estar atento para não cair em armadilhas. Isso faz com que a criança aprenda a ter paciência e a focar em uma atividade por mais tempo. Hoje em dia, com tantos estímulos digitais, qualquer oportunidade de exercitar a atenção é valiosa!</p>
 
-        <img src="./35.png" alt="mão ensinando o filho" class="imgNoticia">
+                <!-- Espaço para Anúncio In-article -->
+                <div class="my-8">
+                    <div class="bg-gray-100 p-6 rounded-2xl text-center text-gray-400">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
+                        crossorigin="anonymous"></script>
+                        <!-- Anuncio Principal -->
+                        <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-7297230407550504"
+                        data-ad-slot="2603632519"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </div>
 
-        <p class="texEn-Pag">
-            Sem perceber, a criança trabalha conceitos matemáticos enquanto joga, como padrões, 
-            sequências e relações espaciais. Estudos mostram que jogos de tabuleiro ajudam no 
-            desenvolvimento da inteligência lógico-matemática, facilitando o aprendizado de 
-            disciplinas como aritmética e geometria.
-        </p>
+                <h2>Aprimoramento da memória</h2>
+                <p>Estudos indicam que jogos de estratégia ajudam a melhorar a memória de curto e longo prazo. Em damas, a criança precisa lembrar das jogadas anteriores para não repetir erros e, aos poucos, vai criando seu próprio repertório de estratégias.</p>
 
+                <h2>Desenvolvimento da inteligência emocional</h2>
+                <p>Ganhando ou perdendo, a criança aprende a lidar com frustrações e vitórias. Ela entende que nem sempre vai vencer, mas que cada partida é uma oportunidade de aprender. Isso fortalece a resiliência e a autoconfiança da criança e tornando ela muito mais madura e resiliente.</p>
+
+                <h2>Benefícios matemáticos</h2>
+                <p>Sem perceber, a criança trabalha conceitos matemáticos enquanto joga, como padrões, sequências e relações espaciais. Estudos mostram que jogos de tabuleiro ajudam no desenvolvimento da inteligência lógico-matemática, facilitando o aprendizado de disciplinas como aritmética e geometria.</p>
+                
+                <p>Se você quer uma forma simples e divertida de estimular o desenvolvimento do seu filho, que tal resgatar aquele tabuleiro de damas esquecido no armário? Além de todos os benefícios cognitivos, esse momento pode ser uma oportunidade única de conexão entre você e seu pequeno. Quem sabe ele não se torna um mestre das damas e ainda leva essa experiência para a vida? Vale muito a pena tentar.</p>
+                <p>Caso não tenha um tabuleiro de Damas para jogar, a baixo vai ser disponibilizado um link para que você possa baixar e imprimir esse maravilhoso jogo e jogar com seu filho.</p>
+
+                <!-- Seção de Download da Atividade -->
+                <div class="mt-12 p-6 bg-cyan-50 border-l-4 border-cyan-500 rounded-r-lg">
+                    <h3 class="text-2xl font-extrabold text-cyan-800">ATIVIDADE DE DAMAS</h3>
+                    <p class="text-gray-700 my-4">Jogo de Damas para recortar e jogar.</p>
+                    <a href="/Nivel 2/4-Outras atividades/2- Jogos de Tabuleiro/PagDow/ATD-Tabul-1/ATD-ARTS-1.html" class="inline-block bg-orange-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-orange-600 transition-colors">
+                        BAIXAR ATIVIDADE
+                    </a>
+                </div>
+
+            </article>
+
+            <!-- Coluna Lateral (Sidebar) -->
+            <aside>
+                <div class="sticky top-28 space-y-8">
+                    <!-- Espaço para Anúncio Vertical -->
+                    <div class="bg-gray-100 p-6 rounded-2xl text-center text-gray-400 h-96 flex items-center justify-center">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
+                        crossorigin="anonymous"></script>
+                        <!-- Anuncio Principal -->
+                        <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-7297230407550504"
+                        data-ad-slot="2603632519"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+
+                    <!-- Artigos Populares -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border">
+                        <h3 class="font-extrabold text-xl mb-4">Artigos Populares</h3>
+                        <div id="popular-articles-list" class="space-y-4">
+                            <!-- Artigos populares serão carregados aqui dinamicamente -->
+                            <p class="text-gray-500">A carregar...</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
         </div>
 
-    <div>
-        <header>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
-            crossorigin="anonymous"></script>
-       <ins class="adsbygoogle"
-            style="display:block; text-align:center;"
-            data-ad-layout="in-article"
-            data-ad-format="fluid"
-            data-ad-client="ca-pub-7297230407550504"
-            data-ad-slot="9114098338"></ins>
-       <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-       </script>        
-        </header><!---espaçamento-->
-    </div>
-
-        <div class="textNoticia">
-
-        <p class="texEn-Pag">
-            Se você quer uma forma simples e divertida de estimular o desenvolvimento do seu filho, 
-            que tal resgatar aquele tabuleiro de damas esquecido no armário? Além de todos os 
-            benefícios cognitivos, esse momento pode ser uma oportunidade única de conexão entre 
-            você e seu pequeno. Quem sabe ele não se torna um mestre das damas e ainda leva essa 
-            experiência para a vida? Vale muito a pena tentar.
-        </p>
-
-        <p class="texEn-Pag">
-            Caso não tenha um tabuleiro de Damas para jogar, a baixo vai ser disponibilizado um link 
-            para que você possa baixar e imprimir esse maravilhoso jogo e jogar com seu filho.
-        </p>
-
-        </div>
-
-    <div>
-        <header>
-                    
-        </header><!---espaçamento-->
-    </div>
-
-    <div class="textNoticia">
-
-        <p class="texEn-Pag">
-            Escrito por: Jean Paulo Jampietri de Paiva Junior
-        </p>
-
-    </div>
-
-    <div>
-        <header>
-                    
-        </header><!---espaçamento-->
-    </div>
-
-    <div class="textNoticia">
-        <h2 class="texTi-Pag">ATIVIDADE DE DAMAS</h2>
-
-        <img src="../../../4-Outras atividades/2- Jogos de Tabuleiro/PagDow/ATD-Tabul-1/1.png" alt="mão ensinando o filho" class="imgNoticia">
-
-        <p class="texEn-Pag">
-            Jogo de Damas para recortar e jogar.
-        </p>
-
-        <a href="../../../4-Outras atividades/2- Jogos de Tabuleiro/PagDow/ATD-Tabul-1/ATD-ARTS-1.html">BAIXAR ATIVIDADE<p class="texEn-Pag"></p></a>
-    </div>
-    <div>
-        <header>
-    
-        </header><!---espaçamento-->
-    </div>
-
-    </div>    
-    </section>
     </main>
-
-    </div><!--noticias da apagina-->
-
-    <div>
-        <header>
     
-        </header><!---espaçamento-->
-    </div>
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white mt-20">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-extrabold mb-4">Atividade Adaptada</h3>
+                    <p class="text-gray-400">Promovendo uma educação mais inclusiva e acessível para todas as crianças.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Navegue</h4>
+                    <ul>
+                        <li class="mb-2"><a href="/index.html" class="text-gray-400 hover:text-white">Início</a></li>
+                        <li class="mb-2"><a href="/Nivel 2/categorias.html" class="text-gray-400 hover:text-white">Atividades</a></li>
+                        <li class="mb-2"><a href="/Nivel 2/6-Quem Somos.html" class="text-gray-400 hover:text-white">Quem Somos</a></li>
+                        <li class="mb-2"><a href="/Nivel 2/6-Quem Somos.html" class="text-gray-400 hover:text-white">Como Ajudar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Siga-nos</h4>
+                    <div class="flex space-x-4">
+                        <!-- Ícones de redes sociais -->
+                        <a href="https://www.youtube.com/@AtividadeAdaptada" class="text-gray-400 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg>
+                        </a>
+                        <a href="https://www.instagram.com/atividadeadaptada.com.br/" class="text-gray-400 hover:text-white">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.585.069-4.85c.149-3.225 1.664-4.771 4.919 4.919 1.266.058 1.644.07 4.85.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Atividade Adaptada. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
-    <div class="barraFundo">
-    <nav>
-        <div><header></header><!---espaçamento--></div>
-        <h2 class="texTi-Pag">Leia também</h2>
-        <ul>
-            <li>
-                <a href="../Atividade-para-educação-infantil/atividades-para-educação-infantil.html"><img src="../Atividade-para-educação-infantil/Atividades-para-Educação-Infantil-p.webp" alt="o poder da leitura" class="imgNoticia"></a><!--Imagem da Noticia-->
-            </li>
-            <li>
-                <a href="../11-Habilidades-da-BNCC-Educação-Infantil/Habilidades-da-BNCC-Educação-Infantil.html"><img src="../11-Habilidades-da-BNCC-Educação-Infantil/Habilidades-da-BNCC-Educação-Infantil-p.webp" alt="o poder da leitura" class="imgNoticia"></a><!--Imagem da Noticia-->
-            </li>
-            <li>
-                <a href="../10-bncc educação infanil/bncc-educação-infantil.html"><img src="../10-bncc educação infanil/bncc-educação-infantil-P.webp" alt="o poder da leitura" class="imgNoticia"></a><!--Imagem da Noticia-->
-            </li>
-        </ul>
-    </nav>
-    </div><!--Barra de navegação-->
+    <!-- Script para o menu mobile -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
 
-    <footer>
-    <div class="barraFundoInfo">
-        <div class="imagembarraFundoInfo">
-        <img src="/Assets/logo AA.webp" class="logofundo">
-        </div>
-        <div class="textobarraFundoInfo3">
-        <a>Atividades educativas e inclusivas para todos os estilos de aprendizagem. | atividadeadaptada.com.br</a>
-        <a></a>
-        </div>
-        <div class="Containerfundo">
-        <div class="textobarraFundoInfo"> 
-        <h4>Navegue</h4>
-        <a href="/index.html">Inicio</a>
-        <a href="/Nivel 2/2-BNCC/2-BNCC.html">Atividades</a>
-        <a href="/Nivel 2/5-recortar e pintar/2-Pintura/Pintura.html">Pintura</a>
-        </div>
-        <div class="textobarraFundoInfo"> 
-        <h4>Ajuda</h4>
-        <a href="/Nivel 2/6-Quem Somos.html">Quem Somos</a>
-        <a href="/Nivel 2/6-Quem Somos.html">Como ajudar</a>
-        <a></a>
-        </div>
-        </div>
-    </div>
-    <div><header></header><!---espaçamento--></div>
-    </footer><!--Fim da Pagina-->
+        // --- LÓGICA DOS ARTIGOS POPULARES ---
+        document.addEventListener('DOMContentLoaded', () => {
+            loadPopularArticles();
+        });
+
+        async function loadPopularArticles() {
+            const popularArticlesList = document.getElementById('popular-articles-list');
+            const jsonPath = '/js/Artigos.json'; // Carrega o JSON para a barra lateral
+
+            try {
+                const response = await fetch(jsonPath);
+                if (!response.ok) throw new Error('Falha ao carregar artigos populares.');
+                
+                const articles = await response.json();
+                popularArticlesList.innerHTML = ''; // Limpa "A carregar..."
+
+                const popularArticles = articles.filter(article => article.popular);
+                
+                if (popularArticles.length > 0) {
+                    popularArticles.forEach((article, index) => {
+                        const popularLink = document.createElement('a');
+                        popularLink.href = article.link;
+                        popularLink.className = "block hover:text-cyan-600";
+                        popularLink.innerHTML = `<p class="font-bold">${index + 1}. ${article.titulo}</p>`;
+                        popularArticlesList.appendChild(popularLink);
+                    });
+                } else {
+                    popularArticlesList.innerHTML = `<p class="text-gray-500">Nenhum artigo popular no momento.</p>`;
+                }
+
+            } catch (error) {
+                console.error("Erro ao carregar artigos populares:", error);
+                popularArticlesList.innerHTML = `<p class="text-red-500">Erro ao carregar.</p>`;
+            }
+        }
+
+    </script>
 
 </body>
 </html>
