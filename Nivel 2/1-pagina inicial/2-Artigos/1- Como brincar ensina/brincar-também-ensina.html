@@ -52,6 +52,9 @@
             color: #0891b2; /* ciano-600 */
             text-decoration: underline;
         }
+        .article-content {
+  word-break: break-word;
+}
     </style>
 </head>
 <body class="text-gray-800">
@@ -90,11 +93,11 @@
     </header>
 
     <!-- Conteúdo Principal -->
-    <main class="container mx-auto px-6 py-12 overflow-hidden">
+    <main class="max-w-full mx-auto px-4 sm:px-6 py-8">
         
-        <div class="grid lg:grid-cols-3 gap-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <!-- Coluna Principal (Conteúdo do Artigo) -->
-            <article class="lg:col-span-2 article-content break-words">
+            <article class="lg:col-span-2 article-content">
                 
                 <header>
                     <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">Como Brincar Também Ensina</h1>
