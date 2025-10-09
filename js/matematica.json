@@ -1,5 +1,29 @@
 [
   {
+    "titulo": "Atividade Mestre das Pipas",
+    "descricao": "Atividade de matemática.Habilidade da BNCC: (EF08MA19) Resolver e elaborar problemas que envolvam medidas de área de figuras geométricas, utilizando expressões de cálculo de área (quadriláteros, triângulos e círculos), em situações como determinar medida de terrenos.A atividade Missão: Mestre das Pipas coloca o aluno numa situação-problema do quotidiano: calcular a quantidade e o custo de material para construir pipas. A complexidade é introduzida progressivamente:",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Mestre das Pipas\\Mestre-das-Pipas.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Mestre das Pipas\\Atividade-Mestre-das-Pipas.html"
+  },
+  {
+    "titulo": "Atividade Montando a Nossa Casinha",
+    "descricao": "Atividade de matemática.(EF02MA14) Medir e comparar comprimentos utilizando unidades de medida não padronizadas e padronizadas (metro, centímetro e milímetro) e instrumentos adequados. (Habilidade adaptada para a noção de área, usando o quadradinho como unidade de medida não padronizada para comparar superfícies).A atividade Montando a Nossa Casinha simplifica o conceito de cálculo de área de figuras compostas, substituindo a multiplicação e a decomposição pela contagem direta de unidades em uma grade. A proposta é construir uma base intuitiva para o conceito de área",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Montando a Nossa Casinha\\Montando a Nossa Casinha.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Montando a Nossa Casinha\\Atividade-Montando-a-Nossa-Casinha.html"
+  },
+  {
+    "titulo": "Atividade Montando Minha Pipa Colorida",
+    "descricao": "Atividade de matemática.(EF02MA15) Reconhecer, comparar e nomear figuras planas (círculo, quadrado, retângulo e triângulo), por meio de características comuns, em desenhos apresentados em diferentes disposições ou em sólidos geométricos. (Habilidade adaptada para focar na composição de uma figura - o losango - a partir de outras - triângulos).A atividade Montando Minha Pipa Colorida traduz o cálculo de áreas de triângulos e losangos em uma tarefa lúdica de construção. Em vez de aplicar fórmulas, o aluno utiliza a contagem como ferramenta principal para medir e entender o espaço.",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Montando Minha Pipa Colorida\\Montando-Minha-Pipa-Colorida.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Montando Minha Pipa Colorida\\Atividade-Montando-Minha-Pipa-Colorida.html"
+  },
+  {
+    "titulo": "Atividade Arquiteto(a) de Sonhos",
+    "descricao": "Atividade de matemática.(EM13MAT309) Resolver e elaborar problemas que envolvem o cálculo de áreas de figuras planas, em contextos como o da determinação de medidas de terrenos ou plantas baixas, com ou sem o uso de tecnologias digitais.A atividade Arquiteto(a) de Sonhos coloca o aluno em uma situação-problema do cotidiano: calcular a área de um imóvel a partir de sua planta baixa para orçar o custo de um novo piso. A complexidade é introduzida progressivamente",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Arquiteto(a) de Sonhos\\Arquiteto(a) de Sonhos.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Arquiteto(a) de Sonhos\\Atividade-Arquiteto(a)-de-Sonhos.html"
+  },
+  {
     "titulo": "Defensores da Amazonia",
     "descricao": "Atividade de matemática.Cálculo Geométrico, Resolução de Problemas, Raciocínio Lógico, Consciência Ambiental, BNCC (EM13MAT309), A atividade Missão: Defensores da Amazônia contextualiza o estudo de áreas de figuras planas em um cenário de monitoramento ambiental. Os alunos assumem o papel de especialistas e progridem através de quatro desafios: Conversão de Unidades: Começam com um cálculo simples para reforçar a conversão de hectares para metros quadrados. Cálculo de Áreas Retangulares: Aplicam a fórmula da área do retângulo em dois cenários de desmatamento. Cálculo de Área Quadrada: Calculam a área de uma zona de preservação quadrada. Análise e Comparação: Consolidam todos os cálculos, somando as áreas desmatadas e comparando-as com a área protegida, o que os leva a uma conclusão crítica sobre o cenário apresentado.",
     "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow/Defensores%20da%20Amazônia/ATDS de Matemática.webp",
