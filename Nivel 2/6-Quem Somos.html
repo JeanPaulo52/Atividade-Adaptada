@@ -1,175 +1,187 @@
 <!DOCTYPE html>
-
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"crossorigin="anonymous"></script>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5V8F3ZKD');</script>
-<!-- End Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5V8F3ZKD');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="/Assets/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade Adaptada.com</title>
-    <link href="/css/style.css" rel="stylesheet" />
+    
+    <!-- Tailwind CSS para estilização rápida e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Nunito, uma fonte amigável e legível -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Aplicando a fonte Nunito como padrão para todo o corpo do site */
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f8fafc; /* Um cinza muito claro para o fundo */
+        }
+        /* Efeito de sombra e escala para os cards, tornando-os mais interativos */
+        .card-hover {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
 </head>
-
-<body>   
+<body class="text-gray-800">
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V8F3ZKD"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <script src="/js/main.js" defer></script>
 
-    <div class="barratopo">
-    <header>
-    <div class="barra-topo-redes">
-    <div class="botao-das-redes-topo">
-    <a target="_blank" href="https://br.pinterest.com/AtividadeAdaptada/" ><img src="/Assets/Pinterest.AA.webp" class="botão-redes"></a>
-    <a target="_blank" href="https://www.instagram.com/atividadeadaptada.com.br/"><img src="/Assets/Instagram.AA.webp" class="botão-redes"></a>
-    <a target="_blank" href="https://www.youtube.com/@AtividadeAdaptada"><img src="/Assets/Youtube.AA.webp" class="botão-redes"></a>
-    </div>
-    <div class="logo-do-site-topo">
-    <a href="/index.html"><img src="/Assets/logo AA.webp" class="logotopo"></a>
-    </div>
-    </div>
+    <!-- Cabeçalho e Navegação -->
+    <!-- A classe "notranslate" foi adicionada aqui para impedir que o Google AdSense injete anúncios neste elemento -->
+    <header class="bg-white shadow-sm sticky top-0 z-50 notranslate">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold">
+                <span class="text-red-600">Atividade</span><span class="text-blue-600">Adaptada</span><span class="text-gray-900">.com</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="/index.html" class="font-bold text-cyan-600">Início</a>
+                <a href="/Nivel 2/categorias.html" class="text-gray-600 hover:text-cyan-500 transition">Atividades</a>
+                <a href="/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html" class="text-gray-600 hover:text-cyan-500 transition">Artigos</a>
+                <a href="/Nivel 2/6-Quem Somos.html" class="text-gray-600 hover:text-cyan-500 transition">Sobre Nós</a>
+            </div>
+            <a href="/embreve.html" class="hidden md:block bg-orange-500 text-white font-bold py-2 px-5 rounded-full hover:bg-orange-600 transition">
+                Entrar
+            </a>
+            <button id="mobile-menu-button" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="/index.html" class="block py-2 font-bold text-cyan-600">Início</a>
+            <a href="/Nivel 2/categorias.html" class="block py-2 text-gray-600 hover:text-cyan-500">Atividades</a>
+            <a href="/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html" class="block py-2 text-gray-600 hover:text-cyan-500">Artigos</a>
+            <a href="/Nivel 2/6-Quem Somos.html" class="block py-2 text-gray-600 hover:text-cyan-500">Sobre Nós</a>
+            <a href="/embreve.html" class="block mt-4 bg-orange-500 text-white font-bold py-2 px-5 rounded-full text-center">Entrar</a>
+        </div>
     </header>
-    </div><!--barra do topo-->
-    <div class="center">
-    <div class="botao-das-redes">
-    <a target="_blank" href="https://br.pinterest.com/AtividadeAdaptada/" ><img src="/Assets/Pinterest.AA.webp" class="botão-redes"></a>
-    <a target="_blank" href="https://www.instagram.com/atividadeadaptada.com.br/"><img src="/Assets/Instagram.AA.webp" class="botão-redes"></a>
-    <a target="_blank" href="https://www.youtube.com/@AtividadeAdaptada"><img src="/Assets/Youtube.AA.webp" class="botão-redes"></a>
-    </div>
-    <div class="logo-do-site">
-    <a href="/index.html"><img src="/Assets/logo AA.webp" class="logotopo"></a>
-    </div>
-    </div><!--logo da pagina-->
 
-    <nav class="menu">
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-    <ul class="menu-list">
-      <li><a href="/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html"><strong>Artigos</strong></a></li>
-      <li><a href="/Nivel 2/5-recortar e pintar/2-Pintura/Pintura.html"><strong>Desenhos</strong></a></li>
-      <li><a href="/Nivel 2/2-BNCC/2-BNCC.html"><strong>Atividades</strong></a></li>
-      <li><a href="/Nivel 2/5-recortar e pintar/1-Infantil/Infantil.html"><strong>Infantil</strong></a></li>
-      <li><a href="/Nivel 2/4-Outras atividades/1-Raciocinio/Raciocinio.html"><strong>Raciocínio</strong></a></li>
-      <li><a href="/Nivel 2/4-Outras atividades/2- Jogos de Tabuleiro/Jogos de tabuleiro.html"><strong>Jogos</strong></a></li>
-      <li><a href="/Nivel 2/3-simulados/simulados.html"><strong>Simulados</strong></a></li>
-      <li><a href="/Nivel 2/6-livros/livros.html"><strong>Livros</strong></a></li>
-      <li><a href="/Nivel 2/7-lojinha/loja.html"><strong>Lojinha</strong></a></li>
-    </ul>
-  </nav>
-
-    <div class="anuncio-container">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
-     crossorigin="anonymous"></script>
-    <!-- Anuncio Principal -->
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7297230407550504"
-     data-ad-slot="2603632519"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-    <script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    </div><!---espaçamento-->
-
-    <div class="container">
-        <main>
-    
-            <section>
-                
-                <div class="QuemSomos">
-
-                <div class="textQuemSomos">
-                <h3 class="texTi-Pag">Seja bem vindo a Atividade Adaptada.com</h3><!--Texto de Titulo-->
-    
-                <p class="texEn-Pag">
-                    Atividade Adaptada é um site dedicado ao desenvolvimento e à promoção da acessibilidade. 
-                    Ele oferece atividades planejadas para atender pessoas de todas as idades e níveis de 
-                    desenvolvimento, com o objetivo de garantir uma experiência prática e inclusiva. Nossa 
-                    missão é assegurar que todos tenham acesso a oportunidades de aprendizado e crescimento, 
-                    promovendo uma compreensão ampla do mundo e de si mesmos.</p><!--Texto de Enunciado-->
-                </div>
-
-                <img src="/Assets/Noticia 1.png" alt="quebra cabeça" class="imgQuemSomos"><!--Imagem da Noticia-->
-
-                </div>    
-
-                <div>
-                    <header>
-                
-                    </header><!---espaçamento-->
-                </div>
-
-                <div class="QuemSomos">
-
-                <div class="textQuemSomos">
-                    <h3 class="texTi-Pag">Como posso ajudar ?</h3><!--Texto de Titulo-->
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto px-6 py-12 overflow-hidden">
         
-                    <p class="texEn-Pag">
-                    Caso seja professor e tenha algum conhecimento para replicar, você pode enviar a sua atividade, sua boa pratica
-                    ou seu artigo para o Email: <b>atividadeadaptada.com@gmail.com</b> com a descrição da atividade e o nome do criador
-                    para que possa ser compartilhada com mais pessoas. </p><!--Texto de Enunciado-->
+        <div class="max-w-4xl mx-auto article-content">
 
-                    <div>
-                        <header>
-                    
-                        </header><!---espaçamento-->
-                    </div>
+            <header class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Quem Somos e a Nossa Missão</h1>
+                <p class="text-lg text-gray-600">Acreditamos que a educação de qualidade é um direito de todos.</p>
+            </header>
 
-                    <p class="texEn-Pag">
-                    Caso queira ajudar com qualquer quantia para manter o Site online você pode enviar o 
-                    PIX: <b>atividadeadaptada.com@gmail.com</b> , qualquer quantia ajuda a manter esse 
-                    servico funcionando. </p><!--Texto de Enunciado-->
+            <img src="https://placehold.co/1200x500/0891b2/ffffff?text=Nossa+Missão" alt="Ilustração representando a missão do site" class="w-full rounded-2xl my-8 shadow-sm">
 
-                    </div>
+            <h2>Nossa Missão</h2>
+            <p>O AtividadeAdaptada.com nasceu de uma necessidade real, percebida em salas de aula e lares por todo o Brasil: a dificuldade de encontrar materiais pedagógicos de qualidade, que sejam ao mesmo tempo inclusivos, criativos e acessíveis. Como educadores, sabemos que cada criança é única e aprende no seu próprio ritmo.</p>
+            <p>A nossa missão é simples: criar e partilhar, de forma totalmente gratuita, atividades, artigos e recursos que ajudem professores, pais e, principalmente, as crianças no seu processo de aprendizagem. Queremos ser uma ponte entre o conhecimento e a descoberta, transformando o ato de aprender numa experiência divertida e significativa para todos.</p>
 
+            <h2 class="text-red-600">Apoie o Nosso Trabalho</h2>
+            <p>Manter um projeto como este, com centenas de atividades gratuitas e acessíveis a todos, envolve custos com servidor, desenvolvimento e, o mais importante, tempo dedicado à criação de cada material. O nosso sonho é continuar a crescer e a oferecer cada vez mais recursos, sem nunca cobrar por isso.</p>
+            <p>Se você acredita na nossa missão e o nosso trabalho já o ajudou de alguma forma, considere fazer uma doação de qualquer valor. A sua contribuição é fundamental para garantir que o AtividadeAdaptada.com continue a ser uma ferramenta gratuita e de qualidade para a educação no Brasil.</p>
+
+            <!-- Seção de Doação -->
+            <div class="mt-12 bg-white p-8 rounded-2xl shadow-md border text-center">
+                <h3 class="text-2xl font-extrabold text-gray-800">Faça a sua contribuição!</h3>
+                <p class="text-gray-600 my-4">A sua doação ajuda a manter este projeto vivo. Muito obrigado pelo seu apoio!</p>
+                
+                <div class="bg-gray-100 p-4 rounded-lg inline-block">
+                    <p class="font-bold text-gray-700">CHAVE PIX (E-mail):</p>
+                    <p id="pix-key" class="text-lg font-bold text-cyan-600 break-words">atividadeadaptada.com@gmail.com</p>
                 </div>
-            </section>
-            
-        </main>
-        </div><!--noticias da apagina-->
+                
+                <button id="copy-button" class="mt-4 bg-cyan-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-cyan-700 transition-colors flex items-center justify-center gap-2 mx-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                    Copiar Chave PIX
+                </button>
+                <p id="copy-feedback" class="text-green-600 mt-2 h-5"></p>
+            </div>
 
-    <div>
-        <header>
+        </div>
+
+    </main>
     
-        </header><!---espaçamento-->
-    </div>
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white mt-20">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-extrabold mb-4">Atividade Adaptada</h3>
+                    <p class="text-gray-400">Promovendo uma educação mais inclusiva e acessível para todas as crianças.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Navegue</h4>
+                    <ul>
+                        <li class="mb-2"><a href="/index.html" class="text-gray-400 hover:text-white">Início</a></li>
+                        <li class="mb-2"><a href="/Nivel 2/categorias.html" class="text-gray-400 hover:text-white">Atividades</a></li>
+                        <li class="mb-2"><a href="/Nivel 2/6-Quem Somos.html" class="text-gray-400 hover:text-white">Quem Somos</a></li>
+                        <li class="mb-2"><a href="/Nivel 2/6-Quem Somos.html" class="text-gray-400 hover:text-white">Como Ajudar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Siga-nos</h4>
+                    <div class="flex space-x-4">
+                        <!-- Ícones de redes sociais -->
+                        <a href="https://www.youtube.com/@AtividadeAdaptada" class="text-gray-400 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg>
+                        </a>
+                        <a href="https://www.instagram.com/atividadeadaptada.com.br/" class="text-gray-400 hover:text-white">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.585.069-4.85c.149-3.225 1.664-4.771 4.919 4.919 1.266.058 1.644.07 4.85.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Atividade Adaptada. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
-        <footer>
-    <div class="barraFundoInfo">
-        <div class="imagembarraFundoInfo">
-        <img src="/Assets/logo AA.webp" class="logofundo">
-        </div>
-        <div class="textobarraFundoInfo3">
-        <a>Atividades educativas e inclusivas para todos os estilos de aprendizagem. | atividadeadaptada.com.br</a>
-        <a></a>
-        </div>
-        <div class="Containerfundo">
-        <div class="textobarraFundoInfo"> 
-        <h4>Navegue</h4>
-        <a href="/index.html">Inicio</a>
-        <a href="/Nivel 2/2-BNCC/2-BNCC.html">Atividades</a>
-        <a href="/Nivel 2/5-recortar e pintar/2-Pintura/Pintura.html">Pintura</a>
-        </div>
-        <div class="textobarraFundoInfo"> 
-        <h4>Ajuda</h4>
-        <a href="/Nivel 2/6-Quem Somos.html">Quem Somos</a>
-        <a href="/Nivel 2/6-Quem Somos.html">Como ajudar</a>
-        <a></a>
-        </div>
-        </div>
-    </div>
-    <div><header></header><!---espaçamento--></div>
-    </footer><!--Fim da Pagina-->
+    <!-- Script para o menu mobile e busca -->
+    <script>
+        // --- LÓGICA DO MENU MOBILE ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        // --- LÓGICA DO BOTÃO DE COPIAR ---
+        const copyButton = document.getElementById('copy-button');
+        const pixKeyElement = document.getElementById('pix-key');
+        const copyFeedback = document.getElementById('copy-feedback');
 
+        copyButton.addEventListener('click', () => {
+            const pixKey = pixKeyElement.innerText;
+            
+            // Cria um elemento de texto temporário para copiar o conteúdo
+            const tempInput = document.createElement('textarea');
+            tempInput.value = pixKey;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            // Mostra um feedback visual ao utilizador
+            copyFeedback.innerText = 'Chave PIX copiada!';
+            setTimeout(() => {
+                copyFeedback.innerText = '';
+            }, 2000);
+        });
+        
+    </script>
 </body>
 </html>
