@@ -1,5 +1,35 @@
 [
   {
+    "titulo": "Quebra-Cabeça da Palavra",
+    "descricao": "Atividade de português onde deve ser identificado as silabas do ínicio e fim da palavra.O Jogo da Memória das Rimas é uma atividade clássica adaptada para o desenvolvimento da consciência fonológica. Em vez de encontrar figuras idênticas, o desafio da criança é encontrar o par de figuras cujos nomes rimam. A ausência de texto força o foco no som das palavras, tornando o aprendizado mais intuitivo. O jogo é composto por 10 pares de rimas simples e visualmente claras, ideal para a faixa etária indicada.",
+    "imagem": "/Nivel 2/2-BNCC/Lingua Portuguesa/PagDow/Quebra-cabeça da Palavra/Quebra-cabeça da Palavra.webp",
+    "link": "/Nivel 2/2-BNCC/Lingua Portuguesa/PagDow/Quebra-cabeça%20da%20Palavra/Quebra-cabeça%20da%20Palavra.html"
+  },
+  {
+    "titulo": "Trilha Silábica",
+    "descricao": "Atividade de português onde deve ser identificado as silabas do ínicio e fim da palavra.O Jogo da Memória das Rimas é uma atividade clássica adaptada para o desenvolvimento da consciência fonológica. Em vez de encontrar figuras idênticas, o desafio da criança é encontrar o par de figuras cujos nomes rimam. A ausência de texto força o foco no som das palavras, tornando o aprendizado mais intuitivo. O jogo é composto por 10 pares de rimas simples e visualmente claras, ideal para a faixa etária indicada.",
+    "imagem": "/Nivel 2/2-BNCC/Lingua Portuguesa/PagDow/Trilha Silábica/Trilha Silábica.webp",
+    "link": "/Nivel 2/2-BNCC/Lingua Portuguesa/PagDow/Trilha%20Silábica/Trilha%20Silábica.html"
+  },
+  {
+    "titulo": "Bate-Palmas das Sílabas",
+    "descricao": "Atividade de português onde deve ser identificado as silabas do ínicio e fim da palavra.O Jogo da Memória das Rimas é uma atividade clássica adaptada para o desenvolvimento da consciência fonológica. Em vez de encontrar figuras idênticas, o desafio da criança é encontrar o par de figuras cujos nomes rimam. A ausência de texto força o foco no som das palavras, tornando o aprendizado mais intuitivo. O jogo é composto por 10 pares de rimas simples e visualmente claras, ideal para a faixa etária indicada.",
+    "imagem": "/Nivel 2/2-BNCC/Lingua Portuguesa/PagDow/Bate-Palmas das Sílabas/Bate-Palmas das Sílabas.webp",
+    "link": "/Nivel 2/2-BNCC/Lingua Portuguesa/PagDow/Bate-Palmas%20das%20Sílabas/Bate-Palmas%20das%20Sílabas.html"
+  },
+  {
+    "titulo": "Fichas dos Detetives do Som Inicial",
+    "descricao": "Atividade de português onde deve ser identificado as silabas do ínicio e fim da palavra.O Jogo da Memória das Rimas é uma atividade clássica adaptada para o desenvolvimento da consciência fonológica. Em vez de encontrar figuras idênticas, o desafio da criança é encontrar o par de figuras cujos nomes rimam. A ausência de texto força o foco no som das palavras, tornando o aprendizado mais intuitivo. O jogo é composto por 10 pares de rimas simples e visualmente claras, ideal para a faixa etária indicada.",
+    "imagem": "/Nivel 2/2-BNCC/Lingua Portuguesa/PagDow/Fichas dos Detetives do Som Inicial/Fichas dos Detetives do Som Inicial.webp",
+    "link": "/Nivel 2/2-BNCC/Lingua Portuguesa/PagDow/Fichas%20dos%20Detetives%20do%20Som%20Inicial/Fichas%20dos%20Detetives%20do%20Som%20Inicial.html"
+  },
+  {
+    "titulo": "Jogo da Memória das Rimas",
+    "descricao": "Atividade de português onde deve ser identificado as silabas do ínicio e fim da palavra.O Jogo da Memória das Rimas é uma atividade clássica adaptada para o desenvolvimento da consciência fonológica. Em vez de encontrar figuras idênticas, o desafio da criança é encontrar o par de figuras cujos nomes rimam. A ausência de texto força o foco no som das palavras, tornando o aprendizado mais intuitivo. O jogo é composto por 10 pares de rimas simples e visualmente claras, ideal para a faixa etária indicada.",
+    "imagem": "/Nivel 2/2-BNCC/Lingua Portuguesa/PagDow/Jogo da Memória das Rimas/Atividade Jogo da Memória das Rimas.webp",
+    "link": "/Nivel 2/2-BNCC/Lingua Portuguesa/PagDow/Jogo%20da%20Memória%20das%20Rimas/Atividade%20Jogo%20da%20Memória%20das%20Rimas.html"
+  },
+  {
     "titulo": "Silaba inicial e final",
     "descricao": "Atividade de português onde deve ser identificado as silabas do ínicio e fim da palavra.",
     "imagem": "/Nivel 2/2-BNCC/Lingua Portuguesa/PagDow/ATD-LP-1/1.png",
