@@ -1,5 +1,125 @@
 [
   {
+    "titulo": "Montando o Mosaico Secreto",
+    "descricao": "Atividade de matemática.(EF01MA14) Identificar e nomear figuras planas (círculo, quadrado, retângulo e triângulo) em desenhos apresentados em diferentes disposições ou em contornos de faces de sólidos geométricos. (Habilidade adaptada para focar na composição de uma figura - o losango - a partir de outras - triângulos).A atividade Montando o Mosaico Secreto traduz o cálculo de áreas de triângulos e losangos em uma tarefa lúdica de construção. Em vez de aplicar fórmulas, o aluno utiliza a contagem como ferramenta principal para medir e entender o espaço.",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Montando o Mosaico Secreto\\Atividade Adaptada - Montando o Mosaico Secreto_page-0001.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Montando o Mosaico Secreto\\Montando o Mosaico Secreto.html"
+  },
+  {
+    "titulo": "Nosso Arraiá Divertido!",
+    "descricao": "Atividade de matemática.(EF01MA04) Contar a quantidade de objetos de coleções (...) e apresentar o resultado por registros verbais e simbólicos. (EF02MA10) Descrever um padrão (ou regularidade) de sequências (...), por meio de palavras, símbolos ou desenhos.A atividade Nosso Arraiá Divertido! envolve os alunos em uma situação-problema do cotidiano: organizar a decoração de uma festa junina. Eles devem contar e agrupar elementos decorativos, além de identificar e continuar padrões visuais, desenvolvendo habilidades de contagem, agrupamento e reconhecimento de sequências.",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Nosso Arraiá Divertido!\\Atividade Adaptada - Nosso Arraiá Divertido_page-0001.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Nosso Arraiá Divertido!\\Nosso Arraiá Divertido!.html"
+  },
+  {
+    "titulo": "O Desafio da Fábrica de Doces",
+    "descricao": "Atividade de matemática.(EF07MA17) Resolver e elaborar problemas que envolvam variação de proporcionalidade direta e de proporcionalidade inversa entre duas grandezas. (A Regra de Três Composta é uma extensão natural desta habilidade, aplicando o mesmo raciocínio a mais de duas grandezas).A atividade O Desafio da Fábrica de Doces coloca o aluno em uma situação-problema do cotidiano: ajustar a produção de doces conforme mudanças na demanda e na capacidade produtiva. A complexidade é introduzida progressivamente:",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\O Desafio da Fábrica de Doces\\Atividade - O Desafio da Fábrica de Doces_page-0001.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\O Desafio da Fábrica de Doces\\O Desafio da Fábrica de Doces.html"
+  },
+  {
+    "titulo": "O Enigma dos Mosaicos Antigos",
+    "descricao": "Atividade de matemática.(EF06MA21) Construir figuras planas semelhantes em situações de ampliação e de redução, com o uso de malhas quadriculadas, plano cartesiano ou tecnologias digitais.A atividade O Enigma dos Mosaicos Antigos coloca o aluno em uma situação-problema do cotidiano: analisar e reproduzir padrões de mosaicos antigos utilizando conceitos de semelhança e proporção. A complexidade é introduzida progressivamente:",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\O Enigma dos Mosaicos Antigos\\Atividade - O Enigma dos Mosaicos Antigos_page-0001.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\O Enigma dos Mosaicos Antigos\\O Enigma dos Mosaicos Antigos.html"
+  },
+  {
+    "titulo": "Olimpíada dos Racionais",
+    "descricao": "Atividade de matemática.(EF07MA10) Comparar e ordenar números racionais em diferentes contextos e associá-los a pontos da reta numérica. (EF07MA12) Resolver e elaborar problemas que envolvam as operações com números racionais.A atividade Olimpíada dos Racionais coloca o aluno em uma situação-problema do cotidiano: competir em desafios matemáticos que envolvem números racionais. A complexidade é introduzida progressivamente:",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Olimpíada dos Racionais\\Atividade - Olimpíada dos Racionais_page-0001.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Olimpíada dos Racionais\\Olimpíada dos Racionais.html"
+  },
+  {
+    "titulo": "Planejando a Festa de Aniversário!",
+    "descricao": "Atividade de matemática.(EF02MA10) Descrever um padrão (ou regularidade) de sequências repetitivas e de sequências recursivas, por meio de palavras, símbolos ou desenhos. (Habilidade adaptada para a percepção de padrões de aumento e diminuição).A atividade Planejando a Festa de Aniversário! envolve os alunos em uma situação-problema do cotidiano: organizar os preparativos para uma festa de aniversário. Eles devem identificar e continuar padrões visuais, além de planejar a quantidade de itens necessários com base no número de convidados, desenvolvendo habilidades de reconhecimento de sequências e planejamento.",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Planejando a Festa de Aniversário!\\Atividade Adaptada - Planejando a Festa de Aniversário_page-0001.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Planejando a Festa de Aniversário!\\Planejando a Festa de Aniversário!.html"
+  },
+  {
+    "titulo": "Viagem de Férias",
+    "descricao": "Atividade de matemática.(EF07MA17) Resolver e elaborar problemas que envolvam variação de proporcionalidade direta e de proporcionalidade inversa entre duas grandezas, utilizando sentença algébrica para expressar a relação entre elas. (A Regra de Três Simples é uma extensão natural desta habilidade, aplicando o mesmo raciocínio a duas grandezas).A atividade Viagem de Férias coloca o aluno em uma situação-problema do cotidiano: planejar uma viagem considerando diferentes variáveis como distância, tempo e custo. A complexidade é introduzida progressivamente:",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Viagem de Férias\\Atividade - Missão_ Viagem de Férias_page-0001.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Viagem de Férias\\Viagem de Férias.html"
+  },
+  {
+    "titulo": "Mestres Culinários   O Desafio das Frações",
+    "descricao": "Atividade de matemática.(EF07MA07) Comparar e ordenar frações associando-as à reta numérica. (EF07MA08) Comparar e ordenar frações com denominadores diferentes pelo processo de equivalência. (EF07MA09) Resolver e elaborar problemas que envolvam as operações com números racionais na forma de frações.A atividade Mestres Culinários: O Desafio das Frações coloca o aluno em uma situação-problema do cotidiano: preparar receitas culinárias que exigem o uso de frações. A complexidade é introduzida progressivamente:",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Mestres Culinários - O Desafio das Frações\\Atividade - Mestres Culinários_page-0001.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Mestres Culinários - O Desafio das Frações\\Mestres Culinários - O Desafio das Frações.html"
+  },
+  {
+    "titulo": "Missão Arraiá de Sucesso!",
+    "descricao": "Atividade de matemática.(EF07MA17) Resolver e elaborar problemas que envolvam variação de proporcionalidade direta e de proporcionalidade inversa entre duas grandezas. (EF07MA02) Resolver e elaborar problemas que envolvam porcentagens, como os que lidam com acréscimos e decréscimos simples.A atividade Missão Arraiá de Sucesso! coloca o aluno em uma situação-problema do cotidiano: organizar uma festa junina considerando diferentes variáveis como número de convidados, quantidade de alimentos e bebidas, e orçamento disponível. A complexidade é introduzida progressivamente:",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Missão Arraiá de Sucesso!\\Atividade - Missão_ Arraiá de Sucesso_page-0001.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Missão Arraiá de Sucesso!\\Missão Arraiá de Sucesso!.html"
+  },
+  {
+    "titulo": "Designers de Pixel Art",
+    "descricao": "Atividade de matemática.(EF06MA21) Construir figuras planas semelhantes em situações de ampliação e de redução, com o uso de malhas quadriculadas, plano cartesiano ou tecnologias digitais.A atividade Designers de Pixel Art coloca o aluno em uma situação-problema do cotidiano: criar e modificar imagens em pixel art utilizando conceitos de semelhança e proporção. A complexidade é introduzida progressivamente:",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Designers de Pixel Art\\Atividade - Designers de Pixel Art_page-0001.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Designers de Pixel Art\\Designers de Pixel Art.html"
+  },
+  {
+    "titulo": "Detetives de Formas O Caso das Figuras Semelhantes",
+    "descricao": "Atividade de matemática.(EF06MA21) Construir figuras planas semelhantes em situações de ampliação e de redução, com o uso de malhas quadriculadas, plano cartesiano ou tecnologias digitais.A atividade Detetives de Formas: O Caso das Figuras Semelhantes coloca o aluno em uma situação-problema do cotidiano: analisar e comparar figuras geométricas para identificar semelhanças e proporções. A complexidade é introduzida progressivamente:",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Detetives de Formas O Caso das Figuras Semelhantes\\Atividade - Detetives de Formas_page-0001.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Detetives de Formas O Caso das Figuras Semelhantes\\Detetives de Formas O Caso das Figuras Semelhantes.html"
+  },
+  {
+    "titulo": "Fábrica de Robôs   O Clone Perfeito",
+    "descricao": "Atividade de matemática.(EF01MA10) Descrever, após o reconhecimento e a explicitação de um padrão (ou regularidade), os elementos ausentes em sequências recursivas de objetos, figuras ou números. (Habilidade adaptada para focar na reprodução de um padrão visual em uma escala diferente).A atividade Fábrica de Robôs: O Clone Perfeito coloca o aluno em uma situação-problema do cotidiano: replicar robôs seguindo padrões específicos de design e proporção. A complexidade é introduzida progressivamente:",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Fábrica de Robôs - O Clone Perfeito\\Atividade Adaptada - Fábrica de Robôs_page-0001.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Fábrica de Robôs - O Clone Perfeito\\Fábrica de Robôs - O Clone Perfeito.html"
+  },
+  {
+    "titulo": "Influenciador Digital",
+    "descricao": "Atividade de matemática.(EF07MA02) Resolver e elaborar problemas que envolvam porcentagens, como os que lidam com acréscimos e decréscimos simples, utilizando estratégias pessoais, cálculo mental e calculadora, no contexto de educação financeira, entre outros.A atividade Influenciador Digital coloca o aluno em uma situação-problema do cotidiano: gerenciar uma conta de rede social considerando métricas de crescimento e engajamento. A complexidade é introduzida progressivamente:",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Influenciador Digital\\Atividade - Missão_ Influenciador Digital_page-0001.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Influenciador Digital\\Influenciador Digital.html"
+  },
+  {
+    "titulo": "Caçadores de Descontos",
+    "descricao": "Atividade de matemática.(EF06MA13) Resolver e elaborar problemas que envolvam porcentagens, com base na ideia de proporcionalidade, sem fazer uso da “regra de três”, utilizando estratégias pessoais, cálculo mental e calculadora, em contextos de educação financeira, entre outros.A atividade Caçadores de Descontos coloca o aluno em uma situação-problema do cotidiano: identificar e calcular descontos em diferentes cenários de compras. A complexidade é introduzida progressivamente:",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Caçadores de Descontos\\Atividade - Missão_ Caçadores de Descontos_page-0001.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Caçadores de Descontos\\Caçadores de Descontos.html"
+  },
+  {
+    "titulo": "Copiando Desenhos Mágicos",
+    "descricao": "Atividade de matemática.(EF01MA10) Descrever, após o reconhecimento e a explicitação de um padrão (ou regularidade), os elementos ausentes em sequências recursivas de objetos, figuras ou números. (Habilidade adaptada para focar na reprodução de um padrão visual em uma malha).A atividade Copiando Desenhos Mágicos envolve os alunos em uma situação-problema do cotidiano: reproduzir desenhos seguindo padrões específicos em uma grade quadriculada. Eles devem observar atentamente os detalhes e aplicar suas habilidades de reconhecimento de padrões para completar a tarefa, desenvolvendo habilidades de percepção visual e atenção aos detalhes.",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Copiando Desenhos Mágicos\\Atividade Adaptada - Copiando Desenhos Mágicos_page-0001.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Copiando Desenhos Mágicos\\Copiando Desenhos Mágicos.html"
+  },
+  {
+    "titulo": "A Barraca de Comidas",
+    "descricao": "Atividade de matemática.(EF04MA09) Reconhecer as frações unitárias mais usuais (...) e suas representações decimais, utilizando a reta numérica como recurso. (Habilidade adaptada para a representação visual da relação entre fração decimal e sua quantidade).A atividade A Barraca de Comidas coloca o aluno em uma situação-problema do cotidiano: calcular quantidades e preços de alimentos em uma feira. A complexidade é introduzida progressivamente:",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\A Barraca de Comidas\\Atividade Adaptada - A Barraca de Comidas.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\A Barraca de Comidas\\A Barraca de Comidas.html"
+  },
+  {
+    "titulo": "A Batalha de Likes",
+    "descricao": "Atividade de matemática.(EF01MA04) Contar a quantidade de objetos de coleções até 100 unidades e apresentar o resultado por registros verbais e simbólicos (...). (Habilidade adaptada para focar na representação e comparação de partes de um todo).A atividade A Batalha de Likes envolve os alunos em uma situação-problema do cotidiano: analisar e comparar a popularidade de diferentes postagens em uma rede social. Eles devem contar e representar graficamente os likes recebidos, além de comparar as quantidades para determinar qual postagem é a mais popular, desenvolvendo habilidades de contagem, representação visual e comparação de quantidades.",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\A Batalha de Likes\\Atividade Adaptada - A Batalha de Likes.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\A Batalha de Likes\\A Batalha de Likes.html"
+  },
+  {
+    "titulo": "A Guerra das Pizzas",
+    "descricao": "Atividade de matemática.(EF04MA09) Reconhecer as frações unitárias mais usuais (1/2, 1/3, 1/4, 1/5, 1/10 e 1/100) como unidades de medida menores do que uma unidade, utilizando a reta numérica como recurso. (Habilidade adaptada para a comparação visual de frações).A atividade A Guerra das Pizzas coloca o aluno em uma situação-problema do cotidiano: dividir e comparar fatias de pizza entre diferentes grupos. A complexidade é introduzida progressivamente:",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\A Guerra das Pizzas\\Atividade Adaptada - A Guerra das Pizzas-imagens-0.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\A Guerra das Pizzas\\A Guerra das Pizzas.html"
+  },
+  {
+    "titulo": "A Lojinha de Brinquedos",
+    "descricao": "Atividade de matemática.(EF01MA04) Contar a quantidade de objetos de coleções até 100 unidades e apresentar o resultado por registros verbais e simbólicos, em situações de seu interesse, como jogos, brincadeiras, materiais da sala de aula, entre outros. (Habilidade adaptada para focar na manipulação de quantidades - adição e subtração).A atividade A Lojinha de Brinquedos envolve os alunos em uma situação-problema do cotidiano: gerenciar uma loja de brinquedos. Eles devem contar e organizar os brinquedos disponíveis, além de calcular o total de vendas e o troco para os clientes, desenvolvendo habilidades de contagem, adição e subtração.",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\A Lojinha de Brinquedos\\Atividade Adaptada - A Lojinha de Brinquedos_page-0001.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\A Lojinha de Brinquedos\\A Lojinha de Brinquedos.html"
+  },
+  {
+    "titulo": "A Super Fábrica de Doces",
+    "descricao": "Atividade de matemática.(EF02MA10) Descrever um padrão (ou regularidade) de sequências repetitivas e de sequências recursivas, por meio de palavras, símbolos ou desenhos. (Habilidade adaptada para a percepção de como múltiplos fatores afetam o resultado de um padrão).A atividade A Super Fábrica de Doces envolve os alunos em uma situação-problema do cotidiano: organizar a produção de doces em uma fábrica. Eles devem identificar e continuar padrões de produção, considerando diferentes variáveis como quantidade de ingredientes e tempo de preparo, desenvolvendo habilidades de reconhecimento de sequências e planejamento.",
+    "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\A Super Fábrica de Doces\\Atividade Adaptada - A Super Fábrica de Doces_page-0001.webp",
+    "link": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\A Super Fábrica de Doces\\A Super Fábrica de Doces.html"
+  },
+  {
     "titulo": "Atividade Mestre das Pipas",
     "descricao": "Atividade de matemática.Habilidade da BNCC: (EF08MA19) Resolver e elaborar problemas que envolvam medidas de área de figuras geométricas, utilizando expressões de cálculo de área (quadriláteros, triângulos e círculos), em situações como determinar medida de terrenos.A atividade Missão: Mestre das Pipas coloca o aluno numa situação-problema do quotidiano: calcular a quantidade e o custo de material para construir pipas. A complexidade é introduzida progressivamente:",
     "imagem": "/Nivel 2\\2-BNCC\\Matematica\\PagDow\\Mestre das Pipas\\Mestre-das-Pipas.webp",
