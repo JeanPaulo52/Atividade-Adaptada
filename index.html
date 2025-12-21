@@ -266,13 +266,10 @@
         const db = getFirestore(app);
 
         // Aguardar DOM carregar
-        window.addEventListener('load', () => {
+        document.addEventListener('DOMContentLoaded', () => {
             onAuthStateChanged(auth, async (user) => {
-                console.log('Auth state changed:', user ? 'logged in' : 'logged out');
                 const desktopBtn = document.getElementById('login-btn-desktop');
                 const mobileBtn = document.getElementById('login-btn-mobile');
-                console.log('Desktop btn:', desktopBtn);
-                console.log('Mobile btn:', mobileBtn);
 
                 if (!desktopBtn || !mobileBtn) {
                     console.error('Botões não encontrados!');
@@ -280,48 +277,44 @@
                 }
 
                 if (user) {
-                    console.log('User logged in:', user.email);
-                    // Usuário logado: substituir por foto de perfil
-                    let photoURL = user.photoURL;
-                    console.log('Photo URL from auth:', photoURL);
-                    if (!photoURL) {
-                        try {
-                            // Tentar pegar do Firestore
-                            const profileRef = doc(db, 'users', user.uid);
-                            const profileSnap = await getDoc(profileRef);
-                            if (profileSnap.exists()) {
-                                photoURL = profileSnap.data().photoURL;
-                            }
-                        } catch (error) {
-                            console.error('Erro no Firestore:', error);
-                        }
-                    }
-                    console.log('Final Photo URL:', photoURL);
-                    if (!photoURL) {
-                        // Fallback simples
-                        const initial = (user.displayName || user.email || 'U').charAt(0).toUpperCase();
-                        photoURL = `data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiMzQjgyRjYiLz4KPHRleHQgeD0iMjAiIHk9IjI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4=${btoa(initial)}</dGV4dD4KPHN2Zz4=`;
-                    }
+                    // Usuário logado: substituir por inicial do nome (rápido)
+                    const initial = (user.displayName || user.email || 'U').charAt(0).toUpperCase();
+                    const svg = `<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="20" fill="#3B82F6"/><text x="20" y="25" font-family="Arial" font-size="16" fill="white" text-anchor="middle">${initial}</text></svg>`;
+                    const photoURL = `data:image/svg+xml;base64,${btoa(svg)}`;
 
                     // Substituir desktop
                     const desktopLink = document.createElement('a');
                     desktopLink.href = 'usuario.html';
                     desktopLink.className = 'hidden md:block';
-                    desktopLink.innerHTML = `<img src="${photoURL}" class="w-10 h-10 rounded-full border-2 border-orange-500" alt="Perfil" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiMzQjgyRjYiLz4KPHRleHQgeD0iMjAiIHk9IjI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5VPjwvdGV4dD4KPHN2Zz4='">`;
+                    desktopLink.innerHTML = `<img src="${photoURL}" class="w-10 h-10 rounded-full border-2 border-orange-500" alt="Perfil">`;
                     desktopBtn.parentNode.replaceChild(desktopLink, desktopBtn);
-                    console.log('Desktop replaced');
 
                     // Substituir mobile
                     const mobileLink = document.createElement('a');
                     mobileLink.href = 'usuario.html';
                     mobileLink.className = 'block mt-4';
-                    mobileLink.innerHTML = `<img src="${photoURL}" class="w-10 h-10 rounded-full border-2 border-orange-500 mx-auto" alt="Perfil" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiMzQjgyRjYiLz4KPHRleHQgeD0iMjAiIHk9IjI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5VPjwvdGV4dD4KPHN2Zz4='">`;
+                    mobileLink.innerHTML = `<img src="${photoURL}" class="w-10 h-10 rounded-full border-2 border-orange-500 mx-auto" alt="Perfil">`;
                     mobileBtn.parentNode.replaceChild(mobileLink, mobileBtn);
-                    console.log('Mobile replaced');
+
+                    // Opcional: tentar atualizar com foto do Firestore em background (sem bloquear)
+                    setTimeout(async () => {
+                        try {
+                            const profileRef = doc(db, 'users', user.uid);
+                            const profileSnap = await getDoc(profileRef);
+                            if (profileSnap.exists() && profileSnap.data().photoURL) {
+                                const newPhotoURL = profileSnap.data().photoURL;
+                                // Atualizar as imagens existentes
+                                const desktopImg = desktopLink.querySelector('img');
+                                const mobileImg = mobileLink.querySelector('img');
+                                if (desktopImg) desktopImg.src = newPhotoURL;
+                                if (mobileImg) mobileImg.src = newPhotoURL;
+                            }
+                        } catch (error) {
+                            console.error('Erro ao buscar foto do Firestore:', error);
+                        }
+                    }, 100); // Pequeno delay para não interferir
                 } else {
-                    console.log('User not logged in');
                     // Usuário não logado: manter como está
-                    // Já está correto
                 }
             });
         });

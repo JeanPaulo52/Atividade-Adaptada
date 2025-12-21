@@ -6,17 +6,27 @@
     <title>Perfil do Usuário - Atividade Adaptada</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Nunito, uma fonte amigável e legível -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+        /* Aplicando a fonte Nunito como padrão para todo o corpo do site */
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f8fafc; /* Um cinza muito claro para o fundo */
+        }
+        /* Efeito de sombra e escala para os cards, tornando-os mais interativos */
+        .card-hover {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
     </style>
 </head>
-<body class="bg-gradient-to-br from-indigo-600 via-purple-500 to-pink-500 min-h-screen">
+<body class="text-gray-800">
 
     <!-- Cabeçalho e Navegação -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
@@ -49,9 +59,9 @@
     <div class="flex items-center justify-center p-4 min-h-screen pt-20">
   
 
-    <div class="glass-card w-full max-w-4xl rounded-3xl shadow-2xl overflow-hidden">
+    <div class="bg-white w-full max-w-4xl rounded-3xl shadow-2xl overflow-hidden card-hover">
         <!-- Header -->
-        <div class="p-8 text-center bg-white/50 border-b border-gray-100">
+        <div class="p-8 text-center bg-gray-50 border-b border-gray-100">
             <h1 class="text-3xl font-bold text-gray-800">Perfil do Usuário</h1>
             <p id="user-status" class="text-gray-500 mt-2 text-sm">Carregando...</p>
         </div>
@@ -199,20 +209,24 @@
         function loadUserProfile() {
             if (!currentUser) return;
 
+            // Mostrar loading
+            document.getElementById('user-status').innerText = "Carregando perfil...";
+
             const profileRef = doc(db, 'users', currentUser.uid);
             onSnapshot(profileRef, (docSnap) => {
                 if (docSnap.exists()) {
                     profileData = docSnap.data();
                 } else {
+                    // Usar dados padrão locais, sem salvar ainda
                     profileData = {
                         displayName: currentUser.displayName || 'Novo Usuário',
                         bio: 'Clique em editar para adicionar sua biografia...',
                         photoURL: currentUser.photoURL || '',
                         role: 'Membro'
                     };
-                    setDoc(profileRef, profileData);
                 }
                 updateUI();
+                document.getElementById('user-status').innerText = "Perfil carregado";
             });
 
             // Carregar atividades
@@ -287,7 +301,7 @@
 
                 try {
                     const profileRef = doc(db, 'users', currentUser.uid);
-                    await updateDoc(profileRef, { photoURL });
+                    await setDoc(profileRef, { photoURL }, { merge: true });
                     showMessage("Foto de perfil atualizada!", "success");
                 } catch (error) {
                     console.error(error);
@@ -307,10 +321,10 @@
 
             try {
                 const profileRef = doc(db, 'users', currentUser.uid);
-                await updateDoc(profileRef, {
+                await setDoc(profileRef, {
                     displayName: newName,
                     bio: newBio
-                });
+                }, { merge: true });
                 profileData.displayName = newName;
                 profileData.bio = newBio;
                 updateUI();
@@ -364,10 +378,15 @@
             const list = document.getElementById('favorites-list');
             list.innerHTML = favorites.length > 0 
                 ? favorites.map(item => `
-                    <div class="bg-white p-4 rounded-xl shadow-sm border border-amber-200">
-                        <h4 class="font-bold text-gray-800">${item.title || 'Favorito'}</h4>
-                        <p class="text-sm text-gray-500">${item.description || 'Descrição não disponível'}</p>
-                    </div>
+                    <a href="${item.url || '#'}" class="block bg-white p-4 rounded-xl shadow-sm border border-amber-200 hover:shadow-md transition">
+                        <div class="flex items-center space-x-4">
+                            <img src="${item.image || '/Assets/placeholder.png'}" alt="${item.title}" class="w-16 h-16 object-cover rounded-lg">
+                            <div>
+                                <h4 class="font-bold text-gray-800">${item.title || 'Favorito'}</h4>
+                                <p class="text-sm text-gray-500">${new Date(item.date).toLocaleDateString('pt-BR')}</p>
+                            </div>
+                        </div>
+                    </a>
                 `).join('')
                 : '<p class="text-center text-gray-500">Nenhum favorito encontrado.</p>';
         }
@@ -377,10 +396,15 @@
             const list = document.getElementById('articles-list');
             list.innerHTML = articles.length > 0 
                 ? articles.map(item => `
-                    <div class="bg-white p-4 rounded-xl shadow-sm border border-rose-200">
-                        <h4 class="font-bold text-gray-800">${item.title || 'Artigo'}</h4>
-                        <p class="text-sm text-gray-500">${item.description || 'Descrição não disponível'}</p>
-                    </div>
+                    <a href="${item.url || '#'}" class="block bg-white p-4 rounded-xl shadow-sm border border-rose-200 hover:shadow-md transition">
+                        <div class="flex items-center space-x-4">
+                            <img src="${item.image || '/Assets/article-placeholder.png'}" alt="${item.title}" class="w-16 h-16 object-cover rounded-lg">
+                            <div>
+                                <h4 class="font-bold text-gray-800">${item.title || 'Artigo'}</h4>
+                                <p class="text-sm text-gray-500">${new Date(item.date).toLocaleDateString('pt-BR')}</p>
+                            </div>
+                        </div>
+                    </a>
                 `).join('')
                 : '<p class="text-center text-gray-500">Nenhum artigo encontrado.</p>';
         }
