@@ -67,9 +67,7 @@
                 <a href="/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html" class="text-gray-600 hover:text-cyan-500 transition">Artigos</a>
                 <a href="/Nivel 2/6-Quem Somos.html" class="text-gray-600 hover:text-cyan-500 transition">Sobre Nós</a>
             </div>
-            <a href="/embreve.html" class="hidden md:block bg-orange-500 text-white font-bold py-2 px-5 rounded-full hover:bg-orange-600 transition">
-                Entrar
-            </a>
+            <a href="/login.html" id="login-btn-desktop" class="hidden md:block bg-orange-500 text-white font-bold py-2 px-5 rounded-full hover:bg-orange-600 transition">Entrar</a>
             <button id="mobile-menu-button" class="md:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
             </button>
@@ -79,7 +77,7 @@
             <a href="/Nivel 2/categorias.html" class="block py-2 text-gray-600 hover:text-cyan-500">Atividades</a>
             <a href="/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html" class="block py-2 text-gray-600 hover:text-cyan-500">Artigos</a>
             <a href="/Nivel 2/6-Quem Somos.html" class="block py-2 text-gray-600 hover:text-cyan-500">Sobre Nós</a>
-            <a href="/embreve.html" class="block mt-4 bg-orange-500 text-white font-bold py-2 px-5 rounded-full text-center">Entrar</a>
+            <a href="/login.html" id="login-btn-mobile" class="block mt-4 bg-orange-500 text-white font-bold py-2 px-5 rounded-full text-center">Entrar</a>
         </div>
     </header>
 
@@ -247,5 +245,88 @@
         });
         
     </script>
+
+    <!-- Scripts Firebase para verificar login -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDmMuftAqoUBEoGHXtV0C_SZVHp5KmdNn4",
+            authDomain: "atividadeadaptada.firebaseapp.com",
+            projectId: "atividadeadaptada",
+            storageBucket: "atividadeadaptada.firebasestorage.app",
+            messagingSenderId: "37982590936",
+            appId: "1:37982590936:web:f0bd7b5c5dd208e26a84ad"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        // Aguardar DOM carregar
+        window.addEventListener('load', () => {
+            onAuthStateChanged(auth, async (user) => {
+                console.log('Auth state changed:', user ? 'logged in' : 'logged out');
+                const desktopBtn = document.getElementById('login-btn-desktop');
+                const mobileBtn = document.getElementById('login-btn-mobile');
+                console.log('Desktop btn:', desktopBtn);
+                console.log('Mobile btn:', mobileBtn);
+
+                if (!desktopBtn || !mobileBtn) {
+                    console.error('Botões não encontrados!');
+                    return;
+                }
+
+                if (user) {
+                    console.log('User logged in:', user.email);
+                    // Usuário logado: substituir por foto de perfil
+                    let photoURL = user.photoURL;
+                    console.log('Photo URL from auth:', photoURL);
+                    if (!photoURL) {
+                        try {
+                            // Tentar pegar do Firestore
+                            const profileRef = doc(db, 'users', user.uid);
+                            const profileSnap = await getDoc(profileRef);
+                            if (profileSnap.exists()) {
+                                photoURL = profileSnap.data().photoURL;
+                            }
+                        } catch (error) {
+                            console.error('Erro no Firestore:', error);
+                        }
+                    }
+                    console.log('Final Photo URL:', photoURL);
+                    if (!photoURL) {
+                        // Fallback simples
+                        const initial = (user.displayName || user.email || 'U').charAt(0).toUpperCase();
+                        photoURL = `data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiMzQjgyRjYiLz4KPHRleHQgeD0iMjAiIHk9IjI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4=${btoa(initial)}</dGV4dD4KPHN2Zz4=`;
+                    }
+
+                    // Substituir desktop
+                    const desktopLink = document.createElement('a');
+                    desktopLink.href = 'usuario.html';
+                    desktopLink.className = 'hidden md:block';
+                    desktopLink.innerHTML = `<img src="${photoURL}" class="w-10 h-10 rounded-full border-2 border-orange-500" alt="Perfil" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiMzQjgyRjYiLz4KPHRleHQgeD0iMjAiIHk9IjI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5VPjwvdGV4dD4KPHN2Zz4='">`;
+                    desktopBtn.parentNode.replaceChild(desktopLink, desktopBtn);
+                    console.log('Desktop replaced');
+
+                    // Substituir mobile
+                    const mobileLink = document.createElement('a');
+                    mobileLink.href = 'usuario.html';
+                    mobileLink.className = 'block mt-4';
+                    mobileLink.innerHTML = `<img src="${photoURL}" class="w-10 h-10 rounded-full border-2 border-orange-500 mx-auto" alt="Perfil" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiMzQjgyRjYiLz4KPHRleHQgeD0iMjAiIHk9IjI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5VPjwvdGV4dD4KPHN2Zz4='">`;
+                    mobileBtn.parentNode.replaceChild(mobileLink, mobileBtn);
+                    console.log('Mobile replaced');
+                } else {
+                    console.log('User not logged in');
+                    // Usuário não logado: manter como está
+                    // Já está correto
+                }
+            });
+        });
+    </script>
 </body>
 </html>
+
+
