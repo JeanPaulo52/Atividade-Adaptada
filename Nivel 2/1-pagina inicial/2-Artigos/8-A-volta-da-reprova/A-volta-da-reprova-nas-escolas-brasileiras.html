@@ -1,16 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504" crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XJ6XZC2JN1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XJ6XZC2JN1');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XJ6XZC2JN1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XJ6XZC2JN1');
+    </script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -18,6 +17,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5V8F3ZKD');</script>
     <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="/Assets/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -36,7 +36,7 @@
         body {
             font-family: 'Nunito', sans-serif;
             background-color: #f8fafc;
-            overflow-x: hidden; /* <-- ADICIONE ESTA LINHA AQUI */
+            overflow-x: hidden;
         }
         /* Estilos para o conteúdo do artigo */
         .article-content h2 {
@@ -62,14 +62,14 @@
             text-decoration: underline;
         }
         .article-content {
-  word-break: break-word;
-}
+            word-break: break-word;
+        }
     </style>
 </head>
 <body class="text-gray-800">
 
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V8F3ZKD"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V8F3ZKD"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
@@ -85,7 +85,7 @@
                 <a href="/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html" class="font-bold text-cyan-600">Artigos</a>
                 <a href="/Nivel 2/6-Quem Somos.html" class="text-gray-600 hover:text-cyan-500 transition">Sobre Nós</a>
             </div>
-            <a href="/login.html" class="hidden md:block bg-orange-500 text-white font-bold py-2 px-5 rounded-full hover:bg-orange-600 transition">
+            <a href="/login.html" id="login-btn-desktop" class="hidden md:block bg-orange-500 text-white font-bold py-2 px-5 rounded-full hover:bg-orange-600 transition">
                 Entrar
             </a>
             <button id="mobile-menu-button" class="md:hidden">
@@ -97,45 +97,42 @@
             <a href="/Nivel 2/categorias.html" class="block py-2 text-gray-600 hover:text-cyan-500">Atividades</a>
             <a href="/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html" class="block py-2 font-bold text-cyan-600">Artigos</a>
             <a href="/Nivel 2/6-Quem Somos.html" class="block py-2 text-gray-600 hover:text-cyan-500">Sobre Nós</a>
-            <a href="/login.html" class="block mt-4 bg-orange-500 text-white font-bold py-2 px-5 rounded-full text-center">Entrar</a>
+            <a href="/login.html" id="login-btn-mobile" class="block mt-4 bg-orange-500 text-white font-bold py-2 px-5 rounded-full text-center">Entrar</a>
         </div>
     </header>
 
     <!-- Conteúdo Principal -->
-    <main class="max-w-full mx-auto px-4 sm:px-6 py-8">
+    <main class="container mx-auto px-6 py-12">
         
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <!-- Coluna Principal (Conteúdo do Artigo) -->
             <article class="lg:col-span-2 article-content">
                 
                 <header>
-                    <div class="flex items-center justify-between mb-4">
-                    <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">A volta da reprova nas escolas brasileiras?</h1>
-                    <p class="text-xl text-gray-600 mb-2">Comissão da Câmara aprova projeto que proíbe promoção automática de alunos sem nota.</p>
-                    <button id="favorite-btn" class="text-gray-400 hover:text-red-500 transition-colors p-2 rounded-full hover:bg-gray-100" title="Adicionar aos favoritos">
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-4 gap-4">
+                        <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">A volta da reprova nas escolas brasileiras?</h1>
+                        <button id="favorite-btn" class="text-gray-400 hover:text-red-500 transition-colors p-2 rounded-full hover:bg-gray-100" title="Adicionar aos favoritos">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                             </svg>
                         </button>
                     </div>
-                    <p class="text-lg text-gray-500">Escrito por: Jean Paulo Jampietri de Paiva Junior</p>
+                    <p class="text-xl text-gray-600 mb-4">Comissão da Câmara aprova projeto que proíbe promoção automática de alunos sem nota.</p>
+                    <p class="text-lg text-gray-500 italic">Escrito por: Jean Paulo Jampietri de Paiva Junior</p>
                 </header>
                 
-                <img src="https://placehold.co/800x450/dc2626/ffffff?text=Reprovação+Escolar" alt="Ilustração sobre reprovação escolar" class="w-full rounded-2xl my-8 shadow-sm">
+                <img src="https://placehold.co/800x450/dc2626/ffffff?text=Reprova%C3%A7%C3%A3o+Escolar" alt="Ilustração sobre reprovação escolar" class="w-full rounded-2xl my-8 shadow-sm">
 
                 <p>Em 16 de julho de 2025, a Comissão de Educação da Câmara dos Deputados aprovou o substitutivo ao Projeto de Lei 5.136/19, que proíbe a promoção automática de alunos dos ensinos fundamental e médio que não atingirem a nota mínima exigida, excetuando apenas casos de saúde devidamente comprovados.</p>
                 
                 <h2>O que muda na prática?</h2>
-                <p><strong>Fim da progressão continuada:</strong> escolas deixarão de aplicar o regime de aprovação automática em ciclos maiores do que um ano, ficando sujeitas a reprovar alunos que não alcançarem os critérios mínimos de aprendizagem.</p>
-                <p><strong>Autoria e relatoria:</strong> o texto é de autoria do deputado Bibo Nunes (PL–RS) e foi relatado pelo deputado Nikolas Ferreira (PL–MG), que argumentou que: “A promoção automática leva a uma progressão de alunos sem compreensão dos conteúdos, resultando em deficiências acumuladas…”.</p>
-                <p><strong>Votação acirrada:</strong> a aprovação ocorreu por empate (17 × 17), com o presidente da comissão decidindo pelo avanço do substitutivo.</p>
+                <p><strong>Fim da progressão continuada:</strong> as escolas deixarão de aplicar o regime de aprovação automática em ciclos maiores do que um ano, ficando sujeitas a reprovar alunos que não alcançarem os critérios mínimos de aprendizagem.</p>
+                <p><strong>Autoria e relatoria:</strong> o texto é de autoria do deputado Bibo Nunes (PL–RS) e foi relatado pelo deputado Nikolas Ferreira (PL–MG), que argumentou que: "A promoção automática leva a uma progressão de alunos sem compreensão dos conteúdos, resultando em deficiências acumuladas…".</p>
+                <p><strong>Votação acirrada:</strong> a aprovação ocorreu por empate (17 × 17), com o presidente da comissão decidindo pelo avanço do substitutivo.</p>
 
                 <!-- Espaço para Anúncio In-article -->
                 <div class="my-8">
                     <div class="bg-gray-100 p-6 rounded-2xl text-center text-gray-400">
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
-                        crossorigin="anonymous"></script>
-                        <!-- Anuncio Principal -->
                         <ins class="adsbygoogle"
                         style="display:block"
                         data-ad-client="ca-pub-7297230407550504"
@@ -149,7 +146,7 @@
                 </div>
 
                 <h2>Contexto e implicações</h2>
-                <p><strong>Posição dos defensores:</strong> A defesa da proposta se baseia na melhoria da qualidade do ensino. Nikolas Ferreira ressaltou que a promoção automática cria “lacunas acumuladas” no aprendizado, desmotivando professores e comprometendo a formação.</p>
+                <p><strong>Posição dos defensores:</strong> A defesa da proposta se baseia na melhoria da qualidade do ensino. Nikolas Ferreira ressaltou que a promoção automática cria "lacunas acumuladas" no aprendizado, desmotivando professores e comprometendo a formação.</p>
                 <p><strong>Argumentos contrários:</strong> Críticos alertam que a medida pode penalizar alunos com dificuldades, aprofundando desigualdades, e sugerem que seria melhor fortalecer mecanismos de apoio e recuperação.</p>
                 <p><strong>Próximos passos legislativos:</strong> O projeto agora segue para análise na Comissão de Constituição e Justiça e de Cidadania (CCJC). Em seguida, será votado no plenário da Câmara e, se aprovado, seguirá para o Senado.</p>
                 
@@ -170,24 +167,20 @@
             <aside>
                 <div class="sticky top-28 space-y-8">
                     <!-- Espaço para Anúncio Vertical -->
-                    <div class="bg-gray-100 p-6 rounded-2xl text-center text-gray-400 h-96 flex items-center justify-center">
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7297230407550504"
-     crossorigin="anonymous"></script>
-<!-- Anuncio teste -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:300px;height:250px"
-     data-ad-client="ca-pub-7297230407550504"
-     data-ad-slot="7826003178"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+                    <div class="bg-gray-100 p-6 rounded-2xl text-center text-gray-400 min-h-[250px] flex items-center justify-center border border-dashed border-gray-300">
+                        <ins class="adsbygoogle"
+                             style="display:inline-block;width:300px;height:250px"
+                             data-ad-client="ca-pub-7297230407550504"
+                             data-ad-slot="7826003178"></ins>
+                        <script>
+                             (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
                     </div>
 
                     <!-- Artigos Populares -->
                     <div class="bg-white p-6 rounded-2xl shadow-sm border">
                         <h3 class="font-extrabold text-xl mb-4">Artigos Populares</h3>
                         <div id="popular-articles-list" class="space-y-4">
-                            <!-- Artigos populares serão carregados aqui dinamicamente -->
                             <p class="text-gray-500">A carregar...</p>
                         </div>
                     </div>
@@ -217,7 +210,6 @@
                 <div>
                     <h4 class="font-bold text-lg mb-4">Siga-nos</h4>
                     <div class="flex space-x-4">
-                        <!-- Ícones de redes sociais -->
                         <a href="https://www.youtube.com/@AtividadeAdaptada" class="text-gray-400 hover:text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg>
                         </a>
@@ -233,53 +225,8 @@
         </div>
     </footer>
 
-    <!-- Script para o menu mobile -->
-    <script>
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // --- LÓGICA DOS ARTIGOS POPULARES ---
-        document.addEventListener('DOMContentLoaded', () => {
-            loadPopularArticles();
-        });
-
-        async function loadPopularArticles() {
-            const popularArticlesList = document.getElementById('popular-articles-list');
-            const jsonPath = '/js/Artigos.json'; // Carrega o JSON para a barra lateral
-
-            try {
-                const response = await fetch(jsonPath);
-                if (!response.ok) throw new Error('Falha ao carregar artigos populares.');
-                
-                const articles = await response.json();
-                popularArticlesList.innerHTML = ''; // Limpa "A carregar..."
-
-                const popularArticles = articles.filter(article => article.popular);
-                
-                if (popularArticles.length > 0) {
-                    popularArticles.forEach((article, index) => {
-                        const popularLink = document.createElement('a');
-                        popularLink.href = article.link;
-                        popularLink.className = "block hover:text-cyan-600";
-                        popularLink.innerHTML = `<p class="font-bold">${index + 1}. ${article.titulo}</p>`;
-                        popularArticlesList.appendChild(popularLink);
-                    });
-                } else {
-                    popularArticlesList.innerHTML = `<p class="text-gray-500">Nenhum artigo popular no momento.</p>`;
-                }
-
-            } catch (error) {
-                console.error("Erro ao carregar artigos populares:", error);
-                popularArticlesList.innerHTML = `<p class="text-red-500">Erro ao carregar.</p>`;
-            }
-        }
-
-    </script>
+    <!-- Script único para todas as funcionalidades -->
+    <script type="module" src="/js/pagina-artigo.js"></script>
 
 </body>
 </html>
-
-

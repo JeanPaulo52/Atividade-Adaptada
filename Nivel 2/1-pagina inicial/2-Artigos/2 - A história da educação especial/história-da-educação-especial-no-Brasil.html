@@ -85,7 +85,7 @@
                 <a href="/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html" class="font-bold text-cyan-600">Artigos</a>
                 <a href="/Nivel 2/6-Quem Somos.html" class="text-gray-600 hover:text-cyan-500 transition">Sobre Nós</a>
             </div>
-            <a href="/login.html" class="hidden md:block bg-orange-500 text-white font-bold py-2 px-5 rounded-full hover:bg-orange-600 transition">
+            <a href="/login.html" id="login-btn-desktop" class="hidden md:block bg-orange-500 text-white font-bold py-2 px-5 rounded-full hover:bg-orange-600 transition">
                 Entrar
             </a>
             <button id="mobile-menu-button" class="md:hidden">
@@ -97,12 +97,12 @@
             <a href="/Nivel 2/categorias.html" class="block py-2 text-gray-600 hover:text-cyan-500">Atividades</a>
             <a href="/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html" class="block py-2 font-bold text-cyan-600">Artigos</a>
             <a href="/Nivel 2/6-Quem Somos.html" class="block py-2 text-gray-600 hover:text-cyan-500">Sobre Nós</a>
-            <a href="/login.html" class="block mt-4 bg-orange-500 text-white font-bold py-2 px-5 rounded-full text-center">Entrar</a>
+            <a href="/login.html" id="login-btn-mobile" class="block mt-4 bg-orange-500 text-white font-bold py-2 px-5 rounded-full text-center">Entrar</a>
         </div>
     </header>
 
     <!-- Conteúdo Principal -->
-    <main class="max-w-full mx-auto px-4 sm:px-6 py-8">
+    <main class="container mx-auto px-6 py-12">
         
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <!-- Coluna Principal (Conteúdo do Artigo) -->
@@ -229,161 +229,8 @@
         </div>
     </footer>
 
-     <!-- Script para o menu mobile -->
-    <script>
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // --- LÓGICA DOS ARTIGOS POPULARES ---
-        document.addEventListener('DOMContentLoaded', () => {
-            loadPopularArticles();
-        });
-
-        async function loadPopularArticles() {
-            const popularArticlesList = document.getElementById('popular-articles-list');
-            const jsonPath = '/js/Artigos.json'; // Carrega o JSON para a barra lateral
-
-            try {
-                const response = await fetch(jsonPath);
-                if (!response.ok) throw new Error('Falha ao carregar artigos populares.');
-                
-                const articles = await response.json();
-                popularArticlesList.innerHTML = ''; // Limpa "A carregar..."
-
-                const popularArticles = articles.filter(article => article.popular);
-                
-                if (popularArticles.length > 0) {
-                    popularArticles.forEach((article, index) => {
-                        const popularLink = document.createElement('a');
-                        popularLink.href = article.link;
-                        popularLink.className = "block hover:text-cyan-600";
-                        popularLink.innerHTML = `<p class="font-bold">${index + 1}. ${article.titulo}</p>`;
-                        popularArticlesList.appendChild(popularLink);
-                    });
-                } else {
-                    popularArticlesList.innerHTML = `<p class="text-gray-500">Nenhum artigo popular no momento.</p>`;
-                }
-
-            } catch (error) {
-                console.error("Erro ao carregar artigos populares:", error);
-                popularArticlesList.innerHTML = `<p class="text-red-500">Erro ao carregar.</p>`;
-            }
-        }
-
-    </script>
-
-    <!-- Scripts Firebase para favoritos de artigos -->
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-        import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
-        import { getFirestore, doc, setDoc, deleteDoc, getDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
-
-        const firebaseConfig = {
-            apiKey: "AIzaSyDmMuftAqoUBEoGHXtV0C_SZVHp5KmdNn4",
-            authDomain: "atividadeadaptada.firebaseapp.com",
-            projectId: "atividadeadaptada",
-            storageBucket: "atividadeadaptada.firebasestorage.app",
-            messagingSenderId: "37982590936",
-            appId: "1:37982590936:web:f0bd7b5c5dd208e26a84ad"
-        };
-
-        const app = initializeApp(firebaseConfig);
-        const auth = getAuth(app);
-        const db = getFirestore(app);
-
-        let currentUser = null;
-        const articleTitle = document.querySelector('h1').innerText;
-        const articleId = articleTitle.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, ''); // ID limpo do título
-        const articleImage = '/Assets/article-placeholder.png'; // Imagem padrão para artigos
-        const favoriteBtn = document.getElementById('favorite-btn');
-
-        // Verificar autenticação
-        onAuthStateChanged(auth, async (user) => {
-            currentUser = user;
-            if (user) {
-                await checkFavoriteStatus();
-            } else {
-                favoriteBtn.style.display = 'none'; // Esconder se não logado
-            }
-        });
-
-        // Verificar se já é favorito
-        async function checkFavoriteStatus() {
-            if (!currentUser) return;
-            try {
-                const favoriteRef = doc(db, 'users', currentUser.uid, 'articles', articleId);
-                const docSnap = await getDoc(favoriteRef);
-                updateFavoriteButton(docSnap.exists());
-            } catch (error) {
-                console.error('Erro ao verificar favorito:', error);
-            }
-        }
-
-        // Atualizar botão
-        function updateFavoriteButton(isFavorite) {
-            const svg = favoriteBtn.querySelector('svg');
-            if (isFavorite) {
-                svg.classList.add('text-red-500', 'fill-current');
-                svg.classList.remove('text-gray-400');
-                favoriteBtn.title = 'Remover dos favoritos';
-            } else {
-                svg.classList.remove('text-red-500', 'fill-current');
-                svg.classList.add('text-gray-400');
-                favoriteBtn.title = 'Adicionar aos favoritos';
-            }
-        }
-
-        // Toggle favorito
-        favoriteBtn.addEventListener('click', async () => {
-            if (!currentUser) {
-                alert('Faça login para favoritar artigos.');
-                return;
-            }
-
-            console.log('Toggling favorite for article:', articleId);
-
-            try {
-                const favoriteRef = doc(db, 'users', currentUser.uid, 'articles', articleId);
-                const docSnap = await getDoc(favoriteRef);
-
-                if (docSnap.exists()) {
-                    // Remover favorito
-                    console.log('Removing favorite');
-                    await deleteDoc(favoriteRef);
-                    updateFavoriteButton(false);
-                    showMessage('Removido dos favoritos!', 'success');
-                } else {
-                    // Adicionar favorito
-                    console.log('Adding favorite');
-                    await setDoc(favoriteRef, {
-                        id: articleId,
-                        title: articleTitle,
-                        image: articleImage,
-                        url: window.location.href,
-                        date: new Date().toISOString()
-                    });
-                    updateFavoriteButton(true);
-                    showMessage('Adicionado aos favoritos!', 'success');
-                }
-            } catch (error) {
-                console.error('Erro detalhado ao toggle favorito:', error);
-                showMessage('Erro ao salvar favorito.', 'error');
-            }
-        });
-
-        // Mostrar mensagem
-        function showMessage(msg, type) {
-            // Criar elemento de mensagem temporária
-            const messageEl = document.createElement('div');
-            messageEl.className = `fixed top-20 right-4 px-4 py-2 rounded-lg text-white z-50 ${type === 'success' ? 'bg-green-500' : 'bg-red-500'}`;
-            messageEl.innerText = msg;
-            document.body.appendChild(messageEl);
-            setTimeout(() => messageEl.remove(), 3000);
-        }
-    </script>
+    <!-- Script único para todas as funcionalidades -->
+    <script type="module" src="/js/pagina-artigo.js"></script>
 
 </body>
 </html>

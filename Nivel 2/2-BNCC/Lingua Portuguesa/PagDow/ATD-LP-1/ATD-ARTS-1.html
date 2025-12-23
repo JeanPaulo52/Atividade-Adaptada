@@ -96,7 +96,7 @@
                 <a href="/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html" class="text-gray-600 hover:text-cyan-500 transition">Artigos</a>
                 <a href="/Nivel 2/6-Quem Somos.html" class="text-gray-600 hover:text-cyan-500 transition">Sobre Nós</a>
             </div>
-            <a href="/login.html" class="hidden md:block bg-orange-500 text-white font-bold py-2 px-5 rounded-full hover:bg-orange-600 transition">
+            <a href="/login.html" id="login-btn-desktop" class="hidden md:block bg-orange-500 text-white font-bold py-2 px-5 rounded-full hover:bg-orange-600 transition">
                 Entrar
             </a>
             <button id="mobile-menu-button" class="md:hidden">
@@ -108,7 +108,7 @@
             <a href="/Nivel 2/categorias.html" class="block py-2 font-bold text-cyan-600">Atividades</a>
             <a href="/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html" class="block py-2 text-gray-600 hover:text-cyan-500">Artigos</a>
             <a href="/Nivel 2/6-Quem Somos.html" class="block py-2 text-gray-600 hover:text-cyan-500">Sobre Nós</a>
-            <a href="/login.html" class="block mt-4 bg-orange-500 text-white font-bold py-2 px-5 rounded-full text-center">Entrar</a>
+            <a href="/login.html" id="login-btn-mobile" class="block mt-4 bg-orange-500 text-white font-bold py-2 px-5 rounded-full text-center">Entrar</a>
         </div>
     </header>
 
@@ -130,6 +130,14 @@
             <!-- Coluna Principal (Conteúdo da Atividade) -->
             <article class="lg:col-span-2">
                 <!-- Título da Atividade -->
+                 <div class="flex items-center justify-between mb-4">
+                    <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900"></h1>
+                    <button id="favorite-btn" class="text-gray-400 hover:text-red-500 transition-colors p-2 rounded-full hover:bg-gray-100" title="Adicionar aos favoritos">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </button>
+                </div>
                 <h1 id="activity-title" class="text-3xl md:text-4xl font-extrabold mb-4 text-gray-900">Silaba inicial e final</h1>
                 <p class="text-lg text-gray-600 mb-6">Atividade de português onde deve ser identificado as sílabas do início e fim da palavra.</p>
                 
@@ -251,97 +259,8 @@
         </div>
     </footer>
 
-    <!-- Script para o menu mobile e funcionalidades da página -->
-    <script>
-        // --- LÓGICA DO MENU MOBILE ---
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // --- LÓGICA DA PÁGINA (PARTILHA E RELACIONADOS) ---
-        document.addEventListener('DOMContentLoaded', () => {
-            
-            // --- LÓGICA DOS BOTÕES DE PARTILHA ---
-            const pageUrl = window.location.href;
-            const pageTitle = document.querySelector('#activity-title').textContent;
-            const shareText = `Confira esta atividade incrível: "${pageTitle}"`;
-
-            const whatsappBtn = document.getElementById('whatsapp-share-btn');
-            const facebookBtn = document.getElementById('facebook-share-btn');
-
-            if (whatsappBtn) {
-                whatsappBtn.href = `https://wa.me/?text=${encodeURIComponent(shareText + ' ' + pageUrl)}`;
-                whatsappBtn.target = '_blank';
-                whatsappBtn.rel = 'noopener noreferrer';
-            }
-
-            if (facebookBtn) {
-                facebookBtn.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`;
-                facebookBtn.target = '_blank';
-                facebookBtn.rel = 'noopener noreferrer';
-            }
-
-            // --- LÓGICA DAS ATIVIDADES RELACIONADAS ---
-            loadRelatedActivities();
-        });
-
-        async function loadRelatedActivities() {
-            const relatedContainer = document.getElementById('related-activities-grid');
-            const currentActivityTitle = document.getElementById('activity-title').textContent.trim();
-
-            // CORREÇÃO: Usar um caminho absoluto a partir da raiz do site
-            const basePath = '/js/';
-            const jsonFiles = [
-                'pintura.json', 'matematica.json', 'artes.json', 'educacao_financeira.json',
-                'biologia.json', 'ciencias.json', 'educacaofisica.json', 'filosofia.json',
-                'fisica.json', 'geografia.json', 'historia.json', 'ingles.json',
-                'portugues.json', 'quimica.json', 'sociologia.json', 'infantil.json',
-                'raciocinio.json', 'livros.json', 'lojinha.json', 'outro.json', 'desenhos.json', 'simulados.json'
-            ];
-
-            try {
-                const fetchPromises = jsonFiles.map(file => 
-                    fetch(basePath + file).then(res => res.ok ? res.json() : []).catch(() => [])
-                );
-
-                const jsonDataArrays = await Promise.all(fetchPromises);
-                let allActivities = [].concat(...jsonDataArrays);
-
-                // Filtrar para não mostrar a atividade atual e depois embaralhar
-                let relatedActivities = allActivities
-                    .filter(activity => activity.titulo.trim() !== currentActivityTitle)
-                    .sort(() => 0.5 - Math.random()) // Embaralha o array
-                    .slice(0, 3); // Pega os 3 primeiros
-
-                relatedContainer.innerHTML = ''; // Limpa a mensagem "A carregar..."
-
-                if (relatedActivities.length === 0) {
-                    relatedContainer.innerHTML = '<p class="col-span-full text-center text-gray-500">Nenhuma outra atividade encontrada.</p>';
-                    return;
-                }
-
-                relatedActivities.forEach(activity => {
-                    const card = document.createElement('a');
-                    card.href = activity.link;
-                    card.className = "card-hover bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col";
-                    card.innerHTML = `
-                        <img src="${activity.imagem}" alt="${activity.titulo}" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2">${activity.titulo}</h3>
-                            <p class="text-gray-600 text-sm">${activity.descricao.substring(0, 80)}...</p>
-                        </div>
-                    `;
-                    relatedContainer.appendChild(card);
-                });
-
-            } catch (error) {
-                console.error("Erro ao carregar atividades relacionadas:", error);
-                relatedContainer.innerHTML = '<p class="col-span-full text-center text-red-500">Não foi possível carregar as sugestões.</p>';
-            }
-        }
-    </script>
+<script type="module" src="/js/favoritos-e-botão.js"></script>
+    <script src="/js/menu-mobile.js"></script>
 
 </body>
 </html>
