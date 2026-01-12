@@ -46,6 +46,25 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
+
+        /* Estilos do Carrossel */
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 2rem;
+        }
+        .carousel-slide {
+            display: none;
+            animation: fade 0.8s ease-in-out;
+        }
+        .carousel-slide.active {
+            display: block;
+        }
+        @keyframes fade {
+            from { opacity: 0.4; }
+            to { opacity: 1; }
+        }
+
     </style>
 </head>
 <body class="text-gray-800">
@@ -58,14 +77,27 @@
     <!-- A classe "notranslate" foi adicionada aqui para impedir que o Google AdSense injete anúncios neste elemento -->
     <header class="bg-white shadow-sm sticky top-0 z-50 notranslate">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-extrabold">
-                <span class="text-red-600">Atividade</span><span class="text-blue-600">Adaptada</span><span class="text-gray-900">.com</span>
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="logo-box text-3xl md:text-4xl select-none transition-transform group-hover:scale-105">
+                    <span class="text-red-600">A</span><span class="text-blue-600">A</span>
+                </div>
+                <div class="text-xl md:text-2xl font-extrabold tracking-tight">
+                    <span class="text-red-600">Atividade</span><span class="text-blue-600">Adaptada</span><span class="text-slate-400 text-lg font-normal">.com</span>
+                </div>
             </a>
             <div class="hidden md:flex items-center space-x-6">
-                <a href="/index.html" class="font-bold text-cyan-600">Início</a>
-                <a href="/Nivel 2/categorias.html" class="text-gray-600 hover:text-cyan-500 transition">Atividades</a>
-                <a href="/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html" class="text-gray-600 hover:text-cyan-500 transition">Artigos</a>
-                <a href="/Nivel 2/6-Quem Somos.html" class="text-gray-600 hover:text-cyan-500 transition">Sobre Nós</a>
+                <a href="/index.html" class="flex items-center gap-1 font-bold text-cyan-600 border-b-2 border-cyan-600 pb-1">
+                    <span class="material-symbols-outlined text-sm">home</span> Início
+                </a>
+                <a href="/Nivel 2/categorias.html" class="flex items-center gap-1 text-gray-600 hover:text-cyan-600 font-semibold transition">
+                    <span class="material-symbols-outlined text-sm">grid_view</span> Atividades
+                </a>
+                <a href="/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html" class="flex items-center gap-1 text-gray-600 hover:text-cyan-600 font-semibold transition">
+                    <span class="material-symbols-outlined text-sm">article</span> Artigos
+                </a>
+                <a href="/Nivel 2/6-Quem Somos.html" class="flex items-center gap-1 text-gray-600 hover:text-cyan-600 font-semibold transition">
+                    <span class="material-symbols-outlined text-sm">info</span> Sobre
+                </a>
             </div>
             <a href="/login.html" id="login-btn-desktop" class="hidden md:block bg-orange-500 text-white font-bold py-2 px-5 rounded-full hover:bg-orange-600 transition">Entrar</a>
             <button id="mobile-menu-button" class="md:hidden">
@@ -73,16 +105,70 @@
             </button>
         </nav>
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-            <a href="/index.html" class="block py-2 font-bold text-cyan-600">Início</a>
-            <a href="/Nivel 2/categorias.html" class="block py-2 text-gray-600 hover:text-cyan-500">Atividades</a>
-            <a href="/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html" class="block py-2 text-gray-600 hover:text-cyan-500">Artigos</a>
-            <a href="/Nivel 2/6-Quem Somos.html" class="block py-2 text-gray-600 hover:text-cyan-500">Sobre Nós</a>
+            <a href="/index.html" class="flex items-center gap-3 py-2 font-bold text-cyan-600"><span class="material-symbols-outlined">home</span> Início</a>
+                <a href="/Nivel 2/categorias.html" class="flex items-center gap-3 py-2 text-gray-600 font-semibold"><span class="material-symbols-outlined">grid_view</span> Atividades</a>
+                <a href="/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html" class="flex items-center gap-3 py-2 text-gray-600 font-semibold"><span class="material-symbols-outlined">article</span> Artigos</a>
+                <a href="/Nivel 2/6-Quem Somos.html" class="flex items-center gap-3 py-2 text-gray-600 font-semibold"><span class="material-symbols-outlined">info</span> Sobre Nós</a>
             <a href="/login.html" id="login-btn-mobile" class="block mt-4 bg-orange-500 text-white font-bold py-2 px-5 rounded-full text-center">Entrar</a>
         </div>
     </header>
 
     <!-- Conteúdo Principal -->
     <main class="container mx-auto px-6 py-12">
+
+         <!-- CARROSSEL DE NOVIDADES -->
+        <section class="mb-16">
+            <div class="carousel-container bg-slate-200 shadow-xl max-w-6xl mx-auto h-[250px] md:h-[450px]">
+                
+                <!-- Slide 1 -->
+                <div class="carousel-slide active h-full relative">
+                    <img src="/Assets/logo AA.webp" alt="Nova Atividade de Alfabetização" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 md:p-12 text-white">
+                        <span class="bg-red-600 text-[10px] md:text-xs font-bold px-3 py-1 rounded-full w-fit mb-2">NOVIDADE</span>
+                        <h2 class="text-xl md:text-4xl font-extrabold mb-2">Combo Alfabetização Lúdica</h2>
+                        <p class="text-sm md:text-lg text-gray-200 max-w-xl mb-4 hidden sm:block">Novas fichas interativas para auxiliar crianças em fase inicial de leitura.</p>
+                        <a href="#" class="bg-white text-slate-900 font-bold py-2 px-6 rounded-xl w-fit hover:bg-cyan-500 hover:text-white transition">Conferir agora</a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide h-full relative">
+                    <img src="/Assets/artigos_capa.webp" alt="Materiais de Matemática" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 md:p-12 text-white">
+                        <span class="bg-blue-600 text-[10px] md:text-xs font-bold px-3 py-1 rounded-full w-fit mb-2">LANÇAMENTO</span>
+                        <h2 class="text-xl md:text-4xl font-extrabold mb-2">Matemática Visual 2.0</h2>
+                        <p class="text-sm md:text-lg text-gray-200 max-w-xl mb-4 hidden sm:block">Material adaptado para ensino de operações básicas com suporte visual.</p>
+                        <a href="#" class="bg-white text-slate-900 font-bold py-2 px-6 rounded-xl w-fit hover:bg-cyan-500 hover:text-white transition">Baixar Material</a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-slide h-full relative">
+                    <img src="/Assets/desenho_capa.webp" alt="Artes e Criatividade" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 md:p-12 text-white">
+                        <span class="bg-violet-600 text-[10px] md:text-xs font-bold px-3 py-1 rounded-full w-fit mb-2">PROJETO</span>
+                        <h2 class="text-xl md:text-4xl font-extrabold mb-2">Atividades de Pintura Guiada</h2>
+                        <p class="text-sm md:text-lg text-gray-200 max-w-xl mb-4 hidden sm:block">Estimule a coordenação motora fina com nossos novos desenhos para colorir.</p>
+                        <a href="#" class="bg-white text-slate-900 font-bold py-2 px-6 rounded-xl w-fit hover:bg-cyan-500 hover:text-white transition">Ver Desenhos</a>
+                    </div>
+                </div>
+
+                <!-- Controles do Carrossel -->
+                <button onclick="changeSlide(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 p-2 rounded-full text-white backdrop-blur-sm transition">
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+                <button onclick="changeSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 p-2 rounded-full text-white backdrop-blur-sm transition">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+
+                <!-- Indicadores (Pontinhos) -->
+                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                    <div class="dot w-2 h-2 rounded-full bg-white/50 transition-all cursor-pointer" onclick="currentSlide(0)"></div>
+                    <div class="dot w-2 h-2 rounded-full bg-white/50 transition-all cursor-pointer" onclick="currentSlide(1)"></div>
+                    <div class="dot w-2 h-2 rounded-full bg-white/50 transition-all cursor-pointer" onclick="currentSlide(2)"></div>
+                </div>
+            </div>
+        </section>
         
         <!-- Seção Principal (Hero) -->
         <section class="text-center">
@@ -101,87 +187,39 @@
             <h2 class="text-3xl font-bold text-center mb-10">Explore por Categoria</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
                 <!-- Card de Categoria -->
-                <a href="/Nivel 2/5-recortar e pintar/1-Infantil/Infantil.html" class="card-hover bg-white p-6 rounded-2xl shadow-sm flex flex-col items-center justify-center">
-                    <div class="bg-cyan-100 p-4 rounded-full mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0891b2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v15H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                <a href="/Nivel 2/5-recortar e pintar/1-Infantil/Infantil.html" class="card-hover bg-white p-6 rounded-3xl border border-gray-100 flex flex-col items-center text-center group">
+                    <div class="bg-cyan-100 p-4 rounded-2xl mb-3 group-hover:bg-cyan-600 transition">
+                        <span class="material-symbols-outlined text-3xl text-cyan-600 group-hover:text-white">abc</span>
                     </div>
-                    <span class="font-bold text-lg">Alfabetização</span>
+                    <span class="font-bold text-sm md:text-base">Alfabetização</span>
                 </a>
-                <!-- Card de Categoria -->
-                <a href="/Nivel 2/2-BNCC/Matematica/Matematica.html" class="card-hover bg-white p-6 rounded-2xl shadow-sm flex flex-col items-center justify-center">
-                    <div class="bg-orange-100 p-4 rounded-full mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                <a href="/Nivel 2/2-BNCC/Matematica/Matematica.html" class="card-hover bg-white p-6 rounded-3xl border border-gray-100 flex flex-col items-center text-center group">
+                    <div class="bg-orange-100 p-4 rounded-2xl mb-3 group-hover:bg-orange-500 transition">
+                        <span class="material-symbols-outlined text-3xl text-orange-600 group-hover:text-white">calculate</span>
                     </div>
-                    <span class="font-bold text-lg">Matemática</span>
+                    <span class="font-bold text-sm md:text-base">Matemática</span>
                 </a>
-                <!-- Card de Categoria -->
-                <a href="/Nivel 2/3-simulados/simulados.html" class="card-hover bg-white p-6 rounded-2xl shadow-sm flex flex-col items-center justify-center">
-                     <div class="bg-teal-100 p-4 rounded-full mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><line x1="10" y1="9" x2="8" y2="9"></line></svg>
+                <a href="/Nivel 2/3-simulados/simulados.html" class="card-hover bg-white p-6 rounded-3xl border border-gray-100 flex flex-col items-center text-center group">
+                    <div class="bg-teal-100 p-4 rounded-2xl mb-3 group-hover:bg-teal-500 transition">
+                        <span class="material-symbols-outlined text-3xl text-teal-600 group-hover:text-white">assignment</span>
                     </div>
-                    <span class="font-bold text-lg">Simulados</span>
+                    <span class="font-bold text-sm md:text-base">Simulados</span>
                 </a>
-                <!-- Card de Categoria -->
-                <a href="/Nivel 2/5-recortar e pintar/2-Pintura/Pintura.html" class="card-hover bg-white p-6 rounded-2xl shadow-sm flex flex-col items-center justify-center">
-                    <div class="bg-violet-100 p-4 rounded-full mb-4">
-                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <a href="/Nivel 2/5-recortar e pintar/2-Pintura/Pintura.html" class="card-hover bg-white p-6 rounded-3xl border border-gray-100 flex flex-col items-center text-center group">
+                    <div class="bg-violet-100 p-4 rounded-2xl mb-3 group-hover:bg-violet-600 transition">
+                        <span class="material-symbols-outlined text-3xl text-violet-600 group-hover:text-white">palette</span>
                     </div>
-                    <span class="font-bold text-lg">Desenhos</span>
+                    <span class="font-bold text-sm md:text-base">Desenhos</span>
                 </a>
-                 <!-- Card de Categoria -->
-                 <a href="/Nivel 2/categorias.html" class="card-hover bg-white p-6 rounded-2xl shadow-sm flex flex-col items-center justify-center">
-                    <div class="bg-rose-100 p-4 rounded-full mb-4">
-                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f43f5e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"></path></svg>
+                <a href="/Nivel 2/categorias.html" class="card-hover bg-cyan-600 p-6 rounded-3xl flex flex-col items-center text-center">
+                    <div class="bg-white/20 p-4 rounded-2xl mb-3 text-white">
+                        <span class="material-symbols-outlined text-3xl">add_circle</span>
                     </div>
-                    <span class="font-bold text-lg">Ver Todas</span>
+                    <span class="font-bold text-white text-sm md:text-base">Ver Todas</span>
                 </a>
             </div>
         </section>
 
-        <!-- Seção de Atividades em Destaque -->
-        <section class="mt-20">
-            <h2 class="text-3xl font-bold text-center mb-10">Atividades em Destaque</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Atividade 1 -->
-                    <a href="/Nivel 2/4-Outras atividades/2- Jogos de Tabuleiro/jogos/Sudoku_relaxante.html" class="card-hover bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
-                        <img src="https://placehold.co/600x400/f97316/ffffff?text=Pintura+Guiada" alt="Pintura geométrica guiada" class="w-full h-48 object-cover">
-                        <div class="p-6 flex-grow">
-                            <h3 class="font-bold text-xl mb-2">Sudoku Estratégico</h3>
-                            <p class="text-gray-600">Sudoku para melhora de raciocinio, foco e estratégia.</p>
-                        </div>
-                        <div class="p-6 pt-0">
-                             <span class="text-xs font-bold bg-pink-100 text-pink-800 px-3 py-1 rounded-full">Artes</span>
-                        </div>
-                    </a>
-                    <!-- Atividade 2 -->
-                    <a href="/Nivel 2/5-recortar e pintar/2-Pintura/Pintura.html" class="card-hover bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
-                        <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Desenho+Simples" alt="Desenhe igual" class="w-full h-48 object-cover">
-                        <div class="p-6 flex-grow">
-                            <h3 class="font-bold text-xl mb-2">Desenhe igual</h3>
-                            <p class="text-gray-600">Utilize as linhas para fazer um desenho igual ao modelo. Ótimo para noção espacial.</p>
-                        </div>
-                        <div class="p-6 pt-0">
-                             <span class="text-xs font-bold bg-teal-100 text-teal-800 px-3 py-1 rounded-full">Coordenação</span>
-                        </div>
-                    </a>
-                    <!-- Atividade 3 -->
-                    <a href="/Nivel 2/2-BNCC/Artes/PagDow/ATD-ARTS-4/ATD-ARTS-4.html" class="card-hover bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
-                        <img src="https://placehold.co/600x400/10b981/ffffff?text=Imaginação" alt="Aquário vazio" class="w-full h-48 object-cover">
-                        <div class="p-6 flex-grow">
-                            <h3 class="font-bold text-xl mb-2">Aquário vazio</h3>
-                            <p class="text-gray-600">Use a criatividade para desenhar e enfeitar o aquário da melhor forma possível.</p>
-                        </div>
-                        <div class="p-6 pt-0">
-                             <span class="text-xs font-bold bg-rose-100 text-rose-800 px-3 py-1 rounded-full">Desenho Livre</span>
-                        </div>
-                    </a>
-            </div>
-            <div class="text-center mt-12">
-                 <a href="/Nivel 2/categorias.html" class="bg-orange-500 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-600 transition text-lg">
-                    Ver Todas as Atividades
-                </a>
-            </div>
-        </section>
     </main>
     
     <!-- Rodapé -->
