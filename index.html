@@ -55,14 +55,20 @@
         }
         .carousel-slide {
             display: none;
-            animation: fade 0.8s ease-in-out;
+            width: 100%;
+            height: 100%;
         }
         .carousel-slide.active {
             display: block;
+            animation: fade 0.8s ease-in-out;
         }
         @keyframes fade {
             from { opacity: 0.4; }
             to { opacity: 1; }
+        }
+        .dot.active {
+            background-color: white;
+            width: 1.5rem;
         }
 
     </style>
@@ -122,50 +128,50 @@
                 
                 <!-- Slide 1 -->
                 <div class="carousel-slide active h-full relative">
-                    <img src="/Assets/logo AA.webp" alt="Nova Atividade de Alfabetização" class="w-full h-full object-cover">
+                    <img src="/Assets/BANNER 1.png" alt="Nova Atividade de Alfabetização" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 md:p-12 text-white">
                         <span class="bg-red-600 text-[10px] md:text-xs font-bold px-3 py-1 rounded-full w-fit mb-2">NOVIDADE</span>
-                        <h2 class="text-xl md:text-4xl font-extrabold mb-2">Combo Alfabetização Lúdica</h2>
-                        <p class="text-sm md:text-lg text-gray-200 max-w-xl mb-4 hidden sm:block">Novas fichas interativas para auxiliar crianças em fase inicial de leitura.</p>
-                        <a href="#" class="bg-white text-slate-900 font-bold py-2 px-6 rounded-xl w-fit hover:bg-cyan-500 hover:text-white transition">Conferir agora</a>
+                        <h2 class="text-xl md:text-4xl font-extrabold mb-2">Crie uma conta</h2>
+                        <p class="text-sm md:text-lg text-gray-200 max-w-xl mb-4 hidden sm:block">e salve as atividades nos favoritos</p>
+                        <a href="/login.html" class="bg-white text-slate-900 font-bold py-2 px-6 rounded-xl w-fit hover:bg-cyan-500 hover:text-white transition">Conferir agora</a>
                     </div>
                 </div>
 
                 <!-- Slide 2 -->
                 <div class="carousel-slide h-full relative">
-                    <img src="/Assets/artigos_capa.webp" alt="Materiais de Matemática" class="w-full h-full object-cover">
+                    <img src="/Assets/BANNER 2.png" alt="Materiais de Matemática" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 md:p-12 text-white">
                         <span class="bg-blue-600 text-[10px] md:text-xs font-bold px-3 py-1 rounded-full w-fit mb-2">LANÇAMENTO</span>
-                        <h2 class="text-xl md:text-4xl font-extrabold mb-2">Matemática Visual 2.0</h2>
+                        <h2 class="text-xl md:text-4xl font-extrabold mb-2">Veja todas as atividades</h2>
                         <p class="text-sm md:text-lg text-gray-200 max-w-xl mb-4 hidden sm:block">Material adaptado para ensino de operações básicas com suporte visual.</p>
-                        <a href="#" class="bg-white text-slate-900 font-bold py-2 px-6 rounded-xl w-fit hover:bg-cyan-500 hover:text-white transition">Baixar Material</a>
+                        <a href="/Nivel 2/categorias.html" class="bg-white text-slate-900 font-bold py-2 px-6 rounded-xl w-fit hover:bg-cyan-500 hover:text-white transition">Baixar Material</a>
                     </div>
                 </div>
 
                 <!-- Slide 3 -->
                 <div class="carousel-slide h-full relative">
-                    <img src="/Assets/desenho_capa.webp" alt="Artes e Criatividade" class="w-full h-full object-cover">
+                    <img src="/Assets/BANNER 3.png" alt="Artes e Criatividade" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-6 md:p-12 text-white">
-                        <span class="bg-violet-600 text-[10px] md:text-xs font-bold px-3 py-1 rounded-full w-fit mb-2">PROJETO</span>
-                        <h2 class="text-xl md:text-4xl font-extrabold mb-2">Atividades de Pintura Guiada</h2>
-                        <p class="text-sm md:text-lg text-gray-200 max-w-xl mb-4 hidden sm:block">Estimule a coordenação motora fina com nossos novos desenhos para colorir.</p>
-                        <a href="#" class="bg-white text-slate-900 font-bold py-2 px-6 rounded-xl w-fit hover:bg-cyan-500 hover:text-white transition">Ver Desenhos</a>
+                        <span class="bg-violet-600 text-[10px] md:text-xs font-bold px-3 py-1 rounded-full w-fit mb-2">VEJA !</span>
+                        <h2 class="text-xl md:text-4xl font-extrabold mb-2">Varios Artigos para ler</h2>
+                        <p class="text-sm md:text-lg text-gray-200 max-w-xl mb-4 hidden sm:block">Leia os artigos que são lançados semanalmente</p>
+                        <a href="/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html" class="bg-white text-slate-900 font-bold py-2 px-6 rounded-xl w-fit hover:bg-cyan-500 hover:text-white transition">Ver artigos</a>
                     </div>
                 </div>
 
-                <!-- Controles do Carrossel -->
-                <button onclick="changeSlide(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 p-2 rounded-full text-white backdrop-blur-sm transition">
+                <!-- Controles -->
+                <button onclick="changeSlide(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 p-2 rounded-full text-white backdrop-blur-sm transition z-10">
                     <span class="material-symbols-outlined">chevron_left</span>
                 </button>
-                <button onclick="changeSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 p-2 rounded-full text-white backdrop-blur-sm transition">
+                <button onclick="changeSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 p-2 rounded-full text-white backdrop-blur-sm transition z-10">
                     <span class="material-symbols-outlined">chevron_right</span>
                 </button>
 
-                <!-- Indicadores (Pontinhos) -->
-                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-                    <div class="dot w-2 h-2 rounded-full bg-white/50 transition-all cursor-pointer" onclick="currentSlide(0)"></div>
+                <!-- Indicadores -->
+                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                    <div class="dot w-2 h-2 rounded-full bg-white/50 transition-all cursor-pointer active" onclick="currentSlide(0)"></div>
                     <div class="dot w-2 h-2 rounded-full bg-white/50 transition-all cursor-pointer" onclick="currentSlide(1)"></div>
-                    <div class="dot w-2 h-2 rounded-full bg-white/50 transition-all cursor-pointer" onclick="currentSlide(2)"></div>
+                    <div class="dot w-2 h-2 rounded-full bg-white/50 transition-all cursor-pointer" onclick="currentSlide(1)"></div>
                 </div>
             </div>
         </section>
@@ -260,6 +266,39 @@
 
     <script src="/js/menu-mobile-e-busca.js"></script>
     <script type="module" src="/js/favoritos-sem-botão.js"></script>
+
+    <!-- LOGICA JAVASCRIPT INTEGRADA -->
+    <script>
+        
+        // 2. Lógica do Carrossel
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlides(n) {
+            if (n >= slides.length) slideIndex = 0;
+            if (n < 0) slideIndex = slides.length - 1;
+            
+            slides.forEach(s => s.classList.remove('active'));
+            dots.forEach(d => d.classList.remove('active'));
+            
+            slides[slideIndex].classList.add('active');
+            dots[slideIndex].classList.add('active');
+        }
+
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        // Auto play carrossel
+        setInterval(() => changeSlide(1), 5000);
+
+    </script>
+
 </body>
 </html>
 
