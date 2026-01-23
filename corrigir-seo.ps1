@@ -176,7 +176,7 @@ function Repair-HTMLFile($filePath, $content) {
     }
     
     # 6. Corrigir alt text de imagens genéricos
-    $modified = $modified -replace 'alt="Planta baixa de um imóvel para cálculo de área"', 'alt="Atividade educativa"'
+    $modified = $modified -replace 'alt="Ilustação da atividade"', 'alt="Atividade educativa"'
     if ($modified -ne $content) {
         $fixes += "Alt text de imagens corrigido"
     }
