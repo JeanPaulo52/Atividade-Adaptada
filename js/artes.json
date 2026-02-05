@@ -1,92 +1,152 @@
-[
+﻿[
+  {
+    "titulo": "A Minha Bolha de Dança",
+    "descricao": "EF06AR09 , EF06AR10 , EF06AR11 , A Minha Bolha de Dança - Atividade que desafia o aluno a visualizar a sua ",
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/a-minha-bolha-de-dança/atividade_-a-minha-bolha-de-dança_page-0001.webp",
+    "link": "/nivel-2/2-bncc/artes/pagdow/a-minha-bolha-de-dança/a-minha-bolha-de-dança.html"
+  },
+  {
+    "titulo": "Criando com Danças do Brasil",
+    "descricao": "EF06AR09 , EF06AR10 , EF06AR14 ,Atividade focada na Criação Coreográfica. O aluno aprende sobre a Catira (dança de palmas e pés), entende o que é fazer uma variação de um movimento (mudar o nível, o tempo ou o espaço) e cria a sua própria sequência de dança no papel.",
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/criando-com-dancas-do-brasil/atividade_-criando-com-dancas-do-brasil_page-0001.webp",
+    "link": "/nivel-2/2-bncc/artes/pagdow/criando-com-dancas-do-brasil/criando-com-dancas-do-brasil.html"
+  },
+  {
+    "titulo": "Descobrindo o Carimbó",
+    "descricao": "EF06AR09 , EF06AR10 , EF06AR11 , Descobrindo o Carimbó - Atvdade que explora o Carimbó, desde a sua origem indígena (Tupi) até à influência africana e portuguesa. Inclui quiz de conhecimentos, análise do ins",
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/descobrindo-o-carimbo/atividade_-descobrindo-o-carimbo_page-0001.webp",
+    "link": "/nivel-2/2-bncc/artes/pagdow/descobrindo-o-carimbo/descobrindo-o-carimbo.html"
+  },
+  {
+    "titulo": "Descobrindo o Jongo",
+    "descricao": "EF06AR09 , EF06AR10 , EF06AR11 , DESCOBRINDO O JONGO - Uma atividade que explora o Jongo não apenas como dança, mas como forma de comunicação e resistência. Inclui exercícios de vocabulário, associação lóg",
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/descobrindo-o-jongo/atividade_-descobrindo-o-jongo_page-0001.webp",
+    "link": "/nivel-2/2-bncc/artes/pagdow/descobrindo-o-jongo/descobrindo-o-jongo.html"
+  },
+  {
+    "titulo": "Descobrindo o Siriri",
+    "descricao": "EF06AR09 , EF06AR10 , EF06AR11 , Descobrindo o Siriri - Atvidade que investiga o Siriri, focando-se na sua origem (Mato Grosso), na técnica de bater os pés e na alegria coletiva. Inclui interpretação de tex",
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/descobrindo-o-siriri/atividade_-descobrindo-o-siriri_page-0001.webp",
+    "link": "/nivel-2/2-bncc/artes/pagdow/descobrindo-o-siriri/descobrindo-o-siriri.html"
+  },
+  {
+    "titulo": "Explorando a Dança no Espaço",
+    "descricao": "EF06AR09 , EF06AR10 , EF06AR11 , Explorando a Dança no Espaço - Atividade que transforma conceitos abstratos de dança em exercícios práticos. O aluno irá classificar movimentos, desenhar ",
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/explorando-a-danca-no-espaco/atividade_-explorando-a-danca-no-espaco_page-0001.webp",
+    "link": "/nivel-2/2-bncc/artes/pagdow/explorando-a-danca-no-espaco/explorando-a-danca-no-espaco.html"
+  },
+  {
+    "titulo": "Expressividade na Dança",
+    "descricao": "EF06AR09 , EF06AR10 , EF06AR11 , Expressividade na Dança - Atividade que traduz a teoria de Laban para a linguagem do aluno. Inclui associação de conceitos, análise de movimentos do quotidiano (ações de esforç",
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/expressividade-na-danca/atividade_-expressividade-na-danca_page-0001.webp",
+    "link": "/nivel-2/2-bncc/artes/pagdow/expressividade-na-danca/expressividade-na-danca.html"
+  },
+  {
+    "titulo": "Níveis da Dança",
+    "descricao": "EF06AR09 , EF06AR10 , EF06AR11 , Níveis da Dança - Atividade que explora a ",
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/niveis-da-danca/atividade_-niveis-da-danca_page-0001.webp",
+    "link": "/nivel-2/2-bncc/artes/pagdow/niveis-da-danca/niveis-da-danca.html"
+  },
+  {
+    "titulo": "O Ensaio Geral",
+    "descricao": "EF06AR14 Atividade técnica para Diretores de Dança. Funciona como um guia de ensaio, onde o aluno avalia a qualidade do movimento do grupo, desenha o mapa de palco para ninguém se chocar e planeia os elementos visuais.",
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/o-ensaio-geral/atividade_-o-ensaio-geral_page-0001.webp",
+    "link": "/nivel-2/2-bncc/artes/pagdow/o-ensaio-geral/o-ensaio-geral.html"
+  },
+  {
+    "titulo": "O Universo do Frevo",
+    "descricao": "EF69AR09 O Universo do Frevo - Uma ficha de trabalho diversificada que combina verificação de factos históricos, vocabulário (caça-palavras), prática artística (design de estampa) e",
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/o-universo-do-frevo/atividade_-o-universo-do-frevo_page-0001.webp",
+    "link": "/nivel-2/2-bncc/artes/pagdow/o-universo-do-frevo/o-universo-do-frevo.html"
+  },
   {
     "titulo": "Da Imaginação à Sonoridade",
-    "descricao": "PARTICIPAR DE UMA HISTÓRIA SONORIZADA. Atividade baseada no material digital do estado de São Paulo (EF01AR17) Apreciar e experimentar sonorização de histórias, utilizando vozes e sons corporais e/ou instrumentos musicais convencionais ou não convencionais. Atividade de Artes.Execução de Onomatopeias, Participação em Narrativa, Exploração de Objetos Sonoros, Autoavaliação e Afeto.",
-    "imagem": "/Nivel 2\\2-BNCC\\Artes\\PagDow\\Da Imaginação à Sonoridade\\Atividade_ Da Imaginação à Sonoridade_page-0001.webp",
-    "link": "/Nivel 2\\2-BNCC\\Artes\\PagDow\\Da Imaginação à Sonoridade\\Da Imaginação à Sonoridade.html"
+    "descricao": "EF01AR17 PARTICIPAR DE UMA HISTÓRIA SONORIZADA. Atividade baseada no material digital do estado de São Paulo (EF01AR17) Apreciar e experimentar sonorização de histórias, utilizando vozes e sons corporais e/ou instrumentos musicais convencionais ou não convencionais. Atividade de Artes.Execução de Onomatopeias, Participação em Narrativa, Exploração de Objetos Sonoros, Autoavaliação e Afeto.",
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/da-imaginacao-a-sonoridade/atividade_-da-imaginacao-a-sonoridade_page-0001.webp",
+    "link": "/nivel-2/2-bncc/artes/pagdow/da-imaginacao-a-sonoridade/da-imaginacao-a-sonoridade.html"
   },
   {
     "titulo": "Descobrindo a Música",
-    "descricao": "EXPERIMENTAR MÚSICAS PRÓPRIAS DO UNIVERSO INFANTIL. APRESENTAÇÃO DA LINGUAGEM ARTÍSTICA: MÚSICA. (EF01AR13) Experimentar, identificar e apreciar músicas brasileiras próprias do universo infantil, inclusive aquelas presentes em seu cotidiano. Presença da Música, Universo Infantil, Linguagem Artística e Sentimentos, Desenho e Escuta Ativa. APRECIAR E CONHECER MÚSICA ENQUANTO LINGUAGEM ARTÍSTICA; Atividade baseada no material digital do estado de São Paulo Atividade de Artes.",
-    "imagem": "/Nivel 2\\2-BNCC\\Artes\\PagDow\\Descobrindo a Música\\Atividade_ Descobrindo a Música_page-0001.webp",
-    "link": "/Nivel 2\\2-BNCC\\Artes\\PagDow\\Descobrindo a Música\\Descobrindo a Música.html"
+    "descricao": "EF01AR13 EXPERIMENTAR MÚSICAS PRÓPRIAS DO UNIVERSO INFANTIL. APRESENTAÇÃO DA LINGUAGEM ARTÍSTICA: MÚSICA. (EF01AR13) Experimentar, identificar e apreciar músicas brasileiras próprias do universo infantil, inclusive aquelas presentes em seu cotidiano. Presença da Música, Universo Infantil, Linguagem Artística e Sentimentos, Desenho e Escuta Ativa. APRECIAR E CONHECER MÚSICA ENQUANTO LINGUAGEM ARTÍSTICA; Atividade baseada no material digital do estado de São Paulo Atividade de Artes.",
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/descobrindo-a-musica/atividade_-descobrindo-a-musica_page-0001.webp",
+    "link": "/nivel-2/2-bncc/artes/pagdow/descobrindo-a-musica/descobrindo-a-musica.html"
   },
   {
     "titulo": "Essa Música é o Bicho!",
     "descricao": "MÚSICAS DO UNIVERSO INFANTIL INSPIRADAS NOS SONS DOS ANIMAIS. (EF01AR13) Experimentar, identificar e apreciar músicas brasileiras próprias do universo infantil, inclusive aquelas presentes em seu cotidiano. Linguagem de Emoções, Cantigas de Roda/Infantis, Utilidade da Música, Expressão Criativa. APRECIAR E CANTAR MÚSICAS DO UNIVERSO INFANTIL. Atividade baseada no material digital do estado de São Paulo Atividade de Artes.",
-    "imagem": "/Nivel 2\\2-BNCC\\Artes\\PagDow\\Essa Música é o Bicho!\\Atividade_ Essa Música é o Bicho!_page-0001.webp",
-    "link": "/Nivel 2\\2-BNCC\\Artes\\PagDow\\Essa Música é o Bicho!\\Essa Música é o Bicho!.html"
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/essa-musica-e-o-bicho!/atividade_-essa-musica-e-o-bicho!_page-0001.webp",
+    "link": "/nivel-2/2-bncc/artes/pagdow/essa-musica-e-o-bicho!/essa-musica-e-o-bicho!.html"
   },
   {
     "titulo": "História com Som",
     "descricao": "SONORIZAÇÃO DE HISTÓRIAS. (EF01AR17) Apreciar e experimentar sonorização de histórias, utilizando vozes e sons corporais e/ou instrumentos musicais convencionais ou não convencionais. Uso de Instrumentos Não Convencionais, Memória e Associação, Criatividade e Inovação, Prática de Sonorização. EXPERIMENTAR A SONORIZAÇÃO DE HISTÓRIAS; UTILIZAR INSTRUMENTOS NÃO CONVENCIONAIS PARA PRODUZIR SOM. Atividade baseada no material digital do estado de São Paulo Atividade de Artes.",
-    "imagem": "/Nivel 2\\2-BNCC\\Artes\\PagDow\\História com Som\\Atividade_ História com Som_page-0001.webp",
-    "link": "/Nivel 2\\2-BNCC\\Artes\\PagDow\\História com Som\\História com Som.html"
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/historia-com-som/atividade_-historia-com-som_page-0001.webp",
+    "link": "/nivel-2/2-bncc/artes/pagdow/historia-com-som/historia-com-som.html"
   },
   {
     "titulo": "Música Para Quê",
     "descricao": "EXPERIMENTAR MÚSICAS PRÓPRIAS DO UNIVERSO INFANTIL. APRESENTAÇÃO DA LINGUAGEM ARTÍSTICA: MÚSICA. APRECIAÇÃO DE MÚSICAS DO UNIVERSO INFANTIL. (EF01AR13) Experimentar, identificar e apreciar músicas brasileiras próprias do universo infantil, inclusive aquelas presentes em seu cotidiano. Linguagem de Emoções, Cantigas de Roda/Infantis, Utilidade da Música, Expressão Criativa. APRECIAR E CONHECER MÚSICAS DO UNIVERSO INFANTIL. Atividade baseada no material digital do estado de São Paulo Atividade de Artes.",
-    "imagem": "/Nivel 2\\2-BNCC\\Artes\\PagDow\\Música Para Quê\\Atividade_ Música Para Quê__page-0001.webp",
-    "link": "/Nivel 2\\2-BNCC\\Artes\\PagDow\\Música Para Quê\\Música Para Quê.html"
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/musica-para-que/atividade_-musica-para-que__page-0001.webp",
+    "link": "/nivel-2/2-bncc/artes/pagdow/musica-para-que/musica-para-que.html"
   },
   {
     "titulo": "Os Sons das Histórias",
     "descricao": "SONORIZAÇÃO DE HISTÓRIAS; SONS NATURAIS E ARTIFICIAIS. (EF01AR13) Experimentar, identificar e apreciar músicas brasileiras próprias do universo infantil, inclusive aquelas presentes em seu cotidiano. Diferenciação de Sons, Sonorização, Expressão Artística, Escuta Ativa. APRECIAR UMA HISTÓRIA SONORIZADA; COMPREENDER E IDENTIFICAR SONS NATURAIS E ARTIFICIAIS. Atividade baseada no material digital do estado de São Paulo Atividade de Artes.",
-    "imagem": "/Nivel 2\\2-BNCC\\Artes\\PagDow\\Os Sons das Histórias\\Atividade_ Os Sons das Histórias_page-0001.webp",
-    "link": "/Nivel 2\\2-BNCC\\Artes\\PagDow\\Os Sons das Histórias\\Os Sons das Histórias.html"
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/os-sons-das-historias/atividade_-os-sons-das-historias_page-0001.webp",
+    "link": "/nivel-2/2-bncc/artes/pagdow/os-sons-das-historias/os-sons-das-historias.html"
   },
   {
     "titulo": "Piá do Mutum",
     "descricao": "MÚSICA BRASILEIRA DO UNIVERSO INFANTIL – “PIÁ DO MUTUM”. (EF01AR17) Apreciar e experimentar sonorização de histórias, utilizando vozes e sons corporais e/ou instrumentos musicais convencionais ou não convencionais. Cultura Popular, Exploração Sonora, Ritmo e Onomatopeia, Imaginação Visual. APRECIAR E CONHECER MÚSICAS DO UNIVERSO INFANTIL. Atividade baseada no material digital do estado de São Paulo Atividade de Artes.",
-    "imagem": "/Nivel 2\\2-BNCC\\Artes\\PagDow\\Piá do Mutum\\Atividade_ Piá do Mutum_page-0001.webp",
-    "link": "/Nivel 2\\2-BNCC\\Artes\\PagDow\\Piá do Mutum\\Piá do Mutum.html"
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/pia-do-mutum/atividade_-pia-do-mutum_page-0001.webp",
+    "link": "/nivel-2/2-bncc/artes/pagdow/pia-do-mutum/pia-do-mutum.html"
   },
   {
     "titulo": "Que Música é Essa",
     "descricao": "MÚSICAS DO UNIVERSO INFANTIL. (EF01AR13) Experimentar, identificar e apreciar músicas brasileiras próprias do universo infantil, inclusive aquelas presentes em seu cotidiano. Memória Musical, Lembranças e Afeto, Identificação de Repertório, Expressão Artística. ESCUTAR E IDENTIFICAR MÚSICAS DO UNIVERSO INFANTIL. Atividade baseada no material digital do estado de São Paulo Atividade de Artes.",
-    "imagem": "/Nivel 2\\2-BNCC\\Artes\\PagDow\\Que Música é Essa\\Atividade_ Que Música é Essa__page-0001.webp",
-    "link": "/Nivel 2\\2-BNCC\\Artes\\PagDow\\Que Música é Essa\\Que Música é Essa.html"
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/que-musica-e-essa/atividade_-que-musica-e-essa__page-0001.webp",
+    "link": "/nivel-2/2-bncc/artes/pagdow/que-musica-e-essa/que-musica-e-essa.html"
   },
   {
     "titulo": "Pintura geometrica guiada",
     "descricao": "Atividade de pintura - Atividade de pintura guiada com formas geométricas - A atividade deve ser pintada seguindo em consideração a forma geométrica e a cor que representa essa forma.",
-    "imagem": "/Nivel 2/2-BNCC/Artes/PagDow/ATD-ARTS-1/1.png",
-    "link": "/Nivel 2/2-BNCC/Artes/PagDow/ATD-ARTS-1/ATD-ARTS-1.html"
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/atd-arts-1/1.png",
+    "link": "/nivel-2/2-bncc/artes/pagdow/atd-arts-1/atd-arts-1.html"
   },
   {
     "titulo": "Gato meio a meio Pintura",
     "descricao": "Atividade de pintura - Atividade onde dever se pintar o desenho conforme a outra metade. - O gato da imagem deve ser pintado levando em consideração as cores do lado colorido.",
-    "imagem": "/Nivel 2/2-BNCC/Artes/PagDow/ATD-ARTS-2/2.png",
-    "link": "/Nivel 2/2-BNCC/Artes/PagDow/ATD-ARTS-2/ATD-ARTS-2.html"
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/atd-arts-2/2.png",
+    "link": "/nivel-2/2-bncc/artes/pagdow/atd-arts-2/atd-arts-2.html"
   },
   {
     "titulo": "Picolé colorido pintura",
     "descricao": "Atividade de pintura - Uma atividade de pintura e raciocínio - Os picolés devem ser pintados conforme a sequências mostradas.",
-    "imagem": "/Nivel 2/2-BNCC/Artes/PagDow/ATD-ARTS-3/3.png",
-    "link": "/Nivel 2/2-BNCC/Artes/PagDow/ATD-ARTS-3/ATD-ARTS-3.html"
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/atd-arts-3/3.png",
+    "link": "/nivel-2/2-bncc/artes/pagdow/atd-arts-3/atd-arts-3.html"
   },
   {
     "titulo": "Aquário vazio",
     "descricao": "Atividade de desenho livre com o uso da imaginação - Deixe que a criatividade fale, e enfeite o aquário da melhor forma possivel.",
-    "imagem": "/Nivel 2/2-BNCC/Artes/PagDow/ATD-ARTS-4/4.png",
-    "link": "/Nivel 2/2-BNCC/Artes/PagDow/ATD-ARTS-4/ATD-ARTS-4.html"
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/atd-arts-4/4.png",
+    "link": "/nivel-2/2-bncc/artes/pagdow/atd-arts-4/atd-arts-4.html"
   },
   {
     "titulo": "Desenhe igual",
     "descricao": "Atividade de pintura - Atividade com foco em ajudar na noção de desenho simples. - Utilize as linhas para fazer um desenho igual ao desenho feito.",
-    "imagem": "/Nivel 2/2-BNCC/Artes/PagDow/ATD-ARTS-5/5.png",
-    "link": "/Nivel 2/2-BNCC/Artes/PagDow/ATD-ARTS-5/ATD-ARTS-5.html"
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/atd-arts-5/5.png",
+    "link": "/nivel-2/2-bncc/artes/pagdow/atd-arts-5/atd-arts-5.html"
   },
   {
     "titulo": "Quem sou eu?",
     "descricao": "Atividade de auto descrição com o uso da cratividade -Desenhe um personagem que melhor represente a pessoa que esta fazendo a atividade pode ser feito também para auto retrato.",
-    "imagem": "/Nivel 2/2-BNCC/Artes/PagDow/ATD-ARTS-6/6.png",
-    "link": "/Nivel 2/2-BNCC/Artes/PagDow/ATD-ARTS-6/ATD-ARTS-6.html"
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/atd-arts-6/6.png",
+    "link": "/nivel-2/2-bncc/artes/pagdow/atd-arts-6/atd-arts-6.html"
   },
   {
     "titulo": "Desenhe igual",
     "descricao": "Atividade de pintura - Essa atividade tem o objetivo de desenvolver a coordenação motora, raciocinio e a criatividade, de forma lúdica e criativa. - Pegue a atividade e permita que a criança desenhe da forma que achar melhor e tente fazer o mais próximo que pode do desenho guia, lembre de incentivar e elogiar a criança pelo esforço e o desenvolvimento da atividade, para assim, ela desenvolva também coragem e auto-estima.",
-    "imagem": "/Nivel 2/2-BNCC/Artes/PagDow/Desenhe igual/ATD Diaria.png",
-    "link": "/Nivel 2/2-BNCC/Artes/PagDow/Desenhe igual/2-23.04.25.html"
+    "imagem": "/nivel-2/2-bncc/artes/pagdow/desenhe-igual/atd-diaria.png",
+    "link": "/nivel-2/2-bncc/artes/pagdow/desenhe-igual/2-23.04.25.html"
   }
 ]

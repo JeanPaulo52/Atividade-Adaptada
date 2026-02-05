@@ -442,7 +442,7 @@ nav a:hover { /* Cor dos botões da barra principal */
 
 /* ------------------------------------------------------------------------------------------------ */
 
-.imgATD-IND { /* Imagem da atividade da pagina de download */
+.imgATD-IND { /* Imagem da atividade da Pagina-de-Download */
     width: 500px;
 
 }
@@ -454,19 +454,19 @@ nav a:hover { /* Cor dos botões da barra principal */
 
 }
 
-.TextATD-IND { /* Texto de descrição da atividade na pagina de downloads */
+.TextATD-IND { /* Texto de descrição da atividade na Pagina-de-Downloads */
 
     margin-bottom: 30px;
     margin-left: 20px;
 }
 
-.TextATD-HAB { /* Texto de descrição da atividade na pagina de downloads */
+.TextATD-HAB { /* Texto de descrição da atividade na Pagina-de-Downloads */
 
     margin-bottom: 5px;
     margin-left: 20px;
 }
 
-.linkDOW-IND { /* link para da atividade na pagina de downloads */
+.linkDOW-IND { /* link para da atividade na Pagina-de-Downloads */
     margin-top: 10px;
     margin-bottom: 50px;
 }

@@ -1,44 +1,44 @@
-[
+﻿[
   {
     "titulo": "",
     "descricao": "",
-    "imagem": "/Assets/artigos_capa.webp",
-    "link": "/Nivel 2/1-pagina inicial/1-Paginas/Artigos.html"
+    "imagem": "/assets/artigos_capa.webp",
+    "link": "/nivel-2/1-pagina-inicial/1-paginas/artigos.html"
   },
   {
     "titulo": "",
     "descricao": "",
-    "imagem": "/Assets/atividades_capa.webp",
-    "link": "/Nivel 2/2-BNCC/2-BNCC.html"
+    "imagem": "/assets/atividades_capa.webp",
+    "link": "/nivel-2/2-bncc/2-bncc.html"
   },
   {
     "titulo": "",
     "descricao": "",
-    "imagem": "/Assets/infantil_capa.webp",
-    "link": "/Nivel 2/5-recortar e pintar/1-Infantil/Infantil.html"
+    "imagem": "/assets/infantil_capa.webp",
+    "link": "/nivel-2/5-recortar-e-pintar/1-infantil/infantil.html"
   },
   {
     "titulo": "",
     "descricao": "",
-    "imagem": "/Assets/desenho_capa.webp",
-    "link": "/Nivel 2/5-recortar e pintar/2-Pintura/Pintura.html"
+    "imagem": "/assets/desenho_capa.webp",
+    "link": "/nivel-2/5-recortar-e-pintar/2-pintura/pintura.html"
   },
   {
     "titulo": "",
     "descricao": "",
-    "imagem": "/Assets/raciocinio_capa.webp",
-    "link": "/Nivel 2/4-Outras atividades/1-Raciocinio/Raciocinio.html"
+    "imagem": "/assets/raciocinio_capa.webp",
+    "link": "/nivel-2/4-outras-atividades/1-raciocinio/raciocinio.html"
   },
   {
     "titulo": "",
     "descricao": "",
-    "imagem": "/Assets/simulados_capa.webp",
-    "link": "/Nivel 2/3-simulados/simulados.html"
+    "imagem": "/assets/simulados_capa.webp",
+    "link": "/nivel-2/3-simulados/simulados.html"
   },
   {
     "titulo": "",
     "descricao": "",
-    "imagem": "/Assets/livros_capa.webp",
-    "link": "/Nivel 2/6-livros/livros.html"
+    "imagem": "/assets/livros_capa.webp",
+    "link": "/nivel-2/6-livros/livros.html"
   }
 ]

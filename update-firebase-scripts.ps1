@@ -1,4 +1,4 @@
-# Script PowerShell para atualizar scripts Firebase em páginas HTML
+﻿# Script PowerShell para atualizar scripts Firebase em páginas HTML
 
 $workspacePath = "c:\Users\jean\Desktop\Atividade Adaptada.com"
 
@@ -293,32 +293,32 @@ $articleScript = @"
 
 # Lista de arquivos HTML com favorite-btn
 $files = @(
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\2-BNCC\Artes\PagDow\ATD-ARTS-1\ATD-ARTS-1.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\1- Como brincar ensina\brincar-também-ensina.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\2 - A história da educação especial\história-da-educação-especial-no-Brasil.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\10-bncc educação infanil\bncc-educação-infantil.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\3 - Jogos que eninam de verdade\jogos-que-ensinam-pela-gamificação.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\4- Como Estimular a Autonomia das Crianças no Ambiente Escolar e em Casa\Como-Estimular-a-Autonomia-das-Crianças-no-Ambiente-Escolar-e-em-Casa.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\5- Atividades Simples para Desenvolver Habilidades Socioemocionais na Infância\Atividades-Simples-para-Desenvolver-Habilidades-Socioemocionais-na-Infância.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\8-A-volta-da-reprova\A-volta-da-reprova-nas-escolas-brasileiras.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\6- 5 Atitudes Simples que Mostram à Criança que Ela é Valorizada\5-Atitudes-Simples-que-Mostram-à-Criança-que-Ela-é-Valorizada.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\7- Ensinando as crianças a resolver conflitos\Ensinando-as-crianças-a-resolverem-conflitos.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\11-Habilidades-da-BNCC-Educação-Infantil\Habilidades-da-BNCC-Educação-Infantil.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\12-6-atividades-matematicas\As Melhores Atividades de Matemática para Educação Infantil.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\13_concurso_educacao_guaruja\concurso_educacao_guaruja.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\Atividade-para-educação-infantil\atividades-para-educação-infantil.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\14_alfabetização_infantil\alfabetização_infantil.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\praticas-pedagogicas-inovadoras\praticas-pedagogicas-na-educação-infantil.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\15_A_Importância_da_Música_na_Educação_Infantil_Estímulo_à_Linguagem_e_à_Criatividade\A_Importância_da_Música_na_Educação_Infantil_Estímulo_à_Linguagem_e_à_Criativi.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\ComoAdaptarAula\Noticia 2.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\Consciência Fonológica\Conciencia Fonologica.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\Damas - seus beneficios\Noticia 4.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\Dia do Autismo\Noticia 7.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\DiaDaDown\Noticia 4.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\O poder da leitura\Noticia 8.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\oPoder do NÃO\Noticia 6.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\OpoderdoFeedBack\Noticia 3.html",
-    "c:\Users\jean\Desktop\Atividade Adaptada.com\Nivel 2\1-pagina inicial\2-Artigos\Plano Semanal de Alfabetização 5 Dias de Atividades Prontas para a Sala de Aula\Plano Semanal de Alfabetização 5 Dias de Atividades Prontas para a Sala de Aula.html"
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\2-BNCC\Artes\PagDow\ATD-ARTS-1\ATD-ARTS-1.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\1- Como brincar ensina\brincar-também-ensina.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\2 - A história da educação especial\história-da-educação-especial-no-Brasil.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\10-bncc educação infanil\bncc-educação-infantil.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\3 - Jogos que eninam de verdade\jogos-que-ensinam-pela-gamificação.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\4- Como Estimular a Autonomia das Crianças no Ambiente Escolar e em Casa\Como-Estimular-a-Autonomia-das-Crianças-no-Ambiente-Escolar-e-em-Casa.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\5- Atividades Simples para Desenvolver Habilidades Socioemocionais na Infância\Atividades-Simples-para-Desenvolver-Habilidades-Socioemocionais-na-Infância.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\8-A-volta-da-reprova\A-volta-da-reprova-nas-escolas-brasileiras.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\6- 5 Atitudes Simples que Mostram à Criança que Ela é Valorizada\5-Atitudes-Simples-que-Mostram-à-Criança-que-Ela-é-Valorizada.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\7- Ensinando as crianças a resolver conflitos\Ensinando-as-crianças-a-resolverem-conflitos.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\11-Habilidades-da-BNCC-Educação-Infantil\Habilidades-da-BNCC-Educação-Infantil.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\12-6-atividades-matematicas\As Melhores Atividades de Matemática para Educação Infantil.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\13_concurso_educacao_guaruja\concurso_educacao_guaruja.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\Atividade-para-educação-infantil\atividades-para-educação-infantil.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\14_alfabetização_infantil\alfabetização_infantil.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\praticas-pedagogicas-inovadoras\praticas-pedagogicas-na-educação-infantil.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\15_A_Importância_da_Música_na_Educação_Infantil_Estímulo_à_Linguagem_e_à_Criatividade\A_Importância_da_Música_na_Educação_Infantil_Estímulo_à_Linguagem_e_à_Criativi.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\ComoAdaptarAula\Noticia 2.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\Consciência Fonológica\Conciencia Fonologica.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\Damas - seus beneficios\Noticia 4.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\Dia do Autismo\Noticia 7.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\DiaDaDown\Noticia 4.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\O poder da leitura\Noticia 8.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\oPoder do NÃO\Noticia 6.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\OpoderdoFeedBack\Noticia 3.html",
+    "c:\Users\jean\Desktop\Atividade Adaptada.com\nivel-2\1-pagina-inicial\2-Artigos\Plano Semanal de Alfabetização 5 Dias de Atividades Prontas para a Sala de Aula\Plano Semanal de Alfabetização 5 Dias de Atividades Prontas para a Sala de Aula.html"
 )
 
 $updatedCount = 0

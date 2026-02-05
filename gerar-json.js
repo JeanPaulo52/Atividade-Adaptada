@@ -1,8 +1,20 @@
-const fs = require("fs");
+﻿const fs = require("fs");
 const path = require("path");
 
-const pastaBase = "./Nivel 2/2-BNCC/Matematica/PagDow/"; // caminho da pasta raiz
+const pastaBase = "./nivel-2/2-BNCC/Artes/PagDow/"; // caminho da pasta raiz
 let atividades = [];
+
+// Função para extrair a meta description do arquivo HTML
+function extrairMetaDescription(caminhoHtml) {
+  try {
+    const conteudo = fs.readFileSync(caminhoHtml, "utf-8");
+    const regex = /meta\s+name=["']description["']\s+content=["']([^"']*)["']/i;
+    const match = conteudo.match(regex);
+    return match ? match[1] : "Atividade de Matematica.";
+  } catch (erro) {
+    return "Atividade de Matematica.";
+  }
+}
 
 function listarPastas(dir) {
   const pastas = fs.readdirSync(dir);
@@ -19,9 +31,12 @@ function listarPastas(dir) {
       const imagem = arquivos.find(f => f.endsWith(".webp"));
 
       if (html && imagem) {
+        const caminhoHtml = path.join(caminhoCompleto, html);
+        const descricao = extrairMetaDescription(caminhoHtml);
+
         atividades.push({
           titulo: html.replace(".html", "").replace(/[-_]/g, " "),
-          descricao: "Atividade de Matematica.",
+          descricao: descricao,
           imagem: path.join(caminhoCompleto, imagem).replace(pastaBase + "/", ""),
           link: path.join(caminhoCompleto, html).replace(pastaBase + "/", "")
         });

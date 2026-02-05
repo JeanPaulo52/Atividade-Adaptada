@@ -1,38 +1,38 @@
-[
+﻿[
   {
     "titulo": "Bandeiras dos paises",
     "descricao": "Atividade de geografia sobre as bandeiras e seus respectivos países.",
-    "imagem": "/Nivel 2/2-BNCC/Geografia/PagDow/ATD-Geo-1/1.png",
-    "link": "/Nivel 2/2-BNCC/Geografia/PagDow/ATD-Geo-1/ATD-ARTS-1.html"
+    "imagem": "/nivel-2/2-bncc/geografia/pagdow/atd-geo-1/1.png",
+    "link": "/nivel-2/2-bncc/geografia/pagdow/atd-geo-1/atd-arts-1.html"
   },
   {
     "titulo": "O seu país",
     "descricao": "Atividade de geografia onde deve ser identificado o país que você mora e qual gostaria de visitar.",
-    "imagem": "/Nivel 2/2-BNCC/Geografia/PagDow/ATD-Geo-2/2.png",
-    "link": "/Nivel 2/2-BNCC/Geografia/PagDow/ATD-Geo-2/ATD-ARTS-2.html"
+    "imagem": "/nivel-2/2-bncc/geografia/pagdow/atd-geo-2/2.png",
+    "link": "/nivel-2/2-bncc/geografia/pagdow/atd-geo-2/atd-arts-2.html"
   },
   {
     "titulo": "Pintando os continentes",
     "descricao": "Atividade de pintura dos continentes.",
-    "imagem": "/Nivel 2/2-BNCC/Geografia/PagDow/ATD-Geo-3/3.png",
-    "link": "/Nivel 2/2-BNCC/Geografia/PagDow/ATD-Geo-3/ATD-ARTS-3.html"
+    "imagem": "/nivel-2/2-bncc/geografia/pagdow/atd-geo-3/3.png",
+    "link": "/nivel-2/2-bncc/geografia/pagdow/atd-geo-3/atd-arts-3.html"
   },
   {
     "titulo": "Meios de transporte",
     "descricao": "Atividade de geografia onde deve ser identificado os tipos de transporte.",
-    "imagem": "/Nivel 2/2-BNCC/Geografia/PagDow/ATD-Geo-4/4.png",
-    "link": "/Nivel 2/2-BNCC/Geografia/PagDow/ATD-Geo-4/ATD-ARTS-4.html"
+    "imagem": "/nivel-2/2-bncc/geografia/pagdow/atd-geo-4/4.png",
+    "link": "/nivel-2/2-bncc/geografia/pagdow/atd-geo-4/atd-arts-4.html"
   },
   {
     "titulo": "O tempo",
     "descricao": "Atividade de geografia onde deve ser identificado o tempo conforme o desenho.",
-    "imagem": "/Nivel 2/2-BNCC/Geografia/PagDow/ATD-Geo-5/5.png",
-    "link": "/Nivel 2/2-BNCC/Geografia/PagDow/ATD-Geo-5/ATD-ARTS-5.html"
+    "imagem": "/nivel-2/2-bncc/geografia/pagdow/atd-geo-5/5.png",
+    "link": "/nivel-2/2-bncc/geografia/pagdow/atd-geo-5/atd-arts-5.html"
   },
   {
     "titulo": "Objetos Naturais",
     "descricao": "Atividade de geogafia sobre os abjetos naturais e como identificar eles.",
-    "imagem": "/Nivel 2/2-BNCC/Geografia/PagDow/ATD-Geo-6/6.png",
-    "link": "/Nivel 2/2-BNCC/Geografia/PagDow/ATD-Geo-6/ATD-ARTS-6.html"
+    "imagem": "/nivel-2/2-bncc/geografia/pagdow/atd-geo-6/6.png",
+    "link": "/nivel-2/2-bncc/geografia/pagdow/atd-geo-6/atd-arts-6.html"
   }
 ]
