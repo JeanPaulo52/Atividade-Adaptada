@@ -1,12 +1,12 @@
 [
   {
-    "titulo": "Artes",
+    "titulo": "artes",
     "descricao": "Atividade de matematica.",
     "imagem": "/nivel-2/2-bncc/artes/artes_logo.webp",
     "link": "/nivel-2/2-bncc/artes/artes.html"
   },
   {
-    "titulo": "Biologia",
+    "titulo": "biologia",
     "descricao": "Atividade de matematica.",
     "imagem": "/nivel-2/2-bncc/biologia/biologia_logo.webp",
     "link": "/nivel-2/2-bncc/biologia/biologia.html"
@@ -18,7 +18,7 @@
     "link": "/nivel-2/2-bncc/ciencias/ciencias.html"
   },
   {
-    "titulo": "Educa��o Fisica",
+    "titulo": "Educa��o fisica",
     "descricao": "Atividade de matematica.",
     "imagem": "/nivel-2/2-bncc/educa��o-fisica/educa��o_fisica_logo.webp",
     "link": "/nivel-2/2-bncc/educa��o-fisica/educa��o-fisica.html"
@@ -30,31 +30,31 @@
     "link": "/nivel-2/2-bncc/educa��o_financeira/educa��o_financeira.html"
   },
   {
-    "titulo": "Filosofia",
+    "titulo": "filosofia",
     "descricao": "Atividade de matematica.",
     "imagem": "/nivel-2/2-bncc/filosofia/filosofia_logo.webp",
     "link": "/nivel-2/2-bncc/filosofia/filosofia.html"
   },
   {
-    "titulo": "Fisica",
+    "titulo": "fisica",
     "descricao": "Atividade de matematica.",
     "imagem": "/nivel-2/2-bncc/fisica/fisica_logo.webp",
     "link": "/nivel-2/2-bncc/fisica/fisica.html"
   },
   {
-    "titulo": "Geografia",
+    "titulo": "geografia",
     "descricao": "Atividade de matematica.",
     "imagem": "/nivel-2/2-bncc/geografia/geografia_logo.webp",
     "link": "/nivel-2/2-bncc/geografia/geografia.html"
   },
   {
-    "titulo": "Historia",
+    "titulo": "historia",
     "descricao": "Atividade de matematica.",
     "imagem": "/nivel-2/2-bncc/historia/hist�ria_logo.webp",
     "link": "/nivel-2/2-bncc/historia/historia.html"
   },
   {
-    "titulo": "Ingles",
+    "titulo": "ingles",
     "descricao": "Atividade de matematica.",
     "imagem": "/nivel-2/2-bncc/ingles/ingles_logo.webp",
     "link": "/nivel-2/2-bncc/ingles/ingles.html"
@@ -66,19 +66,19 @@
     "link": "/nivel-2/2-bncc/lingua-portuguesa/ligua-portugesa.html"
   },
   {
-    "titulo": "Matematica",
+    "titulo": "matematica",
     "descricao": "Atividade de matematica.",
     "imagem": "/nivel-2/2-bncc/matematica/matematica_logo.webp",
     "link": "/nivel-2/2-bncc/matematica/matematica.html"
   },
   {
-    "titulo": "Quimica",
+    "titulo": "quimica",
     "descricao": "Atividade de matematica.",
     "imagem": "/nivel-2/2-bncc/qu�mica/quimica_logo.webp",
     "link": "/nivel-2/2-bncc/qu�mica/quimica.html"
   },
   {
-    "titulo": "Sociologia",
+    "titulo": "sociologia",
     "descricao": "Atividade de matematica.",
     "imagem": "/nivel-2/2-bncc/sociologia/sociologia_logo.webp",
     "link": "/nivel-2/2-bncc/sociologia/sociologia.html"
