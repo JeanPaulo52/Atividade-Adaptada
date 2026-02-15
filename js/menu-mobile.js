@@ -43,7 +43,7 @@
                 'biologia.json', 'ciencias.json', 'educacaofisica.json', 'filosofia.json',
                 'fisica.json', 'geografia.json', 'historia.json', 'ingles.json',
                 'portugues.json', 'quimica.json', 'sociologia.json', 'infantil.json',
-                'raciocinio.json', 'livros.json', 'lojinha.json', 'outro.json', 'desenhos.json', 'simulados.json'
+                'raciocinio.json', 'livros.json', 'lojinha.json', 'outro.json', 'desenhos.json', 'simulado.json'
             ];
 
             try {
