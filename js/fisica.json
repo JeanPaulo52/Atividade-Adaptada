@@ -1,5 +1,72 @@
 ﻿[
   {
+    "titulo": "A simplicidade da função horária do MRU",
+    "descricao": "(EM13CNT204) Elaborar explicações, previsões e cálculos a respeito dos movimentos de objetos na Terra, no Sistema Solar e no Universo com base na análise das interações gravitacionais, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros). Atividade que divide a complexidade matemática em três passos lógicos: (1) Desmontar a fórmula, (2) Ler um gráfico, e (3) Resolver um problema prático de colisão/encontro entre dois veículos. Atividade de física sobre as matrizes elétricas e sua importância.",
+    "imagem": "/nivel-2/2-bncc/fisica/pagdow/a-simplicidade-da-funcao-horaria-do-mru/Atividade_%20A%20Matem%C3%A1tica%20do%20MRU_page-0001.webp",
+    "link": "/nivel-2/2-bncc/fisica/pagdow/a-simplicidade-da-funcao-horaria-do-mru/a-simplicidade-da-funcao-horaria-do-mru.html"
+  },
+  {
+    "titulo": "Equações do MRUV: Além da velocidade constante",
+    "descricao": "(EM13CNT204) Elaborar explicações, previsões e cálculos a respeito dos movimentos de objetos na Terra, no Sistema Solar e no Universo com base na análise das interações gravitacionais, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros). Atividade com um design tech/racing. O aluno passa por três boxes de teste: acelerar (velocidade), medir o asfalto (espaço) e o teste de travagem cega (Torricelli). Atividade de física sobre as matrizes elétricas e sua importância.",
+    "imagem": "/nivel-2/2-bncc/fisica/pagdow/equacoes-do-mruv-alem-da-velocidade-constante/Atividade_%20Engenharia%20de%20Alta%20Performance%20(MRUV)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/fisica/pagdow/equacoes-do-mruv-alem-da-velocidade-constante/equacoes-do-mruv-alem-da-velocidade-constante.html"
+  },
+  {
+    "titulo": "Força e suas medidas: entendendo grandezas escalares e vetoriais",
+    "descricao": "(EM13CNT204) Elaborar explicações, previsões e cálculos a respeito dos movimentos de objetos na Terra, no Sistema Solar e no Universo com base na análise das interações gravitacionais, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros). Atividade visual. Começa com uma triagem de grandezas (escalar vs. vetorial), passa pela identificação visual das características de uma seta (vetor) e termina com o cálculo de forças resultantes em blocos e num cabo de guerra. Atividade de física sobre as grandezas escalares e vetoriais.",
+    "imagem": "/nivel-2/2-bncc/fisica/pagdow/Forca-e-suas-medidas-entendendo-grandezas-escalares-e-vetoriais/Atividade_%20Laborat%C3%B3rio%20de%20Vetores_page-0001.webp",
+    "link": "/nivel-2/2-bncc/fisica/pagdow/Forca-e-suas-medidas-entendendo-grandezas-escalares-e-vetoriais/Forca-e-suas-medidas-entendendo-grandezas-escalares-e-vetoriais.html"
+  },
+  {
+    "titulo": "Lançamentos no Plano: Além da trajetória retilínea.",
+    "descricao": "(EM13CNT204) Elaborar explicações, previsões e cálculos a respeito dos movimentos de objetos na Terra, no Sistema Solar e no Universo com base na análise das interações gravitacionais, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros). Atividade temática de desporto. Contém a análise de uma curva parabólica, a separação do movimento em eixos (MRU vs. MRUV), a descoberta do ângulo perfeito para o alcance máximo e o desafio tático de um guarda-redes.",
+    "imagem": "/nivel-2/2-bncc/fisica/pagdow/lancamentos-no-plano-alem-da-trajetoria-retilinea/Atividade_%20O%20Desafio%20Parab%C3%B3lico%20(F%C3%ADsica)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/fisica/pagdow/lancamentos-no-plano-alem-da-trajetoria-retilinea/lancamentos-no-plano-alem-da-trajetoria-retilinea.html"
+  },
+  {
+    "titulo": "Movimento Circular Uniforme: Entre rotações e transmissões",
+    "descricao": "Atividadetemática (Oficina Mecânica). Inclui a distinção entre variáveis do MCU, a análise do sentido de rotação de engrenagens em contacto, e o clássico problema da transmissão da bicicleta (coroa e carreto/catraca).(EM13CNT204) Elaborar explicações, previsões e cálculos a respeito dos movimentos de objetos na Terra, no Sistema Solar e no Universo com base na análise das interações gravitacionais, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros).",
+    "imagem": "/nivel-2/2-bncc/fisica/pagdow/movimento-circular-uniforme-entre-rotacoes-e-transmissoes/Atividade_%20A%20Oficina%20do%20Movimento%20(MCU)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/fisica/pagdow/movimento-circular-uniforme-entre-rotacoes-e-transmissoes/movimento-circular-uniforme-entre-rotacoes-e-transmissoes.html"
+  },
+  {
+    "titulo": "Movimento circular uniforme: hora de resolver problemas",
+    "descricao": "Atividade temática (Laboratório de Ciclismo). O aluno faz uma revisão rápida das fórmulas, resolve um problema prático de cálculo da frequência da roda traseira e, por fim, aplica o conceito de marchas para decidir a melhor engrenagem para uma subida ou uma reta.(EM13CNT204) Elaborar explicações, previsões e cálculos a respeito dos movimentos de objetos na Terra, no Sistema Solar e no Universo com base na análise das interações gravitacionais, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros).",
+    "imagem": "/nivel-2/2-bncc/fisica/pagdow/movimento-circular-uniforme-hora-de-resolver-problemas/Atividade_%20A%20F%C3%ADsica%20do%20Ciclismo%20(MCU)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/fisica/pagdow/movimento-circular-uniforme-hora-de-resolver-problemas/movimento-circular-uniforme-hora-de-resolver-problemas.html"
+  },
+  {
+    "titulo": "Movimento e Repouso: Tudo é uma questão de referencial",
+    "descricao": "Atividade com três missões de análise. O aluno avalia uma viagem de autocarro (ônibus), classifica objetos pelo seu tamanho relativo ao percurso e prevê o desenho de uma trajetória em queda.(EM13CNT204) Elaborar explicações, previsões e cálculos a respeito dos movimentos de objetos na Terra, no Sistema Solar e no Universo com base na análise das interações gravitacionais, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros).",
+    "imagem": "/nivel-2/2-bncc/fisica/pagdow/movimento-e-repouso-tudo-e-uma-questao-de-referencial/Atividade_%20O%20Guia%20do%20Observador%20(Cinem%C3%A1tica)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/fisica/pagdow/movimento-e-repouso-tudo-e-uma-questao-de-referencial/movimento-e-repouso-tudo-e-uma-questao-de-referencial.html"
+  },
+  {
+    "titulo": "Movimento uniforme: do cálculo à interpretação",
+    "descricao": "Atividade imersiva (com tema de desporto automóvel). Divide-se em 4 etapas (boxes das boxes, computador de bordo, telemetria visual e planeamento de ultrapassagem).(EM13CNT204) Elaborar explicações, previsões e cálculos a respeito dos movimentos de objetos na Terra, no Sistema Solar e no Universo com base na análise das interações gravitacionais, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros).",
+    "imagem": "/nivel-2/2-bncc/fisica/pagdow/movimento-uniforme-do-calculo-a-interpretacao/Atividade_%20Rali%20da%20F%C3%ADsica%20(MRU)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/fisica/pagdow/movimento-uniforme-do-calculo-a-interpretacao/movimento-uniforme-do-calculo-a-interpretacao.html"
+  },
+  {
+    "titulo": "Movimentos verticais: da queda ao lançamento",
+    "descricao": "Atividade dividida em \"etapas de missão\". Inclui uma revisão visual das fórmulas (\"Painel de Controlo\"), um cálculo de lançamento vertical de uma mini-sonda, um cálculo de queda livre de carga, e um exercício conceptual sobre a simetria do movimento.(EM13CNT204) Elaborar explicações, previsões e cálculos a respeito dos movimentos de objetos na Terra, no Sistema Solar e no Universo com base na análise das interações gravitacionais, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros).",
+    "imagem": "/nivel-2/2-bncc/fisica/pagdow/movimentos-verticais-da-queda-ao-lan%C3%A7amento/Atividade_%20Miss%C3%A3o%20Aeroespacial%20(Movimentos%20Verticais)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/fisica/pagdow/movimentos-verticais-da-queda-ao-lançamento/movimentos-verticais-da-queda-ao-lançamento.html"
+  },
+  {
+    "titulo": "Movimentos verticais: governados pela gravidade",
+    "descricao": "Atividade dividida em quatro laboratórios conceptuais. Inclui a análise da experiência da pena e do martelo na Lua, a adaptação das fórmulas do MRUV para o eixo vertical e o cálculo prático da altura de uma ponte.(EM13CNT204) Elaborar explicações, previsões e cálculos a respeito dos movimentos de objetos na Terra, no Sistema Solar e no Universo com base na análise das interações gravitacionais, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros).",
+    "imagem": "/nivel-2/2-bncc/fisica/pagdow/movimentos-verticais-governados-pela-gravidade/Atividade_%20Laborat%C3%B3rio%20de%20Queda%20Livre%20(F%C3%ADsica)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/fisica/pagdow/movimentos-verticais-governados-pela-gravidade/movimentos-verticais-governados-pela-gravidade.html"
+  },
+  {
+    "titulo": "MRUV: Da teoria à prática de resolução de problemas",
+    "descricao": "Atividade temática de \"Investigação Pericial\". Contém um fluxograma de diagnóstico de movimento, um \"kit de ferramentas\" (associação de fórmulas) e a análise do cenário de uma travagem brusca usando cálculos.(EM13CNT204) Elaborar explicações, previsões e cálculos a respeito dos movimentos de objetos na Terra, no Sistema Solar e no Universo com base na análise das interações gravitacionais, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros).",
+    "imagem": "/nivel-2/2-bncc/fisica/pagdow/mruv-da-teoria-a-pratica-de-resolucao-de-problemas/Atividade_%20Peritos%20do%20Asfalto%20(MRU_MRUV)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/fisica/pagdow/mruv-da-teoria-a-pratica-de-resolucao-de-problemas/mruv-da-teoria-a-pratica-de-resolucao-de-problemas.html"
+  },
+
+  {
     "titulo": "Matrizes elétricas",
     "descricao": "Atividade de física sobre as matrizes elétricas e sua importância.",
     "imagem": "/nivel-2/2-bncc/fisica/pagdow/atd-fisi-1/1.png",
