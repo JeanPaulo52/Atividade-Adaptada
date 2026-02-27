@@ -1,5 +1,41 @@
 ﻿[
   {
+    "titulo": "Por que filosofia?",
+    "descricao": "(EM13CHS101) Identificar, analisar e comparar diferentes fontes e narrativas expressas em diversas linguagens, com vistas à compreensão de ideias filosóficas e de processos e eventos históricos, geográficos, políticos, econômicos, sociais, ambientais e culturais. (SÃO PAULO, 2020) Atividade reflexiva. Inclui a classificação de frases do senso comum, a interpretação da atitude dialógica (baseada na Escola de Atenas) e um exercício de pensamento crítico sobre o papel das perguntas na nossa vida em sociedade. Atividade de filosofia sobre a reflexão de seus atos.",
+    "imagem": "/nivel-2/2-bncc/filosofia/pagdow/por-que-filosofia/Atividade_%20O%20Despertar%20do%20Pensamento%20(Filosofia)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/filosofia/pagdow/por-que-filosofia/por-que-filosofia.html"
+  },
+  {
+    "titulo": "Períodos da história da Filosofia",
+    "descricao": "(EM13CHS101) Identificar, analisar e comparar diferentes fontes e narrativas expressas em diversas linguagens, com vistas à compreensão de ideias filosóficas e de processos e eventos históricos, geográficos, políticos, econômicos, sociais, ambientais e culturais. (SÃO PAULO, 2020) Atividade reflexiva e histórica. O aluno começa por decifrar o Mapa dos Séculos, avalia a relação entre a Filosofia e a História, aplica o conhecimento estoico a uma situação moderna e, por fim, reflete sobre os desafios filosóficos da nossa própria época. Atividade de filosofia sobre a reflexão de seus atos.",
+    "imagem": "/nivel-2/2-bncc/filosofia/pagdow/periodos-da-historia-da-filosofia/Atividade_%20M%C3%A1quina%20do%20Tempo%20(Hist%C3%B3ria%20da%20Filosofia)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/filosofia/pagdow/periodos-da-historia-da-filosofia/periodos-da-historia-da-filosofia.html"
+  },
+  {
+    "titulo": "Origens da filosofia",
+    "descricao": "(EM13CHS101) Identificar, analisar e comparar diferentes fontes e narrativas expressas em diversas linguagens, com vistas à compreensão de ideias filosóficas e de processos e eventos históricos, geográficos, políticos, econômicos, sociais, ambientais e culturais. (SÃO PAULO, 2020) Atividade reflexiva (Diário de Escavação). Inclui o enigma de Sócrates, a identificação do sentimento de espanto no quotidiano, a desconstrução do mito de que só a Grécia produziu pensamento filosófico (crítica ao Eurocentrismo) e uma auto-análise sobre o crescimento pessoal. Atividade de filosofia sobre a reflexão de seus atos.",
+    "imagem": "/nivel-2/2-bncc/filosofia/pagdow/origens-da-filosofia/Atividade_%20Arqueologia%20das%20Ideias%20(Filosofia)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/filosofia/pagdow/origens-da-filosofia/origens-da-filosofia.html"
+  },
+  {
+    "titulo": "Mito e Filosofia",
+    "descricao": "Atividade reflexiva. Começa com a diferenciação dos conceitos de Mythos e Logos, avança para a interpretação do terrível Mito de Cronos, propõe um exercício de comparação entre um texto mítico e um científico, e termina com uma reflexão sobre os mitos modernos. Atividade de filosofia sobre a reflexão de seus atos.",
+    "imagem": "/nivel-2/2-bncc/filosofia/pagdow/mito-e-filosofia/Atividade_%20Do%20Mito%20%C3%A0%20Raz%C3%A3o%20(Filosofia)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/filosofia/pagdow/mito-e-filosofia/mito-e-filosofia.html"
+  },
+  {
+    "titulo": "Atitude filosófica: a exigência pela argumentação",
+    "descricao": "Atividade interativa. O aluno começa por ser um Detetive de Proposições, avança para a ligação lógica entre teses e argumentos, descodifica o método de Sócrates (o parto das ideias) e termina com um relato pessoal sobre a coragem de mudar de opinião. Atividade de filosofia sobre a reflexão de seus atos.",
+    "imagem": "/nivel-2/2-bncc/filosofia/pagdow/atitude-filosofica-a-exigencia-pela-argumentacao/Atividade_%20O%20Tribunal%20da%20Raz%C3%A3o%20(Filosofia)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/filosofia/pagdow/atitude-filosofica-a-exigencia-pela-argumentacao/atitude-filosofica-a-exigencia-pela-argumentacao.html"
+  },
+  {
+    "titulo": "A atitude filosófica: a análise dos argumentos",
+    "descricao": "(EM13CHS101) Identificar, analisar e comparar diferentes fontes e narrativas expressas em diversas linguagens, com vistas à compreensão de ideias filosóficas e de processos e eventos históricos, geográficos, políticos, econômicos, sociais, ambientais e culturais. (SÃO PAULO, 2020) Atividade investigativa. Começa com a dissecação de um silogismo clássico, avança para um jogo de correspondência de falácias disfarçadas de frases do quotidiano, testa a diferença entre verdade e validade e culmina num desafio de escrita lógica. Atividade de filosofia sobre a reflexão de seus atos.",
+    "imagem": "/nivel-2/2-bncc/filosofia/pagdow/a-atitude-filosofica-a-analise-dos-argumentos/Atividade_%20Detetives%20da%20L%C3%B3gica%20(Filosofia)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/filosofia/pagdow/a-atitude-filosofica-a-analise-dos-argumentos/a-atitude-filosofica-a-analise-dos-argumentos.html"
+  },
+  {
     "titulo": "Expressões pessoais",
     "descricao": "Atividade de filosofia sobre a reflexão de seus atos.",
     "imagem": "/nivel-2/2-bncc/filosofia/pagdow/atd-filo-1/1.png",

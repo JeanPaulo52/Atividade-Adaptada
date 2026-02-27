@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "sitemap": "node generate-sitemap-v2.js"
+  },
   "dependencies": {
     "glob": "^11.0.3"
   }
