@@ -1,5 +1,41 @@
 ﻿[
   {
+    "titulo": "Recursos hídricos",
+    "descricao": "(EM13CHS103) Elaborar hipóteses, selecionar evidências e compor argumentos relativos a processos políticos, econômicos, sociais, ambientais, culturais e epistemológicos, com base na sistematização de dados e informações de diversas naturezas (expressões artísticas, textos filosóficos e sociológicos, documentos históricos e geográficos, gráficos, mapas, tabelas, tradições orais, entre outros). (SÃO PAULO, 2020) Atividade esquemática e reflexiva (Dossiê Hídrico). Começa com o Mito da Abundância (análise das percentagens de água), avança para a Anatomia do Rio (identificação visual e conceptual dos elementos da bacia), testa os conhecimentos com um bloco de Verdadeiro/Falso, e culmina numa reflexão crítica sobre a gestão da água nas cidades. atividade de geografia",
+    "imagem": "http://127.0.0.1:5501/nivel-2/2-bncc/geografia/pagdow/recursos-hidricos/Atividade_%20Guardi%C3%B5es%20das%20%C3%81guas%20(Geografia)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/geografia/pagdow/recursos-hidricos/recursos-hidricos.html"
+  },
+  {
+    "titulo": "Gestão sustentável dos recursos hídricos",
+    "descricao": "(EM13CHS206) Analisar a ocupação humana e a produção do espaço em diferentes tempos, aplicando os princípios de localização, distribuição, ordem, extensão, conexão, arranjos, casualidade, entre outros que contribuem para o raciocínio geográfico. (SÃO PAULO, 2020) Atividade reflexiva e de intervenção. O aluno começa por analisar o Paradoxo da Abundância (distribuição desigual), avança para a Balança da Responsabilidade (ligando ações ao Estado ou ao Cidadão), avalia mitos e verdades sobre o uso da água e termina redigindo um Plano de Ação sustentável para a sua escola ou bairro. atividade de geografia",
+    "imagem": "/nivel-2/2-bncc/geografia/pagdow/gestao-sustentavel-dos-recursos-hidricos/Atividade_%20Gestores%20da%20Sustentabilidade%20(Geografia)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/geografia/pagdow/gestao-sustentavel-dos-recursos-hidricos/gestao-sustentavel-dos-recursos-hidricos.html"
+  },
+  {
+    "titulo": "Elementos e controles climáticos",
+    "descricao": "Atividade esquemática. O aluno começa por separar os Ingredientes (Elementos) dos Controladores (Fatores), analisa o comportamento térmico de cidades no litoral vs. interior (Maritimidade), avalia regras sobre Altitude e Latitude num verdadeiro/falso, e termina com um relatório prático aplicando os conceitos à sua própria região. atividade de geografia",
+    "imagem": "/nivel-2/2-bncc/geografia/pagdow/elementos-e-controles-climaticos/Atividade_%20Laborat%C3%B3rio%20Clim%C3%A1tico%20(Geografia)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/geografia/pagdow/elementos-e-controles-climaticos/elementos-e-controles-climaticos.html"
+  },
+  {
+    "titulo": "Elaboração de climogramas",
+    "descricao": "(EM13CHS304) Analisar os impactos socioambientais decorrentes de práticas de instituições governamentais, de empresas e de indivíduos, discutindo as origens dessas práticas, selecionando, incorporando e promovendo aquelas que favoreçam a consciência e a ética socioambiental e o consumo responsável. Atividade prática e oficinal (Prancheta do Meteorologista). O aluno começa por rever as regras de construção, recebe uma tabela de dados realísticos para desenhar o seu próprio gráfico na grelha fornecida, compara dois climas extremos (Desértico vs. Equatorial) e escreve uma síntese avaliativa. atividade de geografia",
+    "imagem": "/nivel-2/2-bncc/geografia/pagdow/elaboracao-de-climogramas/Atividade_%20Arquitetos%20do%20Clima%20(Geografia)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/geografia/pagdow/elaboracao-de-climogramas/elaboracao-de-climogramas.html"
+  },
+  {
+    "titulo": "Climograma",
+    "descricao": "(EM13CHS304) Analisar os impactos socioambientais decorrentes de práticas de instituições governamentais, de empresas e de indivíduos, discutindo as origens dessas práticas, selecionando, incorporando e promovendo aquelas que favoreçam a consciência e a ética socioambiental e o consumo responsável. Atividade prática e analítica. O aluno começa por legendar a anatomia de um climograma, avança para um desafio prático de \"Mala de Viagem\" com base num perfil climático, associa diferentes perfis a biomas específicos (floresta vs. deserto) e conclui refletindo sobre o impacto do clima na sociedade. atividade de geografia",
+    "imagem": "/nivel-2/2-bncc/geografia/pagdow/climograma/Atividade_%20O%20C%C3%B3digo%20dos%20Climas%20(Geografia)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/geografia/pagdow/climograma/climograma.html"
+  },
+  {
+    "titulo": "Atmosfera",
+    "descricao": "(EM13CHS304) Analisar os impactos socioambientais decorrentes de práticas de instituições governamentais, de empresas e de indivíduos, discutindo as origens dessas práticas, selecionando, incorporando e promovendo aquelas que favoreçam a consciência e a ética socioambiental e o consumo responsável. Atividade esquemática e investigativa. O aluno começa por analisar as funções vitais da atmosfera, depois preenche o Elevador Espacial identificando as características de cada camada (Troposfera até Exosfera), avança para a máquina do clima (Alta e Baixa Pressão) e termina com um relatório de bordo sobre a influência destes movimentos no nosso dia a dia. atividade de geografia",
+    "imagem": "/nivel-2/2-bncc/geografia/pagdow/atmosfera/Atividade_%20Miss%C3%A3o%20Atmosfera%20(Geografia)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/geografia/pagdow/atmosfera/atmosfera.html"
+  },
+  {
     "titulo": "Climatologia e meteorologia",
     "descricao": "Geografia (EM13CHS304) Analisar os impactos socioambientais decorrentes de práticas de instituições governamentais, de empresas e de indivíduos, discutindo as origens dessas práticas, selecionando, incorporando e promovendo aquelas que favoreçam a consciência e a ética socioambiental e o consumo responsável. Atividade estruturada. O aluno começa por ligar as ciências aos seus objetos de estudo, atua como Revisor de Texto para corrigir o uso errado das palavras tempo e clima, avalia afirmações como (V) ou (F) sobre a medição atmosférica e termina com uma reflexão sobre a importância destas ciências para a sociedade (agricultura, prevenção de desastres). Uma folha de atividades colorida e visual que trabalha a memória do trajeto escolar, a categorização de objetos (o que pertence à escola vs. casa) e a percepção do espaço de lazer.(EF01GE01) Descrever características observadas de seus lugares de vivência (moradia, escola etc.) e identificar semelhanças e diferenças entre esses lugares.",
     "imagem": "/nivel-2/2-bncc/geografia/pagdow/climatologia-e-meteorologia/Atividade_%20Observat%C3%B3rio%20da%20Terra%20(Geografia)_page-0001.webp",
