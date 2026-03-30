@@ -1,5 +1,65 @@
 ﻿[
   {
+    "titulo": "Desafio da Vida Financeira",
+    "descricao": "(EM13MAT203) Aplicar conceitos matemáticos no planejamento, na execução e na análise de ações envolvendo a utilização de aplicativos e a criação de planilhas (para o controle de orçamento familiar, simuladores de cálculos de juros simples e compostos, entre outros), para tomar decisões. (EM13CHS404) Identificar e discutir os múltiplos aspectos do trabalho em diferentes circunstâncias e contextos históricos e/ou geográficos e seus efeitos sobre as gerações, em especial, os jovens, levando em consideração, na atualidade, as transformações técnicas, tecnológicas e informacionais. (SÃO PAULO, 2020) Atividade baseada na resolução de problemas (Dossiê de Consultoria). O aluno começa por classificar o Código da Renda (Fixa vs. Variável), avança para a Mesa do Consultor onde analisa três perfis de jovens e os seus maiores desafios, avalia mitos sobre riqueza num bloco de Verdadeiro/Falso e termina com uma reflexão empática sobre como as condições financeiras influenciam as escolhas de vida. Atividade de educação financeira ",
+    "imagem": "/nivel-2/2-bncc/educacao-financeira/pagdow/desafio-da-vida-financeira/Atividade_%20Miss%C3%A3o%20Realidade%20(Educa%C3%A7%C3%A3o%20Financeira)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/educacao-financeira/pagdow/desafio-da-vida-financeira/desafio-da-vida-financeira.html"
+  },
+  {
+    "titulo": "Introdução à Educação Financeira",
+    "descricao": "(EM13LP20) Compartilhar gostos, interesses, práticas culturais, temas/problemas/questões que despertam maior interesse ou preocupação, respeitando e valorizando diferenças, como forma de identificar afinidades e interesses comuns, como também de organizar e/ou participar de grupos, clubes, oficinas e afins. Atividade de reflexão e planeamento (O meu Portefólio Financeiro). Começa com o exercício O Significado do Dinheiro (Ver, Pensar, Perguntar), avança para a Linha do Tempo (comparando gastos atuais e futuros), desafia o aluno a criar o seu Mapa dos Sonhos e termina com um compromisso pessoal sobre a importância de aprender a lidar com as finanças desde cedo. Atividade de educação financeira ",
+    "imagem": "/nivel-2/2-bncc/educacao-financeira/pagdow/introducao-a-educacao-financeira/Atividade_%20Miss%C3%A3o%20Independ%C3%AAncia%20(Educa%C3%A7%C3%A3o%20Financeira)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/educacao-financeira/pagdow/introducao-a-educacao-financeira/introducao-a-educacao-financeira.html"
+  },
+  {
+    "titulo": "Orçamento pessoal básico",
+    "descricao": "(EF09MA03) Efetuar cálculos com números reais, inclusive potências com expoentes fracionários. (EM13MAT203) Aplicar conceitos matemáticos no planejamento, na execução e na análise de ações envolvendo a utilização de aplicativos e a criação de planilhas (para o controle de orçamento familiar, simuladores de cálculos de juros simples e compostos, entre outros), para tomar decisões. Atividade investigativa (Relatório de Auditoria). O aluno começa por dominar as três palavras-chave da economia pessoal (o Código do Orçamento), avança para um exercício de classificação de despesas (O Raio-X dos Gastos), analisa a Cena do Crime Financeiro (um estudo de caso com cálculos básicos) e termina a redigir o seu parecer final sobre a importância do planeamento. Atividade de educação financeira ",
+    "imagem": "/nivel-2/2-bncc/educacao-financeira/pagdow/orcamento-pessoal-basico/Atividade_%20Miss%C3%A3o%20Or%C3%A7amento%20(Educa%C3%A7%C3%A3o%20Financeira)_page-0002.webp",
+    "link": "/nivel-2/2-bncc/educacao-financeira/pagdow/orcamento-pessoal-basico/orcamento-pessoal-basico.html"
+  },
+  {
+    "titulo": "Orçamento pessoal básico 2",
+    "descricao": "(EF09MA05) Resolver e elaborar problemas que envolvam porcentagens, com a ideia de aplicação de percentuais sucessivos e a determinação das taxas percentuais, preferencialmente com o uso de tecnologias digitais, no contexto da educação financeira. (EM13MAT203) Aplicar conceitos matemáticos no planejamento, na execução e na análise de ações envolvendo a utilização de aplicativos e a criação de planilhas (para o controle de orçamento familiar, simuladores de cálculos de juros simples e compostos, entre outros), para tomar decisões. Atividade prática e de cálculo (Plano de Estratégia). O aluno começa por decifrar a Regra de Ouro (classificando despesas em 50, 30 ou 20), avança para o Laboratório de Cálculo (onde aplica a percentagem a um salário fictício), avalia mitos sobre o orçamento (Verdadeiro/Falso) e termina a elaborar o seu próprio manifesto de organização. Atividade de educação financeira ",
+    "imagem": "/nivel-2/2-bncc/educacao-financeira/pagdow/orcamento-pessoal-basico-2/Atividade_%20A%20F%C3%B3rmula%20do%20Equil%C3%ADbrio%20(Educa%C3%A7%C3%A3o%20Financeira)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/educacao-financeira/pagdow/orcamento-pessoal-basico-2/orcamento-pessoal-basico-2.html"
+  },
+  {
+    "titulo": "Panorama da educação financeira",
+    "descricao": "(EM13LP27) Engajar-se na busca de solução para problemas que envolvam a coletividade, denunciando o desrespeito a direitos, organizando e/ou participando de discussões, campanhas e debates, produzindo textos reivindicatórios, normativos, entre outras possibilidades, como forma de fomentar os princípios democráticos e uma atuação pautada pela ética da responsabilidade, pelo consumo consciente e pela consciência socioambiental. (EM13MAT101) Interpretar criticamente situações econômicas, sociais e fatos relativos às Ciências da Natureza que envolvam a variação de grandezas, pela análise dos gráficos das funções representadas e das taxas de variação, com ou sem apoio de tecnologias digitais. Atividade reflexiva e analítica ( O Meu Raio-X Financeiro ). O aluno começa por analisar a Manchete da Realidade (dados sobre endividamento), avança para o Descodificador Financeiro (onde liga conceitos vitais como autonomia e metas), analisa o Efeito Dominó na sua própria casa e culmina numa reflexão de compromisso familiar. Atividade de educação financeira ",
+    "imagem": "/nivel-2/2-bncc/educacao-financeira/pagdow/panorama-da-educacao-financeira/Atividade_%20Vis%C3%A3o%20360%C2%BA%20(Educa%C3%A7%C3%A3o%20Financeira)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/educacao-financeira/pagdow/panorama-da-educacao-financeira/panorama-da-educacao-financeira.html"
+  },
+  {
+    "titulo": "Renda e trabalho",
+    "descricao": "(EM13CHS402) Analisar e comparar indicadores de emprego, trabalho e renda em diferentes espaços, escalas e tempos, associando-os a processos de estratificação e desigualdade socioeconômica. Atividade prática e investigativa (Dossiê de Carreira). O aluno começa por separar o dinheiro que custa suor do dinheiro que trabalha sozinho (Renda Ativa vs. Passiva), avança para a classificação de trabalhadores no mercado atual, julga afirmações sobre a estabilidade orçamental (Verdadeiro/Falso) e termina projetando o seu próprio futuro profissional. Atividade de educação financeira ",
+    "imagem": "/nivel-2/2-bncc/educacao-financeira/pagdow/renda-e-trabalho/Atividade_%20Miss%C3%A3o%20Carreira%20(Educa%C3%A7%C3%A3o%20Financeira)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/educacao-financeira/pagdow/renda-e-trabalho/renda-e-trabalho.html"
+  },
+  {
+    "titulo": "Renda e trabalho 2",
+    "descricao": "(EM13CHS401) Identificar e analisar as relações entre sujeitos, grupos, classes sociais e sociedades com culturas distintas diante das transformações técnicas, tecnológicas e informacionais e das novas formas de trabalho ao longo do tempo, em diferentes espaços (urbanos e rurais) e contextos. (EM13MAT102) Analisar tabelas, gráficos e amostras de pesquisas estatísticas apresentadas em relatórios divulgados por diferentes meios de comunicação, identificando, quando for o caso, inadequações que possam induzir a erros de interpretação, como escalas e amostras não apropriadas. (EM13MAT406) Construir e interpretar tabelas e gráficos de frequências com base em dados obtidos em pesquisas por amostras estatísticas, incluindo ou não o uso de softwares que inter-relacionem estatística, geometria e álgebra. Atividade prospetiva (O Radar do Futuro). O aluno começa por classificar as profissões em risco ou em crescimento, avança para a definição de Empregabilidade e Desocupação (preenchimento de conceitos), avalia cenários do mercado num bloco de Verdadeiro Falso e termina com a projeção do seu próprio Currículo do Futuro, escolhendo habilidades essenciais a desenvolver desde já. Atividade de educação financeira ",
+    "imagem": "/nivel-2/2-bncc/educacao-financeira/pagdow/renda-e-trabalho-2/Atividade_%20Miss%C3%A3o%20Talento%20(Educa%C3%A7%C3%A3o%20Financeira)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/educacao-financeira/pagdow/renda-e-trabalho-2/renda-e-trabalho-2.html"
+  },
+  {
+    "titulo": "Renda e trabalho 3",
+    "descricao": "(EM13CHS402) Analisar e comparar indicadores de emprego, trabalho e renda em diferentes espaços, escalas e tempos, associando-os a processos de estratificação e desigualdade socioeconômica. (EM13MAT104) Interpretar taxas e índices de natureza socioeconômica (índice de desenvolvimento humano, taxas de inflação, entre outros), investigando os processos de cálculo desses números, para analisar criticamente a realidade e produzir argumentos. Atividade analítica e reflexiva (Dossiê Socioeconómico). O aluno começa por analisar o Gráfico da Desigualdade (o choque de realidade dos 1%), avança para um exercício de preenchimento sobre o Salário Mínimo e os Benefícios Sociais, julga mitos e verdades num bloco de (V/F) e culmina com a redação de um pequeno manifesto sobre justiça social. Atividade de educação financeira ",
+    "imagem": "/nivel-2/2-bncc/educacao-financeira/pagdow/renda-e-trabalho-3/Atividade_%20Miss%C3%A3o%20Igualdade%20(Educa%C3%A7%C3%A3o%20Financeira)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/educacao-financeira/pagdow/renda-e-trabalho-3/renda-e-trabalho-3.html"
+  },
+  {
+    "titulo": "Sistema Financeiro Nacional",
+    "descricao": " (EM13CHS202) Analisar e avaliar os impactos das tecnologias na estruturação e nas dinâmicas de grupos, povos e sociedades contemporâneos (fluxos populacionais, financeiros, de mercadorias, de informações, de valores éticos e culturais etc.), bem como suas interferências nas decisões políticas, sociais, ambientais, econômicas e culturais. (EM13CO07) Compreender as diferentes tecnologias, bem como equipamentos, protocolos e serviços envolvidos no funcionamento de redes de computadores, identificando suas possibilidades de escala e confiabilidade. Atividade esquemática (Dossiê Financeiro). O aluno começa por preencher a Ponte do Dinheiro (identificando quem poupa, o banco e quem pede emprestado), classifica características dos meios de pagamento (Físico vs. Digital), resolve um bloco de Verdadeiro Falso sobre o funcionamento dos bancos e termina com uma reflexão crítica sobre como a tecnologia mudou a nossa forma de gastar. Atividade de educação financeira ",
+    "imagem": "/nivel-2/2-bncc/educacao-financeira/pagdow/sistema-financeiro-nacional/Atividade_%20Miss%C3%A3o%20Banc%C3%A1ria%20(Educa%C3%A7%C3%A3o%20Financeira)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/educacao-financeira/pagdow/sistema-financeiro-nacional/sistema-financeiro-nacional.html"
+  },
+  {
+    "titulo": "Sistema Financeiro Nacional 2",
+    "descricao": " (EM13CHS202) Analisar e avaliar os impactos das tecnologias na estruturação e nas dinâmicas de grupos, povos e sociedades contemporâneos (fluxos populacionais, financeiros, de mercadorias, de informações, de valores éticos e culturais etc.), bem como suas interferências nas decisões políticas, sociais, ambientais, econômicas e culturais. (EM13CO07) Compreender as diferentes tecnologias, bem como equipamentos, protocolos e serviços envolvidos no funcionamento de redes de computadores, identificando suas possibilidades de escala e confiabilidade. Atividade investigativa (Relatório de Inspeção). O aluno começa por ligar o tipo de instituição à sua descrição, avança para um exercício de Verdadeiro ou Falso sobre os superpoderes do Banco Central, analisa dois cenários práticos de risco segurança (para identificar burlas) e termina com um relatório reflexivo sobre a importância de escolher instituições autorizadas. Atividade de educação financeira ",
+    "imagem": "/nivel-2/2-bncc/educacao-financeira/pagdow/sistema-financeiro-nacional-2/Atividade_%20Miss%C3%A3o%20Seguran%C3%A7a%20(Educa%C3%A7%C3%A3o%20Financeira)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/educacao-financeira/pagdow/sistema-financeiro-nacional-2/sistema-financeiro-nacional-2.html"
+  },
+  {
     "titulo": "O Desafio da Inflação: O que seu dinheiro pode comprar? - atividade adaptada educação financeira",
     "descricao": "Atividade de educação financeira focada em inflrção e em como essa inflação pode influencias diretamente no poder de compra do dinheiro ao longo do tempo. - Atividade de educação financeira.",
     "imagem": "/nivel-2/2-bncc/educacao-financeira/pagdow/atd-edfin-9/atividade_adaptada_educacao_financeira_img.webp",

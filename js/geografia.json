@@ -1,8 +1,50 @@
 ﻿[
   {
+    "titulo": "Biomas do estado de São Paulo",
+    "descricao": "(EM13CHS103) Elaborar hipóteses, selecionar evidências e compor argumentos relativos a processos políticos, econômicos, sociais, ambientais, culturais e epistemológicos, com base na sistematização de dados e informações de diversas naturezas (expressões artísticas, textos filosóficos e sociológicos, documentos históricos e geográficos, gráficos, mapas, tabelas, tradições orais, entre outros). Atividade prática (Relatório de Conservação). O aluno começa por distinguir a Mata Atlântica do Cerrado, avança para o mistério biológico do Endemismo (usando o caso dos mini-sapos), avalia mitos e verdades sobre os serviços da natureza, e conclui desenvolvendo um plano de ação para salvar uma área verde ameaçada. atividade de geografia",
+    "imagem": "/nivel-2/2-bncc/geografia/pagdow/biomas-do-estado-de-sao-paulo/Atividade_%20Guardi%C3%B5es%20Paulistas%20(Geografia)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/geografia/pagdow/biomas-do-estado-de-sao-paulo/biomas-do-estado-de-sao-paulo.html"
+  },
+  {
+    "titulo": "Prevenção e mitigação de impactos",
+    "descricao": "(EM13CHS304) Analisar os impactos socioambientais decorrentes de práticas de instituições governamentais, de empresas e de indivíduos, discutindo as origens dessas práticas, selecionando, incorporando e promovendo aquelas que favoreçam a consciência e a ética socioambiental e o consumo responsável. Atividade prática e avaliativa (Dossiê de Prevenção). O aluno começa por ligar as técnicas agrícolas corretas às suas definições, avança para a análise de medidas urbanas de contenção, avalia um caso de estudo (verdadeiro/falso sobre desastres reais) e termina com a elaboração de um plano de contingência. atividade de geografia",
+    "imagem": "/nivel-2/2-bncc/geografia/pagdow/prevencao-e-mitigacao-de-impactos/Atividade_%20Comit%C3%A9%20de%20Crise%20(Geografia)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/geografia/pagdow/prevencao-e-mitigacao-de-impactos/prevencao-e-mitigacao-de-impactos.html"
+  },
+  {
+    "titulo": "Principais biomas do planeta Terra",
+    "descricao": "(EM13CHS103) Elaborar hipóteses, selecionar evidências e compor argumentos relativos a processos políticos, econômicos, sociais, ambientais, culturais e epistemológicos, com base na sistematização de dados e informações de diversas naturezas (expressões artísticas, textos filosóficos e sociológicos, documentos históricos e geográficos, gráficos, mapas, tabelas, tradições orais, entre outros). Atividade prática e investigativa (Passaporte de Exploração). O aluno começa por definir os ingredientes de um bioma, decifra enigmas no seu Diário de Bordo para identificar biomas extremos, avalia afirmações ecológicas num verdadeiro/falso e termina redigindo uma mensagem de SOS ambiental para proteger um ecossistema ameaçado. atividade de geografia",
+    "imagem": "/nivel-2/2-bncc/geografia/pagdow/principais-biomas-do-planeta-terra/Atividade_%20Expedi%C3%A7%C3%A3o%20Biosfera%20(Geografia)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/geografia/pagdow/principais-biomas-do-planeta-terra/principais-biomas-do-planeta-terra.html"
+  },
+  {
+    "titulo": "Relevo",
+    "descricao": "(EM13CHS103) Elaborar hipóteses, selecionar evidências e compor argumentos relativos a processos políticos, econômicos, sociais, ambientais, culturais e epistemológicos, com base na sistematização de dados e informações de diversas naturezas (expressões artísticas, textos filosóficos e sociológicos, documentos históricos e geográficos, gráficos, mapas, tabelas, tradições orais, entre outros). (SÃO PAULO, 2020) Atividade esquemática e investigativa. O aluno começa por separar as forças da natureza (construtores vs. destruidores), avalia o impacto da erosão num bloco de Verdadeiro/Falso, desvenda as ferramentas da natureza (vento, chuva, rios) e termina com um relatório de campo sobre o relevo da sua cidade. atividade de geografia",
+    "imagem": "/nivel-2/2-bncc/geografia/pagdow/relevo/Atividade_%20Os%20Escultores%20da%20Terra%20(Geografia)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/geografia/pagdow/relevo/relevo.html"
+  },
+  {
+    "titulo": "Relevo e ocupação humana",
+    "descricao": "(EM13CHS304) Analisar os impactos socioambientais decorrentes de práticas de instituições governamentais, de empresas e de indivíduos, discutindo as origens dessas práticas, selecionando, incorporando e promovendo aquelas que favoreçam a consciência e a ética socioambiental e o consumo responsável. Atividade prática e investigativa (Prancheta do Urbanista). O aluno começa por distinguir a base geológica da forma superficial, avança para a análise de áreas de risco (encostas e margens de rios), avalia práticas de construção (Verdadeiro/Falso) e termina com a elaboração de um plano de melhoria para a segurança habitacional da sua própria região. atividade de geografia",
+    "imagem": "/nivel-2/2-bncc/geografia/pagdow/relevo-e-ocupacao-humana/Atividade_%20Arquitetos%20da%20Paisagem%20(Geografia)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/geografia/pagdow/relevo-e-ocupacao-humana/relevo-e-ocupacao-humana.html"
+  },
+  {
+    "titulo": "Riscos geológicos",
+    "descricao": "Atividade prática e simulada (Dossiê de Proteção Civil). O aluno começa por distinguir as causas da degradação (Natureza vs. Ação Humana), decifra um Código de Emergência para identificar os desastres terrestres, avalia as estratégias de prevenção da cidade e, por fim, redige um relatório propondo soluções para um problema da sua região. atividade de geografia",
+    "imagem": "/nivel-2/2-bncc/geografia/pagdow/riscos-geologicos/Atividade_%20O%20Esquadr%C3%A3o%20de%20Resgate%20(Geografia)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/geografia/pagdow/riscos-geologicos/riscos-geologicos.html"
+  },
+  {
+    "titulo": "Sistema Nacional de Unidades de Conservação da natureza",
+    "descricao": "(EM13CHS304) Analisar os impactos socioambientais decorrentes de práticas de instituições governamentais, de empresas e de indivíduos, discutindo as origens dessas práticas, selecionando, incorporando e promovendo aquelas que favoreçam a consciência e a ética socioambiental e o consumo responsável. Atividade oficial (Dossiê de Conservação). O aluno começa por decifrar as regras do SNUC, classifica cenários práticos como Proteção Integral ou Uso Sustentável, julga afirmações sobre a importância ecológica das reservas e termina elaborando um mini-projeto de lei para proteger uma área da sua região. atividade de geografia",
+    "imagem": "/nivel-2/2-bncc/geografia/pagdow/sistema-nacional-de-unidades-de-conservacao-da-natureza/Atividade_%20Miss%C3%A3o%20SNUC%20(Geografia)_page-0001.webp",
+    "link": "/nivel-2/2-bncc/geografia/pagdow/sistema-nacional-de-unidades-de-conservacao-da-natureza/sistema-nacional-de-unidades-de-conservacao-da-natureza.html"
+  },
+  {
     "titulo": "Recursos hídricos",
     "descricao": "(EM13CHS103) Elaborar hipóteses, selecionar evidências e compor argumentos relativos a processos políticos, econômicos, sociais, ambientais, culturais e epistemológicos, com base na sistematização de dados e informações de diversas naturezas (expressões artísticas, textos filosóficos e sociológicos, documentos históricos e geográficos, gráficos, mapas, tabelas, tradições orais, entre outros). (SÃO PAULO, 2020) Atividade esquemática e reflexiva (Dossiê Hídrico). Começa com o Mito da Abundância (análise das percentagens de água), avança para a Anatomia do Rio (identificação visual e conceptual dos elementos da bacia), testa os conhecimentos com um bloco de Verdadeiro/Falso, e culmina numa reflexão crítica sobre a gestão da água nas cidades. atividade de geografia",
-    "imagem": "http://127.0.0.1:5501/nivel-2/2-bncc/geografia/pagdow/recursos-hidricos/Atividade_%20Guardi%C3%B5es%20das%20%C3%81guas%20(Geografia)_page-0001.webp",
+    "imagem": "/nivel-2/2-bncc/geografia/pagdow/recursos-hidricos/Atividade_%20Guardi%C3%B5es%20das%20%C3%81guas%20(Geografia)_page-0001.webp",
     "link": "/nivel-2/2-bncc/geografia/pagdow/recursos-hidricos/recursos-hidricos.html"
   },
   {
