@@ -1,8 +1,38 @@
 {
   "scripts": {
-    "sitemap": "node generate-sitemap-v2.js"
+    "sitemap": "node generate-sitemap-v2.js",
+    "generate-json": "node generate-json-links.js",
+    "generate-json-artes": "node generate-json-links.js artes",
+    "generate-json-biologia": "node generate-json-links.js biologia",
+    "generate-json-ciencias": "node generate-json-links.js ciencias",
+    "generate-json-educacao-financeira": "node generate-json-links.js educacao-financeira",
+    "generate-json-educacao-fisica": "node generate-json-links.js educacao-fisica",
+    "generate-json-filosofia": "node generate-json-links.js filosofia",
+    "generate-json-fisica": "node generate-json-links.js fisica",
+    "generate-json-geografia": "node generate-json-links.js geografia",
+    "generate-json-historia": "node generate-json-links.js historia",
+    "generate-json-ingles": "node generate-json-links.js ingles",
+    "generate-json-lingua-portuguesa": "node generate-json-links.js lingua-portuguesa",
+    "generate-json-matematica": "node generate-json-links.js matematica",
+    "generate-json-quimica": "node generate-json-links.js quimica",
+    "generate-json-sociologia": "node generate-json-links.js sociologia",
+    "generate-json-artes-overwrite": "node generate-json-links.js artes --overwrite",
+    "generate-json-biologia-overwrite": "node generate-json-links.js biologia --overwrite",
+    "generate-json-ciencias-overwrite": "node generate-json-links.js ciencias --overwrite",
+    "generate-json-educacao-financeira-overwrite": "node generate-json-links.js educacao-financeira --overwrite",
+    "generate-json-educacao-fisica-overwrite": "node generate-json-links.js educacao-fisica --overwrite",
+    "generate-json-filosofia-overwrite": "node generate-json-links.js filosofia --overwrite",
+    "generate-json-fisica-overwrite": "node generate-json-links.js fisica --overwrite",
+    "generate-json-geografia-overwrite": "node generate-json-links.js geografia --overwrite",
+    "generate-json-historia-overwrite": "node generate-json-links.js historia --overwrite",
+    "generate-json-ingles-overwrite": "node generate-json-links.js ingles --overwrite",
+    "generate-json-lingua-portuguesa-overwrite": "node generate-json-links.js lingua-portuguesa --overwrite",
+    "generate-json-matematica-overwrite": "node generate-json-links.js matematica --overwrite",
+    "generate-json-quimica-overwrite": "node generate-json-links.js quimica --overwrite",
+    "generate-json-sociologia-overwrite": "node generate-json-links.js sociologia --overwrite"
   },
   "dependencies": {
+    "cheerio": "^1.2.0",
     "glob": "^11.0.3"
   }
 }
