@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!isArticle) {
         loadRelatedActivities();
     } else {
-        loadPopularArticles();
+        loadRecommendedArticles();
     }
 });
 
@@ -263,33 +263,45 @@ async function loadRelatedActivities() {
     }
 }
 
-async function loadPopularArticles() {
-    const popularArticlesList = document.getElementById('popular-articles-list');
-    const jsonPath = '/js/Artigos.json'; // Carrega o JSON para a barra lateral
+async function loadRecommendedArticles() {
+    const recommendedContainer = document.getElementById('recommended-articles-grid');
+    const jsonPath = '/js/Artigos.json'; // Carrega o JSON de artigos
+    const currentPath = window.location.pathname.replace(/\/$/, '');
 
     try {
         const response = await fetch(jsonPath);
-        if (!response.ok) throw new Error('Falha ao carregar artigos populares.');
+        if (!response.ok) throw new Error('Falha ao carregar artigos recomendados.');
         
         const articles = await response.json();
-        popularArticlesList.innerHTML = ''; // Limpa "A carregar..."
+        const availableArticles = articles.filter(article => article.link.replace(/\/$/, '') !== currentPath);
+        const shuffled = availableArticles.sort(() => 0.5 - Math.random());
+        const selected = shuffled.slice(0, 3);
 
-        const popularArticles = articles.filter(article => article.popular);
-        
-        if (popularArticles.length > 0) {
-            popularArticles.forEach((article, index) => {
-                const popularLink = document.createElement('a');
-                popularLink.href = article.link;
-                popularLink.className = "block hover:text-cyan-600";
-                popularLink.innerHTML = `<p class="font-bold">${index + 1}. ${article.titulo}</p>`;
-                popularArticlesList.appendChild(popularLink);
-            });
-        } else {
-            popularArticlesList.innerHTML = `<p class="text-gray-500">Nenhum artigo popular no momento.</p>`;
+        recommendedContainer.innerHTML = ''; // Limpa o texto de carregando
+
+        if (selected.length === 0) {
+            recommendedContainer.innerHTML = '<p class="text-gray-500">Nenhum artigo encontrado no momento.</p>';
+            return;
         }
 
+        selected.forEach(article => {
+            const card = document.createElement('a');
+            card.href = article.link;
+            card.className = 'block overflow-hidden rounded-3xl border border-gray-100 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md';
+            card.innerHTML = `
+                <div class="h-36 overflow-hidden bg-gray-100">
+                    <img src="${article.imagem}" alt="${article.titulo}" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                </div>
+                <div class="p-4">
+                    <h4 class="font-semibold text-base text-gray-900 mb-2">${article.titulo}</h4>
+                    <p class="text-sm text-gray-600">${article.descricao ? article.descricao.replace(/<[^>]+>/g, '').slice(0, 90) + '...' : 'Leia um artigo interessante e continue aprendendo.'}</p>
+                </div>
+            `;
+            recommendedContainer.appendChild(card);
+        });
+
     } catch (error) {
-        console.error("Erro ao carregar artigos populares:", error);
-        popularArticlesList.innerHTML = `<p class="text-red-500">Erro ao carregar.</p>`;
+        console.error('Erro ao carregar artigos recomendados:', error);
+        recommendedContainer.innerHTML = '<p class="text-red-500">Erro ao carregar sugestões.</p>';
     }
 }
